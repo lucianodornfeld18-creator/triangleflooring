@@ -1,0 +1,30 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Build/temp
+node_modules/
+dist/
+.cache/
+*.log
+
+# Cloudflare
+.wrangler/
+
+# Local env (should never be committed)
+.env
+.env.local
+.env.*.local
+
+# Sensitive
+*.pem
+*.key
+secrets/

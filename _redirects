@@ -1,0 +1,44 @@
+# Triangle Flooring - URL redirects (Cloudflare Pages)
+# Pattern: from-path  to-path  status
+
+# Common redirect patterns
+/home                       /                                    301
+/index                      /                                    301
+/index.html                 /                                    301
+/services                   /hardwood-flooring/                  301
+/services/                  /hardwood-flooring/                  301
+
+# Service variation redirects (catch common search terms)
+/hardwood                   /hardwood-flooring/                  301
+/wood-flooring              /hardwood-flooring/                  301
+/wood-floors                /hardwood-flooring/                  301
+/vinyl                      /vinyl-plank-flooring/               301
+/vinyl-flooring             /vinyl-plank-flooring/               301
+/lvp                        /vinyl-plank-flooring/               301
+/lvp-flooring               /vinyl-plank-flooring/               301
+/luxury-vinyl-plank         /vinyl-plank-flooring/               301
+/tile                       /tile-installation/                  301
+/tile-flooring              /tile-installation/                  301
+/laminate                   /laminate-flooring/                  301
+/stairs                     /stair-treads/                       301
+/repair                     /floor-repair/                       301
+/floor-replacement          /floor-repair/                       301
+
+# City variation redirects
+/bradenton                  /hardwood-flooring/bradenton/        301
+/sarasota                   /hardwood-flooring/sarasota/         301
+/lakewood-ranch             /hardwood-flooring/lakewood-ranch/   301
+/palmetto                   /contact/                            301
+/parrish                    /contact/                            301
+/venice                     /contact/                            301
+/tampa                      /contact/                            301
+/st-petersburg              /contact/                            301
+
+# Misc
+/quote                      /contact/                            301
+/free-quote                 /contact/                            301
+/estimate                   /contact/                            301
+/free-estimate              /contact/                            301
+/get-quote                  /contact/                            301
+
+# 404 fallback (Cloudflare auto-handles this if 404.html exists)
