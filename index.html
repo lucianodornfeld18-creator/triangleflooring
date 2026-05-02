@@ -39,7 +39,7 @@
 <!-- Performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="image" href="/images/hero-waterfront-hardwood.webp" fetchpriority="high">
+<link rel="preload" as="image" href="/images/hero-bg.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
@@ -111,32 +111,29 @@ p{margin:0 0 1rem}
 .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--navy)}
 .menu-toggle svg{width:26px;height:26px}
 
-/* HERO */
-.hero{position:relative;background:linear-gradient(135deg,#0F3A6E 0%,#1A4F8C 50%,#2E8DD9 100%);color:#fff;padding:80px 0 90px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(circle at 20% 80%,rgba(46,141,217,.4) 0,transparent 40%),radial-gradient(circle at 80% 20%,rgba(224,122,43,.18) 0,transparent 35%);pointer-events:none}
-.hero::after{content:"";position:absolute;bottom:-1px;left:0;right:0;height:80px;background:linear-gradient(to bottom,transparent,rgba(255,255,255,.04));pointer-events:none}
-.hero-grid{position:relative;display:grid;grid-template-columns:1.15fr 1fr;gap:3rem;align-items:center;max-width:var(--container);margin:0 auto;padding:0 20px}
-.hero-content .eyebrow{background:rgba(255,255,255,.14);color:#fff}
-.hero h1{color:#fff;margin-bottom:1.1rem}
-.hero h1 span{display:block;background:linear-gradient(90deg,#5BAEEB,#FFC993);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
-.hero-sub{font-size:1.08rem;line-height:1.6;color:rgba(255,255,255,.92);margin-bottom:1.6rem;max-width:540px}
-.hero-cta{display:flex;flex-wrap:wrap;gap:.85rem;margin-bottom:1.7rem}
-.trust-row{display:flex;flex-wrap:wrap;gap:1.4rem;align-items:center}
-.trust-item{display:flex;align-items:center;gap:7px;font-size:.88rem;color:rgba(255,255,255,.95);font-weight:600}
-.trust-item svg{width:16px;height:16px;color:#FFC993;flex-shrink:0}
-.rating-stars{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);padding:8px 14px;border-radius:50px;backdrop-filter:blur(8px);font-size:.88rem;font-weight:600}
-.rating-stars .stars{color:#FFD580;letter-spacing:1px}
-.hero-visual{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4);aspect-ratio:4/5;background:linear-gradient(135deg,#0F3A6E 0%,#1A4F8C 45%,#2E8DD9 100%)}
-.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
-.hero-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,35,66,0) 35%,rgba(15,35,66,.55) 100%);pointer-events:none}
-.hero-badge{position:absolute;top:18px;left:18px;background:rgba(255,255,255,.97);padding:8px 14px;border-radius:50px;display:inline-flex;align-items:center;gap:6px;font-family:var(--font-head);font-weight:700;font-size:.78rem;color:var(--navy);box-shadow:var(--shadow);letter-spacing:.04em;z-index:3}
-.hero-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#10B981;box-shadow:0 0 0 4px rgba(16,185,129,.18);animation:pulse 1.8s ease-in-out infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(16,185,129,.18)}50%{box-shadow:0 0 0 8px rgba(16,185,129,.05)}}
-.hero-card{z-index:3}
-.hero-card{position:absolute;bottom:24px;left:24px;right:24px;background:rgba(255,255,255,.97);padding:18px 22px;border-radius:var(--radius);box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:14px;backdrop-filter:blur(8px)}
-.hero-card-icon{width:44px;height:44px;background:var(--navy);border-radius:50%;display:grid;place-items:center;color:#fff;flex-shrink:0;font-size:1.3rem}
-.hero-card-content p{margin:0;font-size:.78rem;color:var(--gray);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
-.hero-card-content strong{font-family:var(--font-head);font-size:1.05rem;color:var(--navy);font-weight:700;display:block;margin-top:2px}
+/* HERO — centered full-bleed */
+.hero{position:relative;min-height:88vh;min-height:700px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden;padding:100px 20px 90px}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center;display:block}
+.hero-overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(135deg,rgba(15,35,66,.82) 0%,rgba(15,58,110,.74) 50%,rgba(26,79,140,.7) 100%)}
+.hero-overlay::after{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 50% 60%,transparent 0%,rgba(15,35,66,.3) 100%)}
+.hero-content{position:relative;z-index:2;max-width:920px;margin:0 auto;animation:fadeUp .8s ease-out}
+.hero-pill{display:inline-flex;align-items:center;gap:9px;background:rgba(15,35,66,.55);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.14);padding:9px 18px;border-radius:50px;font-family:var(--font-head);font-weight:600;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:#fff;margin-bottom:1.5rem}
+.hero-pill-dot{width:8px;height:8px;border-radius:50%;background:var(--orange);box-shadow:0 0 0 4px rgba(224,122,43,.3);animation:pulse 1.8s ease-in-out infinite}
+.hero-rating{display:inline-flex;align-items:center;justify-content:center;gap:10px;margin-bottom:1.4rem;font-family:var(--font-head);font-weight:600;font-size:.95rem;color:rgba(255,255,255,.96)}
+.hero-rating .stars{color:#FFC993;font-size:1.1rem;letter-spacing:2px}
+.hero h1{color:#fff;margin-bottom:1.4rem;font-size:clamp(2.1rem,5.6vw,4rem);font-weight:800;line-height:1.05;letter-spacing:-.025em}
+.hero-accent{background:linear-gradient(90deg,#FFC993 0%,#E07A2B 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;color:transparent}
+.hero-sub{font-size:1.08rem;line-height:1.6;color:rgba(255,255,255,.92);margin:0 auto 2.1rem;max-width:660px}
+.hero-cta{display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.2rem}
+.btn-large{padding:16px 30px;font-size:1.02rem}
+.btn-secondary-light{background:rgba(255,255,255,.08);color:#fff;border:1.5px solid rgba(255,255,255,.4);backdrop-filter:blur(10px)}
+.btn-secondary-light:hover{background:#fff;color:var(--navy);border-color:#fff;transform:translateY(-2px)}
+.hero-trust{display:flex;justify-content:center;flex-wrap:wrap;gap:1rem 2rem;font-family:var(--font-head)}
+.hero-trust-item{display:inline-flex;align-items:center;gap:8px;font-size:.94rem;font-weight:600;color:#fff;white-space:nowrap}
+.hero-trust-item svg{width:17px;height:17px;color:var(--orange);flex-shrink:0}
+
+@keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(224,122,43,.3)}50%{box-shadow:0 0 0 9px rgba(224,122,43,.05)}}
 
 /* SOCIAL PROOF STRIP */
 .proof-strip{background:#fff;padding:2rem 0;border-bottom:1px solid var(--gray-border)}
@@ -272,9 +269,14 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
 
 /* MOBILE */
 @media(max-width:960px){
-  .hero{padding:50px 0 60px}
-  .hero-grid{grid-template-columns:1fr;gap:2rem}
-  .hero-visual{aspect-ratio:5/4;order:-1}
+  .hero{min-height:auto;padding:70px 16px 60px}
+  .hero h1{font-size:clamp(1.85rem,7vw,2.6rem);line-height:1.1}
+  .hero-sub{font-size:.98rem}
+  .hero-pill{font-size:.7rem;padding:7px 14px;letter-spacing:.08em}
+  .hero-cta{flex-direction:column;align-items:stretch;width:100%;max-width:340px;margin-left:auto;margin-right:auto;gap:.75rem}
+  .hero-cta .btn{width:100%}
+  .hero-trust{gap:.85rem 1.4rem}
+  .hero-trust-item{font-size:.85rem}
   section{padding:3.5rem 0}
   .services-grid,.why-grid,.process-grid,.reviews-grid{grid-template-columns:1fr}
   .gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px}
@@ -369,36 +371,49 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-grid">
-    <div class="hero-content">
-      <span class="eyebrow">⭐ 5.0 Google Rated · 300+ Projects</span>
-      <h1>Flooring Contractor in Bradenton, FL <span>Built on Precision. Backed by Trust.</span></h1>
-      <p class="hero-sub">Hardwood, luxury vinyl plank, tile, laminate, and stair treads — installed by a 5+ year flooring crew across Bradenton, Sarasota, Lakewood Ranch & Tampa Bay. Free in-home estimate within 24 hours.</p>
-      <div class="hero-cta">
-        <a href="/contact/" class="btn btn-primary">Get My Free Estimate
-          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </a>
-        <a href="tel:+19414026861" class="btn btn-ghost">📞 Call (941) 402-6861</a>
-      </div>
-      <div class="trust-row">
-        <div class="rating-stars"><span class="stars">★★★★★</span> 5.0 on Google</div>
-        <div class="trust-item"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg> Insured</div>
-        <div class="trust-item"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg> 1-Year Warranty</div>
-        <div class="trust-item"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg> Free Estimates</div>
-      </div>
+  <picture class="hero-bg">
+    <source srcset="/images/hero-bg-mobile.webp" media="(max-width:768px)" type="image/webp">
+    <source srcset="/images/hero-bg.webp" type="image/webp">
+    <img src="/images/hero-bg.jpg" alt="Luxury European White Oak hardwood flooring installation by Triangle Flooring" width="1920" height="1080" loading="eager" fetchpriority="high">
+  </picture>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <span class="hero-pill">
+      <span class="hero-pill-dot"></span>
+      Tampa Bay's Trusted Flooring Contractor
+    </span>
+    <div class="hero-rating">
+      <span class="stars">★★★★★</span>
+      <span>5.0 · 6 Google Reviews</span>
     </div>
-    <div class="hero-visual">
-      <picture>
-        <source srcset="/images/hero-waterfront-hardwood.webp" type="image/webp">
-        <img src="/images/hero-waterfront-hardwood-hero.jpg" alt="Luxury European White Oak hardwood flooring installation by Triangle Flooring in Lakewood Ranch waterfront home" width="800" height="1000" loading="eager" fetchpriority="high">
-      </picture>
-      <div class="hero-badge">Now Booking · May 2026</div>
-      <div class="hero-card">
-        <div class="hero-card-icon">⚡</div>
-        <div class="hero-card-content">
-          <p>Free Estimate</p>
-          <strong>Within 24 Hours</strong>
-        </div>
+    <h1>Flooring Contractor in <span class="hero-accent">Bradenton, FL</span><br>Built to Last. Built Local.</h1>
+    <p class="hero-sub">Hardwood, vinyl plank, tile, laminate &amp; stair treads — installed by a 5+ year flooring crew across Bradenton, Sarasota, Lakewood Ranch &amp; Tampa Bay. 300+ projects · free in-home estimate within 24 hours.</p>
+    <div class="hero-cta">
+      <a href="/contact/" class="btn btn-primary btn-large">
+        <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        Get Free Quote
+      </a>
+      <a href="tel:+19414026861" class="btn btn-secondary-light btn-large">
+        <svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        Insured
+      </div>
+      <div class="hero-trust-item">
+        <svg fill="currentColor" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        5-Star Reviews
+      </div>
+      <div class="hero-trust-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        300+ Projects
+      </div>
+      <div class="hero-trust-item">
+        <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+        Free Estimates
       </div>
     </div>
   </div>
