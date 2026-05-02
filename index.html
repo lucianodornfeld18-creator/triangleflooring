@@ -18,9 +18,10 @@
 <meta property="og:title" content="Flooring Contractor in Bradenton FL | Triangle Flooring">
 <meta property="og:description" content="Hardwood, vinyl plank, tile & laminate flooring across Bradenton, Sarasota, Lakewood Ranch & Tampa Bay. 300+ projects · 5★ Google rated · Free estimates.">
 <meta property="og:url" content="https://triangle-floor.com/">
-<meta property="og:image" content="https://triangle-floor.com/images/og-home.jpg">
+<meta property="og:image" content="https://triangle-floor.com/images/hero-waterfront-hardwood-og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Luxury hardwood flooring installation by Triangle Flooring in Tampa Bay, Florida">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Triangle Flooring">
 
@@ -28,15 +29,17 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Flooring Contractor in Bradenton FL | Triangle Flooring">
 <meta name="twitter:description" content="Hardwood, vinyl, tile & laminate flooring across Bradenton, Sarasota & Tampa Bay. 5★ rated · Free estimate.">
-<meta name="twitter:image" content="https://triangle-floor.com/images/og-home.jpg">
+<meta name="twitter:image" content="https://triangle-floor.com/images/hero-waterfront-hardwood-og.jpg">
+<meta name="twitter:image:alt" content="Luxury European White Oak hardwood flooring by Triangle Flooring">
 
 <!-- Favicons -->
-<link rel="icon" type="image/png" href="/images/favicon.png">
-<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
 
 <!-- Performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/images/hero-waterfront-hardwood.webp" fetchpriority="high">
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 
 <style>
@@ -123,12 +126,13 @@ p{margin:0 0 1rem}
 .trust-item svg{width:16px;height:16px;color:#FFC993;flex-shrink:0}
 .rating-stars{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);padding:8px 14px;border-radius:50px;backdrop-filter:blur(8px);font-size:.88rem;font-weight:600}
 .rating-stars .stars{color:#FFD580;letter-spacing:1px}
-.hero-visual{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.35);aspect-ratio:4/5;background:linear-gradient(135deg,#0F3A6E 0%,#1A4F8C 45%,#2E8DD9 100%)}
-.hero-visual::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.04) 0px,rgba(255,255,255,.04) 60px,rgba(255,255,255,.08) 60px,rgba(255,255,255,.08) 64px,rgba(255,255,255,.04) 64px,rgba(255,255,255,.04) 130px,rgba(0,0,0,.06) 130px,rgba(0,0,0,.06) 134px);opacity:.55;mix-blend-mode:overlay}
-.hero-visual::after{content:"";position:absolute;top:-20%;right:-20%;width:80%;height:80%;background:radial-gradient(circle,rgba(255,201,147,.25),transparent 60%);pointer-events:none}
-.hero-badge{position:absolute;top:24px;left:24px;background:rgba(255,255,255,.96);padding:8px 14px;border-radius:50px;display:inline-flex;align-items:center;gap:6px;font-family:var(--font-head);font-weight:700;font-size:.78rem;color:var(--navy);box-shadow:var(--shadow);letter-spacing:.04em;z-index:2}
+.hero-visual{position:relative;border-radius:var(--radius-lg);overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.4);aspect-ratio:4/5;background:linear-gradient(135deg,#0F3A6E 0%,#1A4F8C 45%,#2E8DD9 100%)}
+.hero-visual img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-visual::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,35,66,0) 35%,rgba(15,35,66,.55) 100%);pointer-events:none}
+.hero-badge{position:absolute;top:18px;left:18px;background:rgba(255,255,255,.97);padding:8px 14px;border-radius:50px;display:inline-flex;align-items:center;gap:6px;font-family:var(--font-head);font-weight:700;font-size:.78rem;color:var(--navy);box-shadow:var(--shadow);letter-spacing:.04em;z-index:3}
 .hero-badge::before{content:"";width:8px;height:8px;border-radius:50%;background:#10B981;box-shadow:0 0 0 4px rgba(16,185,129,.18);animation:pulse 1.8s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(16,185,129,.18)}50%{box-shadow:0 0 0 8px rgba(16,185,129,.05)}}
+.hero-card{z-index:3}
 .hero-card{position:absolute;bottom:24px;left:24px;right:24px;background:rgba(255,255,255,.97);padding:18px 22px;border-radius:var(--radius);box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:14px;backdrop-filter:blur(8px)}
 .hero-card-icon{width:44px;height:44px;background:var(--navy);border-radius:50%;display:grid;place-items:center;color:#fff;flex-shrink:0;font-size:1.3rem}
 .hero-card-content p{margin:0;font-size:.78rem;color:var(--gray);font-weight:600;letter-spacing:.06em;text-transform:uppercase}
@@ -142,6 +146,19 @@ p{margin:0 0 1rem}
 .proof-num{font-family:var(--font-head);font-size:1.85rem;font-weight:800;color:var(--navy);line-height:1;letter-spacing:-.02em}
 .proof-num span{color:var(--orange)}
 .proof-label{font-size:.78rem;color:var(--gray);font-weight:600;text-transform:uppercase;letter-spacing:.08em;margin-top:6px}
+
+/* GALLERY */
+.gallery{background:#fff;padding:5rem 0}
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gallery-item{position:relative;aspect-ratio:4/5;border-radius:14px;overflow:hidden;cursor:pointer;background:var(--gray-light);text-decoration:none;color:#fff;display:block;box-shadow:0 4px 12px rgba(15,58,110,.08);transition:all .35s cubic-bezier(.4,0,.2,1)}
+.gallery-item:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(15,58,110,.18);color:#fff}
+.gallery-item img{width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.gallery-item:hover img{transform:scale(1.07)}
+.gallery-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,35,66,0) 38%,rgba(15,35,66,.55) 70%,rgba(15,35,66,.88) 100%);transition:opacity .3s;z-index:1}
+.gallery-caption{position:absolute;bottom:14px;left:16px;right:16px;color:#fff;z-index:2}
+.gallery-caption strong{font-family:var(--font-head);font-weight:700;font-size:1rem;display:block;line-height:1.2;letter-spacing:-.01em}
+.gallery-caption span{font-size:.74rem;color:rgba(255,255,255,.85);font-family:var(--font-head);text-transform:uppercase;letter-spacing:.1em;display:block;margin-top:5px}
+.gallery-cta{text-align:center;margin-top:2.5rem}
 
 /* SECTION BASE */
 section{padding:5rem 0}
@@ -260,6 +277,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
   .hero-visual{aspect-ratio:5/4;order:-1}
   section{padding:3.5rem 0}
   .services-grid,.why-grid,.process-grid,.reviews-grid{grid-template-columns:1fr}
+  .gallery-grid{grid-template-columns:repeat(2,1fr);gap:10px}
   .area-grid{grid-template-columns:repeat(2,1fr)}
   .proof-grid{grid-template-columns:repeat(3,1fr);gap:.5rem}
   .proof-item:nth-child(4),.proof-item:nth-child(5){display:none}
@@ -331,6 +349,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
           <a href="/vinyl-plank-flooring/lakewood-ranch/">Venice, FL</a>
         </div>
       </li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="/about/">About</a></li>
       <li><a href="/blog/">Blog</a></li>
       <li><a href="/contact/">Contact</a></li>
@@ -368,7 +387,11 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         <div class="trust-item"><svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg> Free Estimates</div>
       </div>
     </div>
-    <div class="hero-visual" aria-hidden="true">
+    <div class="hero-visual">
+      <picture>
+        <source srcset="/images/hero-waterfront-hardwood.webp" type="image/webp">
+        <img src="/images/hero-waterfront-hardwood-hero.jpg" alt="Luxury European White Oak hardwood flooring installation by Triangle Flooring in Lakewood Ranch waterfront home" width="800" height="1000" loading="eager" fetchpriority="high">
+      </picture>
       <div class="hero-badge">Now Booking · May 2026</div>
       <div class="hero-card">
         <div class="hero-card-icon">⚡</div>
@@ -686,6 +709,78 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
   </div>
 </section>
 
+<!-- PROJECT GALLERY -->
+<section class="gallery" id="projects">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">📸 Project Gallery</span>
+      <h2>Recent Triangle Flooring Installations</h2>
+      <p>Real projects across Bradenton, Sarasota, Lakewood Ranch, Tampa Bay & beyond — hardwood, vinyl plank, tile, and stair treads.</p>
+    </div>
+    <div class="gallery-grid">
+      <a href="/hardwood-flooring/lakewood-ranch/" class="gallery-item">
+        <img src="/images/hardwood-herringbone-hallway.webp" alt="Custom herringbone hardwood flooring in luxury Lakewood Ranch home" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>Herringbone Hardwood</strong>
+          <span>Lakewood Ranch · FL</span>
+        </div>
+      </a>
+      <a href="/vinyl-plank-flooring/bradenton/" class="gallery-item">
+        <img src="/images/vinyl-plank-bradenton-light-oak.webp" alt="Light oak luxury vinyl plank flooring installation in Bradenton FL" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>Light Oak LVP</strong>
+          <span>Bradenton · FL</span>
+        </div>
+      </a>
+      <a href="/stair-treads/" class="gallery-item">
+        <img src="/images/stairs-white-oak-herringbone-landing.webp" alt="White Oak stair treads with herringbone landing pattern" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>White Oak Stair Treads</strong>
+          <span>Sarasota · FL</span>
+        </div>
+      </a>
+      <a href="/tile-installation/" class="gallery-item">
+        <img src="/images/tile-sarasota-marble.webp" alt="Marble-look porcelain tile flooring installation in Sarasota FL" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>Marble-Look Porcelain Tile</strong>
+          <span>Sarasota · FL</span>
+        </div>
+      </a>
+      <a href="/stair-treads/" class="gallery-item">
+        <img src="/images/stairs-venice-white-oak.webp" alt="White Oak stair treads custom installation in Venice FL home" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>Custom Stair Treads</strong>
+          <span>Venice · FL</span>
+        </div>
+      </a>
+      <a href="/vinyl-plank-flooring/" class="gallery-item">
+        <img src="/images/vinyl-tampa-gray.webp" alt="Gray luxury vinyl plank flooring in Tampa FL condo" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>Gray LVP Living Room</strong>
+          <span>Tampa · FL</span>
+        </div>
+      </a>
+      <a href="/hardwood-flooring/" class="gallery-item">
+        <img src="/images/hardwood-venice-cherry.webp" alt="Solid cherry hardwood flooring installation in Venice FL home" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>Solid Hardwood</strong>
+          <span>Venice · FL</span>
+        </div>
+      </a>
+      <a href="/vinyl-plank-flooring/" class="gallery-item">
+        <img src="/images/vinyl-palmetto-light.webp" alt="Light luxury vinyl plank flooring installation in Palmetto FL" width="800" height="1067" loading="lazy">
+        <div class="gallery-caption">
+          <strong>Whitewashed LVP</strong>
+          <span>Palmetto · FL</span>
+        </div>
+      </a>
+    </div>
+    <div class="gallery-cta">
+      <a href="/contact/" class="btn btn-primary">Start Your Project — Free Quote →</a>
+    </div>
+  </div>
+</section>
+
 <!-- FINAL CTA -->
 <section class="final-cta">
   <div class="final-cta-content">
@@ -789,7 +884,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
   "alternateName":"Triangle Flooring LLC",
   "url":"https://triangle-floor.com/",
   "logo":{"@type":"ImageObject","url":"https://triangle-floor.com/images/logo.png","width":500,"height":500},
-  "image":"https://triangle-floor.com/images/og-home.jpg",
+  "image":"https://triangle-floor.com/images/hero-waterfront-hardwood-og.jpg",
   "telephone":"+19414026861",
   "email":"trianglefloor@gmail.com",
   "description":"Professional flooring contractor serving Bradenton, Sarasota, Lakewood Ranch, Tampa Bay and surrounding areas. Hardwood, vinyl plank, tile, laminate, stair treads, and floor repair installation.",
@@ -843,7 +938,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
   "description":"Flooring installation contractor specializing in hardwood, luxury vinyl plank, tile, laminate, and stair treads across Tampa Bay and Southwest Florida.",
   "url":"https://triangle-floor.com/",
   "telephone":"+19414026861",
-  "image":"https://triangle-floor.com/images/og-home.jpg",
+  "image":"https://triangle-floor.com/images/hero-waterfront-hardwood-og.jpg",
   "address":{
     "@type":"PostalAddress",
     "streetAddress":"8737 Royal Acacia Ave",
@@ -896,6 +991,27 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
   "name":"Triangle Flooring",
   "publisher":{"@id":"https://triangle-floor.com/#organization"},
   "inLanguage":"en-US"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"ImageGallery",
+  "@id":"https://triangle-floor.com/#gallery",
+  "name":"Triangle Flooring — Recent Project Gallery",
+  "description":"Real flooring installations completed by Triangle Flooring across Bradenton, Sarasota, Lakewood Ranch, Venice, Palmetto, and Tampa Bay, FL.",
+  "url":"https://triangle-floor.com/#projects",
+  "image":[
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/hardwood-herringbone-hallway.webp","name":"Custom Herringbone Hardwood","description":"Custom herringbone hardwood flooring meeting wide-plank in luxury Lakewood Ranch hallway","contentLocation":{"@type":"Place","name":"Lakewood Ranch, FL"}},
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/vinyl-plank-bradenton-light-oak.webp","name":"Light Oak LVP Bradenton","description":"Light oak luxury vinyl plank flooring in Bradenton FL home","contentLocation":{"@type":"Place","name":"Bradenton, FL"}},
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/stairs-white-oak-herringbone-landing.webp","name":"White Oak Stair Treads","description":"White Oak stair treads with herringbone landing pattern","contentLocation":{"@type":"Place","name":"Sarasota, FL"}},
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/tile-sarasota-marble.webp","name":"Marble-Look Porcelain Tile","description":"Marble-look porcelain tile flooring installation","contentLocation":{"@type":"Place","name":"Sarasota, FL"}},
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/stairs-venice-white-oak.webp","name":"Custom Stair Treads Venice","description":"White Oak stair treads custom installation","contentLocation":{"@type":"Place","name":"Venice, FL"}},
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/vinyl-tampa-gray.webp","name":"Gray LVP Tampa","description":"Gray luxury vinyl plank flooring in Tampa FL condo","contentLocation":{"@type":"Place","name":"Tampa, FL"}},
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/hardwood-venice-cherry.webp","name":"Solid Hardwood Venice","description":"Solid cherry hardwood flooring installation in Venice FL","contentLocation":{"@type":"Place","name":"Venice, FL"}},
+    {"@type":"ImageObject","contentUrl":"https://triangle-floor.com/images/vinyl-palmetto-light.webp","name":"Whitewashed LVP Palmetto","description":"Light luxury vinyl plank flooring installation in Palmetto FL","contentLocation":{"@type":"Place","name":"Palmetto, FL"}}
+  ]
 }
 </script>
 
