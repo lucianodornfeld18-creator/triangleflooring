@@ -162,22 +162,22 @@ section{padding:5rem 0}
 .section-head{text-align:center;max-width:740px;margin:0 auto 3rem}
 .section-head p{color:var(--gray);font-size:1.05rem;margin-top:.6rem}
 
-/* SERVICES */
+/* SERVICES — photo on top, content below (GCM style) */
 .services{background:var(--gray-light)}
-.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem}
-.service-card{background:#fff;padding:1.8rem;border-radius:var(--radius-lg);border:1px solid var(--gray-border);transition:all var(--transition);position:relative;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column}
-.service-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cerulean),var(--navy));transform:scaleX(0);transform-origin:left;transition:transform var(--transition)}
-.service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent}
-.service-card:hover::before{transform:scaleX(1)}
-.service-icon{width:80px;height:80px;border-radius:14px;overflow:hidden;margin-bottom:1.1rem;position:relative;box-shadow:0 4px 12px rgba(15,58,110,.15);transition:all var(--transition);background:var(--navy-light)}
-.service-icon img{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--transition)}
-.service-icon::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,79,140,.12) 0%,transparent 60%);pointer-events:none}
-.service-card:hover .service-icon{transform:scale(1.06);box-shadow:0 8px 20px rgba(15,58,110,.25)}
-.service-card:hover .service-icon img{transform:scale(1.12)}
-.service-card h3{margin-bottom:.55rem;color:var(--text)}
-.service-card p{font-size:.94rem;color:var(--gray);margin-bottom:1.1rem;flex-grow:1}
-.service-link{display:inline-flex;align-items:center;gap:6px;color:var(--cerulean);font-weight:700;font-size:.9rem;font-family:var(--font-head)}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem}
+.service-card{background:#fff;border-radius:var(--radius-lg);border:1px solid var(--gray-border);transition:all var(--transition);position:relative;overflow:hidden;text-decoration:none;color:inherit;display:flex;flex-direction:column;box-shadow:var(--shadow-sm)}
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg);border-color:transparent}
+.service-photo{position:relative;aspect-ratio:8/5;overflow:hidden;background:var(--navy-light)}
+.service-photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s cubic-bezier(.4,0,.2,1)}
+.service-card:hover .service-photo img{transform:scale(1.06)}
+.service-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,35,66,0) 60%,rgba(15,35,66,.18) 100%);pointer-events:none}
+.service-body{padding:1.6rem 1.5rem;display:flex;flex-direction:column;flex-grow:1}
+.service-card h3{margin:0 0 .55rem;color:var(--text);font-size:1.25rem}
+.service-card p{font-size:.94rem;color:var(--gray);margin-bottom:1.1rem;flex-grow:1;line-height:1.55}
+.service-link{display:inline-flex;align-items:center;gap:6px;color:var(--cerulean);font-weight:700;font-size:.9rem;font-family:var(--font-head);letter-spacing:.04em;text-transform:uppercase}
+.service-link svg{transition:transform var(--transition)}
 .service-card:hover .service-link{color:var(--orange)}
+.service-card:hover .service-link svg{transform:translateX(4px)}
 
 /* WHY US */
 .why-us{background:#fff}
@@ -466,52 +466,64 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
     </div>
     <div class="services-grid">
       <a href="/hardwood-flooring/" class="service-card">
-        <div class="service-icon"><img src="/images/icon-hardwood.webp" alt="Hardwood flooring sample" width="200" height="200" loading="lazy"></div>
-        <h3>Hardwood Flooring</h3>
-        <p>Solid and engineered hardwood installation. Acclimated for Florida humidity, nail-down or glue-down — built to outlast Gulf Coast moisture.</p>
-        <span class="service-link">Explore hardwood
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </span>
+        <div class="service-photo"><img src="/images/card-hardwood.webp" alt="Custom herringbone hardwood flooring installation by Triangle Flooring" width="800" height="500" loading="lazy"></div>
+        <div class="service-body">
+          <h3>Hardwood Flooring</h3>
+          <p>Solid and engineered hardwood installation. Acclimated for Florida humidity, nail-down or glue-down — built to outlast Gulf Coast moisture.</p>
+          <span class="service-link">Explore hardwood
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
       </a>
       <a href="/vinyl-plank-flooring/" class="service-card">
-        <div class="service-icon"><img src="/images/icon-vinyl.webp" alt="Luxury vinyl plank flooring sample" width="200" height="200" loading="lazy"></div>
-        <h3>Luxury Vinyl Plank (LVP)</h3>
-        <p>100% waterproof LVP and SPC flooring — perfect for Florida kitchens, baths, and short-term rentals. Click-lock or glue-down.</p>
-        <span class="service-link">Explore vinyl plank
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </span>
+        <div class="service-photo"><img src="/images/card-vinyl.webp" alt="Light oak luxury vinyl plank flooring installation in Bradenton FL" width="800" height="500" loading="lazy"></div>
+        <div class="service-body">
+          <h3>Luxury Vinyl Plank (LVP)</h3>
+          <p>100% waterproof LVP and SPC flooring — perfect for Florida kitchens, baths, and short-term rentals. Click-lock or glue-down.</p>
+          <span class="service-link">Explore vinyl plank
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
       </a>
       <a href="/tile-installation/" class="service-card">
-        <div class="service-icon"><img src="/images/icon-tile.webp" alt="Porcelain tile flooring sample" width="200" height="200" loading="lazy"></div>
-        <h3>Tile Installation</h3>
-        <p>Porcelain, ceramic, and large-format tile (24×48, 48×48). Curbless showers, backsplashes, and Schluter waterproofing systems.</p>
-        <span class="service-link">Explore tile
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </span>
+        <div class="service-photo"><img src="/images/card-tile.webp" alt="Marble-look porcelain tile flooring in Sarasota FL" width="800" height="500" loading="lazy"></div>
+        <div class="service-body">
+          <h3>Tile Installation</h3>
+          <p>Porcelain, ceramic, and large-format tile (24×48, 48×48). Curbless showers, backsplashes, and Schluter waterproofing systems.</p>
+          <span class="service-link">Explore tile
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
       </a>
       <a href="/laminate-flooring/" class="service-card">
-        <div class="service-icon"><img src="/images/icon-laminate.webp" alt="Laminate flooring sample" width="200" height="200" loading="lazy"></div>
-        <h3>Laminate Flooring</h3>
-        <p>Affordable, scratch-resistant laminate that mimics hardwood. Great for high-traffic areas, rental properties, and budget-conscious projects.</p>
-        <span class="service-link">Explore laminate
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </span>
+        <div class="service-photo"><img src="/images/card-laminate.webp" alt="Dark walnut laminate flooring installation by Triangle Flooring" width="800" height="500" loading="lazy"></div>
+        <div class="service-body">
+          <h3>Laminate Flooring</h3>
+          <p>Affordable, scratch-resistant laminate that mimics hardwood. Great for high-traffic areas, rental properties, and budget-conscious projects.</p>
+          <span class="service-link">Explore laminate
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
       </a>
       <a href="/stair-treads/" class="service-card">
-        <div class="service-icon"><img src="/images/icon-stairs.webp" alt="Custom stair treads installation sample" width="200" height="200" loading="lazy"></div>
-        <h3>Stair Treads & Risers</h3>
-        <p>Custom hardwood, vinyl, and tile stair treads with matching risers and stringers. Precision miter joints and slip-resistant finishes.</p>
-        <span class="service-link">Explore stair treads
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </span>
+        <div class="service-photo"><img src="/images/card-stairs.webp" alt="Modern stair treads with cable railing installation by Triangle Flooring" width="800" height="500" loading="lazy"></div>
+        <div class="service-body">
+          <h3>Stair Treads & Risers</h3>
+          <p>Custom hardwood, vinyl, and tile stair treads with matching risers and stringers. Precision miter joints and slip-resistant finishes.</p>
+          <span class="service-link">Explore stair treads
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
       </a>
       <a href="/floor-repair/" class="service-card">
-        <div class="service-icon"><img src="/images/icon-repair.webp" alt="Floor repair and replacement sample" width="200" height="200" loading="lazy"></div>
-        <h3>Repair & Replacement</h3>
-        <p>Hurricane and water damage restoration, plank replacement, subfloor repair, and partial reflooring without redoing the whole space.</p>
-        <span class="service-link">Explore repair
-          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
-        </span>
+        <div class="service-photo"><img src="/images/card-repair.webp" alt="Vinyl plank flooring replacement in Florida home" width="800" height="500" loading="lazy"></div>
+        <div class="service-body">
+          <h3>Repair & Replacement</h3>
+          <p>Hurricane and water damage restoration, plank replacement, subfloor repair, and partial reflooring without redoing the whole space.</p>
+          <span class="service-link">Explore repair
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </span>
+        </div>
       </a>
     </div>
   </div>
