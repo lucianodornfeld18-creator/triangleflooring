@@ -169,8 +169,11 @@ section{padding:5rem 0}
 .service-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--cerulean),var(--navy));transform:scaleX(0);transform-origin:left;transition:transform var(--transition)}
 .service-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:transparent}
 .service-card:hover::before{transform:scaleX(1)}
-.service-icon{width:56px;height:56px;background:var(--navy-light);color:var(--navy);border-radius:14px;display:grid;place-items:center;font-size:1.6rem;margin-bottom:1rem;transition:all var(--transition)}
-.service-card:hover .service-icon{background:var(--navy);color:#fff;transform:scale(1.05)}
+.service-icon{width:80px;height:80px;border-radius:14px;overflow:hidden;margin-bottom:1.1rem;position:relative;box-shadow:0 4px 12px rgba(15,58,110,.15);transition:all var(--transition);background:var(--navy-light)}
+.service-icon img{width:100%;height:100%;object-fit:cover;display:block;transition:transform var(--transition)}
+.service-icon::after{content:"";position:absolute;inset:0;background:linear-gradient(135deg,rgba(26,79,140,.12) 0%,transparent 60%);pointer-events:none}
+.service-card:hover .service-icon{transform:scale(1.06);box-shadow:0 8px 20px rgba(15,58,110,.25)}
+.service-card:hover .service-icon img{transform:scale(1.12)}
 .service-card h3{margin-bottom:.55rem;color:var(--text)}
 .service-card p{font-size:.94rem;color:var(--gray);margin-bottom:1.1rem;flex-grow:1}
 .service-link{display:inline-flex;align-items:center;gap:6px;color:var(--cerulean);font-weight:700;font-size:.9rem;font-family:var(--font-head)}
@@ -285,11 +288,17 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
   .proof-item:nth-child(4),.proof-item:nth-child(5){display:none}
   .proof-num{font-size:1.5rem}
   .footer-grid{grid-template-columns:1fr 1fr;gap:1.8rem}
-  .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:1rem;box-shadow:var(--shadow-lg);align-items:stretch;border-top:1px solid var(--gray-border)}
+  .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:.5rem 0;box-shadow:var(--shadow-lg);align-items:stretch;border-top:1px solid var(--gray-border);max-height:calc(100vh - 80px);overflow-y:auto}
   .nav-menu.open{display:flex}
-  .nav-menu li{width:100%}
-  .nav-menu a{padding:12px 8px;display:block}
-  .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;background:var(--gray-light);margin-top:6px}
+  .nav-menu li{width:100%;border-bottom:1px solid var(--gray-border)}
+  .nav-menu li:last-child{border-bottom:none}
+  .nav-menu>li>a{padding:14px 20px;display:flex;align-items:center;justify-content:space-between;font-weight:500;font-size:1rem}
+  .nav-menu>li>a[data-toggle]::after{content:"+";font-size:1.4rem;font-weight:300;color:var(--cerulean);transition:transform var(--transition);line-height:1}
+  .nav-menu>li.expanded>a[data-toggle]::after{content:"−"}
+  .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;background:var(--gray-light);margin:0;padding:0;border-radius:0;border:none;display:none;max-height:none;min-width:0}
+  .nav-menu>li.expanded .dropdown{display:block}
+  .dropdown a{padding:11px 20px 11px 36px;font-size:.94rem;color:var(--text);border-bottom:1px solid rgba(0,0,0,.04)}
+  .dropdown a:last-child{border-bottom:none}
   .nav-menu li:hover .dropdown{transform:none}
   .nav-phone span{display:none}
   .menu-toggle{display:block}
@@ -330,7 +339,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
     <ul class="nav-menu" id="navMenu">
       <li><a href="/">Home</a></li>
       <li>
-        <a href="#services">Services ▾</a>
+        <a href="#services" data-toggle>Services</a>
         <div class="dropdown">
           <a href="/hardwood-flooring/">Hardwood Flooring</a>
           <a href="/vinyl-plank-flooring/">Vinyl Plank (LVP)</a>
@@ -341,7 +350,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         </div>
       </li>
       <li>
-        <a href="#areas">Service Areas ▾</a>
+        <a href="#areas" data-toggle>Service Areas</a>
         <div class="dropdown">
           <a href="/hardwood-flooring/bradenton/">Bradenton, FL</a>
           <a href="/hardwood-flooring/sarasota/">Sarasota, FL</a>
@@ -457,7 +466,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
     </div>
     <div class="services-grid">
       <a href="/hardwood-flooring/" class="service-card">
-        <div class="service-icon">🪵</div>
+        <div class="service-icon"><img src="/images/icon-hardwood.webp" alt="Hardwood flooring sample" width="200" height="200" loading="lazy"></div>
         <h3>Hardwood Flooring</h3>
         <p>Solid and engineered hardwood installation. Acclimated for Florida humidity, nail-down or glue-down — built to outlast Gulf Coast moisture.</p>
         <span class="service-link">Explore hardwood
@@ -465,7 +474,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         </span>
       </a>
       <a href="/vinyl-plank-flooring/" class="service-card">
-        <div class="service-icon">💧</div>
+        <div class="service-icon"><img src="/images/icon-vinyl.webp" alt="Luxury vinyl plank flooring sample" width="200" height="200" loading="lazy"></div>
         <h3>Luxury Vinyl Plank (LVP)</h3>
         <p>100% waterproof LVP and SPC flooring — perfect for Florida kitchens, baths, and short-term rentals. Click-lock or glue-down.</p>
         <span class="service-link">Explore vinyl plank
@@ -473,7 +482,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         </span>
       </a>
       <a href="/tile-installation/" class="service-card">
-        <div class="service-icon">🔲</div>
+        <div class="service-icon"><img src="/images/icon-tile.webp" alt="Porcelain tile flooring sample" width="200" height="200" loading="lazy"></div>
         <h3>Tile Installation</h3>
         <p>Porcelain, ceramic, and large-format tile (24×48, 48×48). Curbless showers, backsplashes, and Schluter waterproofing systems.</p>
         <span class="service-link">Explore tile
@@ -481,7 +490,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         </span>
       </a>
       <a href="/laminate-flooring/" class="service-card">
-        <div class="service-icon">📐</div>
+        <div class="service-icon"><img src="/images/icon-laminate.webp" alt="Laminate flooring sample" width="200" height="200" loading="lazy"></div>
         <h3>Laminate Flooring</h3>
         <p>Affordable, scratch-resistant laminate that mimics hardwood. Great for high-traffic areas, rental properties, and budget-conscious projects.</p>
         <span class="service-link">Explore laminate
@@ -489,7 +498,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         </span>
       </a>
       <a href="/stair-treads/" class="service-card">
-        <div class="service-icon">🪜</div>
+        <div class="service-icon"><img src="/images/icon-stairs.webp" alt="Custom stair treads installation sample" width="200" height="200" loading="lazy"></div>
         <h3>Stair Treads & Risers</h3>
         <p>Custom hardwood, vinyl, and tile stair treads with matching risers and stringers. Precision miter joints and slip-resistant finishes.</p>
         <span class="service-link">Explore stair treads
@@ -497,7 +506,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         </span>
       </a>
       <a href="/floor-repair/" class="service-card">
-        <div class="service-icon">🛠️</div>
+        <div class="service-icon"><img src="/images/icon-repair.webp" alt="Floor repair and replacement sample" width="200" height="200" loading="lazy"></div>
         <h3>Repair & Replacement</h3>
         <p>Hurricane and water damage restoration, plank replacement, subfloor repair, and partial reflooring without redoing the whole space.</p>
         <span class="service-link">Explore repair
@@ -1075,12 +1084,53 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
 </script>
 
 <script>
-// Mobile menu toggle
 (function(){
-  var t=document.getElementById('menuToggle'),m=document.getElementById('navMenu');
-  if(t&&m){t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o)})}
-  // Close on link click (mobile)
-  document.querySelectorAll('#navMenu a').forEach(function(a){a.addEventListener('click',function(){m.classList.remove('open');t.setAttribute('aria-expanded','false')})});
+  var toggle = document.getElementById('menuToggle');
+  var menu = document.getElementById('navMenu');
+  if (!toggle || !menu) return;
+
+  // Toggle hamburger menu
+  toggle.addEventListener('click', function(){
+    var isOpen = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', isOpen);
+    if (!isOpen) {
+      // Collapse all dropdowns when menu closes
+      menu.querySelectorAll('li.expanded').forEach(function(li){ li.classList.remove('expanded'); });
+    }
+  });
+
+  // Mobile: clicking Services / Service Areas toggles their dropdown (accordion)
+  menu.querySelectorAll('a[data-toggle]').forEach(function(link){
+    link.addEventListener('click', function(e){
+      // Only intercept on mobile (when hamburger menu is active)
+      if (window.innerWidth > 960) return;
+      e.preventDefault();
+      var li = link.parentElement;
+      var wasExpanded = li.classList.contains('expanded');
+      // Close all other dropdowns first (accordion style)
+      menu.querySelectorAll('li.expanded').forEach(function(l){ l.classList.remove('expanded'); });
+      if (!wasExpanded) li.classList.add('expanded');
+    });
+  });
+
+  // Close menu when a real link (inside dropdown or top-level non-toggle) is clicked
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      if (a.hasAttribute('data-toggle') && window.innerWidth <= 960) return;
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.querySelectorAll('li.expanded').forEach(function(l){ l.classList.remove('expanded'); });
+    });
+  });
+
+  // Reset state when window resizes back to desktop
+  window.addEventListener('resize', function(){
+    if (window.innerWidth > 960) {
+      menu.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      menu.querySelectorAll('li.expanded').forEach(function(l){ l.classList.remove('expanded'); });
+    }
+  });
 })();
 </script>
 </body>
