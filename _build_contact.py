@@ -121,11 +121,12 @@ content = f"""{page_head(TITLE, DESC, PATH)}
           <button type="submit" class="btn btn-primary" style="width:100%;font-size:1rem">Send My Request →</button>
           <p style="font-size:.78rem;color:var(--gray);text-align:center;margin-top:.85rem">By submitting, you agree to be contacted about your project. We never spam.</p>
         </form>
+        <p style="font-size:.85rem;color:var(--gray);text-align:center;margin-top:1.4rem;padding-top:1.4rem;border-top:1px dashed var(--gray-border)">Form not working? Email us directly at <a href="mailto:trianglefloor@gmail.com?subject=Free%20Flooring%20Quote%20Request" style="color:var(--cerulean);font-weight:600">trianglefloor@gmail.com</a> or call <a href="tel:+19414026861" style="color:var(--cerulean);font-weight:600">(941) 402-6861</a>.</p>
       </div>
     </div>
 
     <div class="map-wrap" style="margin-top:3rem;max-width:1100px;margin-left:auto;margin-right:auto">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=&q=Triangle+Flooring,Bradenton,FL" title="Triangle Flooring location map" allowfullscreen></iframe>
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=8737+Royal+Acacia+Ave,+Palmetto,+FL+34221&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Triangle Flooring location map" allowfullscreen></iframe>
     </div>
 
   </div>

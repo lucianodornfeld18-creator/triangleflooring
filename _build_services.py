@@ -438,6 +438,41 @@ def build_service_hub(slug, svc):
 
 {city_links_html}
 
+{render_common_mistakes_section(title_short)}
+
+<section class="intro" style="background:#fff">
+  <div class="container">
+    <div class="intro-content">
+      <h2 style="margin-bottom:1.4rem">How to Choose the Right {title_short} for Your Florida Home</h2>
+      <p>After 300+ installs, here's the framework we walk every client through during in-home consultations. It's the same logic we use to recommend products, simplified into something you can use yourself before you ever talk to a contractor.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Step 1 — Understand your home's actual conditions</h3>
+      <p>Before looking at materials, look at your home. <strong>Is your home on slab or wood subfloor?</strong> Slab homes have moisture migration risk; wood subfloors have flex and squeak risk. <strong>What's your indoor humidity range?</strong> A whole-house dehumidifier or properly sized AC keeps it stable; without those, materials work harder. <strong>Where does water risk exist?</strong> Kitchens, baths, laundry rooms, and rooms adjacent to lanai sliders all face higher moisture exposure than bedrooms or living rooms.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Step 2 — Match the material to the room</h3>
+      <p>The single biggest mistake homeowners make is choosing one material for the whole house. <strong>Different rooms have different demands.</strong> A premium hardwood that's perfect in your living room is a disaster in your bathroom. A waterproof vinyl plank that's perfect in your kitchen feels less luxurious in your formal foyer. The smartest installs use different materials in different zones — connected with thoughtful transitions — to optimize each space.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Step 3 — Plan for the long term</h3>
+      <p>Are you in a forever home, a 5-7 year stop, or an investment property? Each scenario points toward different choices. <strong>Forever homes</strong> justify premium materials with longer lifespans (engineered hardwood, porcelain tile) — the per-year cost actually drops as ownership extends. <strong>Mid-term homes</strong> usually favor mid-range SPC, which delivers most of the visual appeal of hardwood at lower cost and faster ROI at sale. <strong>Investment properties</strong> almost always favor premium SPC — waterproof, scratch-resistant, easy to repair when tenants damage planks.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Step 4 — Get itemized written quotes (plural)</h3>
+      <p>Always get at least 2-3 quotes. Always require itemized line items: material cost, labor cost, removal/disposal, subfloor prep, transition strips, baseboards, waste percentage. Compare apples to apples. The cheapest quote almost always becomes the most expensive job (because of the line items hidden out of the initial bid). The right contractor explains what every line is for.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Step 5 — Ask the questions that filter contractors</h3>
+      <p>These five questions reveal more about a contractor than any sales pitch:</p>
+      <ol style="margin:0 0 1rem 1.4rem;padding:0">
+        <li><strong>"Will the same crew that quotes my job install it?"</strong> If they subcontract, quality varies wildly.</li>
+        <li><strong>"Do you test subfloor moisture before install? Can you show me the meter reading?"</strong> If they don't, your floor is at risk before it's even installed.</li>
+        <li><strong>"How long do you acclimate materials on-site?"</strong> Anything under 48 hours is too short for Florida.</li>
+        <li><strong>"Can I see your written labor warranty?"</strong> If it's verbal-only or under 12 months, that's a red flag.</li>
+        <li><strong>"What's your contingency for finding subfloor damage mid-install?"</strong> A good contractor has a documented process; a bad one says "we'll figure it out."</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+{render_why_triangle_section(title_short)}
+
 <section class="faq-section">
   <div class="container">
     <div class="section-head"><span class="eyebrow">Common Questions</span><h2>{title_short} FAQ</h2></div>
@@ -575,6 +610,33 @@ def build_service_city(svc_slug, city_slug):
 </section>
 
 {render_neighborhoods_section(city, svc['short'])}
+
+{render_common_mistakes_section(svc['short'])}
+
+<section class="intro" style="background:#fff">
+  <div class="container">
+    <div class="intro-content">
+      <h2 style="margin-bottom:1.4rem">How {city['name']} Homeowners Should Choose {svc['short']}</h2>
+      <p>{city['name']} has its own dynamics — different neighborhoods, different home ages, different humidity exposures. Here's how we help local clients think through the choice.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Match the material to your specific {city['name']} home</h3>
+      <p>If you're in a beachfront or waterfront home (think Anna Maria Island, Siesta Key, Lido Key, Longboat Key), salt-air exposure and elevated humidity push the recommendation toward <strong>SPC vinyl plank or porcelain tile</strong>. If you're in a newer Lakewood Ranch or East Manatee build (built 2010+), modern slab construction generally handles engineered hardwood very well. If you're in a 1980s-1990s {city['name']} home, expect older subfloor conditions that may need more prep — both for hardwood and for vinyl plank.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Consider how you actually live in your {city['name']} home</h3>
+      <p>Are you full-time residents, snowbirds, vacation rentals? Each scenario changes the math. <strong>Full-time families</strong> need durable, easy-maintenance flooring that handles daily traffic — premium SPC is often the smartest pick. <strong>Snowbirds</strong> who close up the home for summer face indoor humidity spikes when AC is set high — moisture-tolerant materials (SPC, tile) protect against this. <strong>Vacation rentals</strong> need waterproof, scratch-resistant flooring that photographs well in listings and survives turnover cleaning — SPC dominates this category.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Get itemized quotes from local installers</h3>
+      <p>The {city['name']} flooring market includes everyone from one-truck handymen to nationally-franchised chains. The pricing varies wildly — but so does the quality. Always require: itemized line items (material, labor, removal, prep, transitions, baseboards, waste), written 1-year minimum labor warranty, documented subfloor moisture testing, and 48-72 hour on-site acclimation. Anyone unwilling to commit to all four in writing is not the right contractor.</p>
+
+      <h3 style="margin:2rem 0 .9rem;font-size:1.2rem;color:var(--text)">Plan for the {city['name']} climate, not the showroom climate</h3>
+      <p>That gorgeous wide-plank European white oak you saw at Floor &amp; Decor in air-conditioned 70°F showroom climate? It will move in your {city['name']} home, where indoor humidity swings 10-15 points seasonally. <strong>The product matters; the install matters more.</strong> Florida-experienced contractors plan for our climate — generic national install protocols don't.</p>
+
+      <p>If you'd like a free in-home consultation in {city['name']}, we cover all of {city['county']} including {', '.join(city['neighborhoods'][:5])} and {len(city['neighborhoods'])-5}+ other neighborhoods. We measure, test your subfloor, and provide written itemized quotes within 24 hours.</p>
+    </div>
+  </div>
+</section>
+
+{render_why_triangle_section(svc['short'])}
 
 <section class="faq-section">
   <div class="container">
