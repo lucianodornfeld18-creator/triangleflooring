@@ -103,6 +103,46 @@ CITIES = {
     "context": "<strong>Lakewood Ranch</strong> has been ranked the #1 best-selling multigenerational master-planned community in the US for eight consecutive years, with a population of 60,000+ across more than 31 villages. The community spans both Manatee and Sarasota counties and continues to grow rapidly with new developments like Star Farms, Sweetwater, and Waterside Place. Lakewood Ranch homeowners typically select premium materials: 7-9 inch wide-plank engineered hardwood, custom herringbone patterns, and large-format porcelain tile. Many homes feature covered lanais and second-floor bonus rooms, requiring precise stair tread work and continuous flooring transitions.",
     "landmarks": "Main Street at Lakewood Ranch, Waterside Place, Lakewood Ranch Medical Center, The Premier Sports Campus, UTC (University Town Center)",
   },
+  "palmetto": {
+    "name": "Palmetto",
+    "county": "Manatee County",
+    "zips": ["34220","34221","34222"],
+    "neighborhoods": ["Historic Downtown Palmetto","Snead Island","Terra Ceia","Riviera Dunes","Sanctuary Cove","Heron Creek","Esplanade at Artisan Lakes","Artisan Lakes","Northshore","Rye Wilderness","Palmetto Estates","Memphis","Ellenton","Palm View"],
+    "context": "<strong>Palmetto</strong> is a small but rapidly growing waterfront city of roughly 13,000 residents, located on the north side of the Manatee River directly across from Bradenton. As the headquarters of Triangle Flooring, this is our home market — we've completed more projects here than in any other city. Palmetto's mix of older waterfront homes, new master-planned communities (Artisan Lakes, Esplanade at Artisan Lakes), and the rapidly developing Riviera Dunes area drives diverse flooring needs. Many Palmetto homes are second residences for snowbirds, who require flooring that handles 6-month closures and humidity spikes.",
+    "landmarks": "Riviera Dunes Marina, Snead Island, Emerson Point Preserve, Manatee River, Sutton Park",
+  },
+  "parrish": {
+    "name": "Parrish",
+    "county": "Manatee County",
+    "zips": ["34219"],
+    "neighborhoods": ["Forest Creek","Crosscreek","Silverleaf","Twin Rivers","Foxbrook","Canoe Creek","Parrish Lakes","Aviary at Rutland Ranch","North River Ranch","Ranch at North River","Rye Ranch","Wilderness Reserve","Star Farms (Parrish portion)","Jacaranda Estates","Copperstone","Salt Meadows"],
+    "context": "<strong>Parrish</strong> is one of Florida's fastest-growing communities, with population doubling from approximately 14,000 in 2015 to over 28,000 in 2025. Located in northeastern Manatee County, Parrish has become the preferred relocation destination for families seeking new construction at lower price points than Lakewood Ranch. Massive master-planned communities like North River Ranch, Star Farms, and Aviary at Rutland Ranch are bringing thousands of new homes online annually. Most flooring projects here are new-construction upgrades from builder-grade carpet/laminate to premium engineered hardwood or wide-plank LVP — this is one of the markets where flooring upgrades deliver strongest resale ROI.",
+    "landmarks": "Fort Hamer Park, Fort Hamer Bridge, Florida Railroad Museum, Carlton Reserve trails, Buffalo Creek Park",
+  },
+  "venice": {
+    "name": "Venice",
+    "county": "Sarasota County",
+    "zips": ["34284","34285","34292","34293"],
+    "neighborhoods": ["Venice Island","Historic Downtown Venice","Venice Gulf View","Venice Beach","Pelican Pointe","Venetian Golf & River Club","Venetia","Sawgrass","Stoneybrook at Venice","Wellen Park","IslandWalk","Gran Paradiso","Renaissance","Ventura Country Club","Capri Isles","Caribbean Bay","Bird Bay","Jacaranda West"],
+    "context": "<strong>Venice</strong> is a coastal city of roughly 26,000 residents in southern Sarasota County, known for its pedestrian-friendly historic downtown, world-class beaches, and the rapidly expanding Wellen Park master-planned community (which has added 15,000+ homes since 2018). Venice has a strong snowbird and retiree population, plus growing demographics of younger families moving from cooler states. Homes here range from 1950s mid-century cottages on Venice Island (requiring careful renovation work) to brand-new luxury construction in Wellen Park (where premium hardwood and large-format porcelain tile are the most popular choices).",
+    "landmarks": "Venice Beach, Venice Pier, Historic Downtown Venice, Wellen Park Downtown, Venice Theatre, Caspersen Beach (shark teeth beach)",
+  },
+  "tampa": {
+    "name": "Tampa",
+    "county": "Hillsborough County",
+    "zips": ["33602","33603","33604","33605","33606","33607","33609","33610","33611","33612","33613","33614","33615","33616","33617","33618","33619","33620","33621","33624","33625","33626","33629","33634","33635","33637","33647"],
+    "neighborhoods": ["Hyde Park","Davis Islands","Bayshore Beautiful","South Tampa","Channelside","Westshore","Carrollwood","Lutz","Wesley Chapel","New Tampa","Brandon","Riverview","Apollo Beach","Tampa Palms","Westchase","Town N' Country","Seminole Heights","Ybor City","Beach Park","Sunset Park","Culbreath Heights","Palma Ceia"],
+    "context": "<strong>Tampa</strong> is the third-largest city in Florida, with a population of approximately 405,000 in the city itself and over 3.2 million in the broader metro area (Tampa-St. Petersburg-Clearwater MSA). The flooring market here is diverse — luxury waterfront homes in Davis Islands and Bayshore Beautiful command premium hardwood and large-format porcelain installations, while booming suburbs like Wesley Chapel, Riverview, and New Tampa drive volume in mid-range LVP for new construction. Tampa's heat and humidity patterns are slightly more extreme than coastal Bradenton/Sarasota, making moisture management especially critical for any wood-based flooring.",
+    "landmarks": "Bayshore Boulevard, Tampa Riverwalk, Amalie Arena, Tampa Bay Buccaneers stadium, Busch Gardens, University of South Florida, Channelside",
+  },
+  "st-petersburg": {
+    "name": "St. Petersburg",
+    "county": "Pinellas County",
+    "zips": ["33701","33702","33703","33704","33705","33706","33707","33708","33709","33710","33711","33712","33713","33714","33715","33716"],
+    "neighborhoods": ["Downtown St. Pete","Old Northeast","Snell Isle","Coffee Pot","Allendale Terrace","Crescent Lake","Euclid St. Paul","Roser Park","Kenwood","Historic Uptown","Tropicana Field district","Treasure Island","St. Pete Beach","Tierra Verde","Pasadena","Pink Streets","Bayway Isles","Shore Acres","Gateway","Skyway Marina"],
+    "context": "<strong>St. Petersburg</strong> is the fifth-largest city in Florida with approximately 263,000 residents, spread across the Pinellas peninsula between Tampa Bay and the Gulf of Mexico. The city has a vibrant mix of historic 1920s-1950s homes in neighborhoods like Old Northeast and Snell Isle (where engineered hardwood restorations are common), modern downtown condos (where luxury vinyl plank and porcelain tile dominate), and beachfront properties in St. Pete Beach and Treasure Island (where waterproof flooring is essential). The city's three-sided exposure to water creates higher salt-air humidity than inland markets, requiring careful product selection.",
+    "landmarks": "St. Pete Pier, Salvador Dali Museum, Sunken Gardens, Tropicana Field, Vinoy Park, St. Pete Beach, Fort De Soto Park",
+  },
 }
 
 # ============================================================================
@@ -378,13 +418,12 @@ def build_service_hub(slug, svc):
     pricing = render_pricing_table(svc["pricing_rows"], title_short)
     scope = render_scope_section(svc["scope_items"])
 
-    # City links section
+    # City links section — every service hub now links to its 8 city pages
     city_links_html = ""
-    if slug in ["hardwood-flooring","vinyl-plank-flooring"]:
-        cards = []
-        for cs, cd in CITIES.items():
-            cards.append(f'<a href="/{slug}/{cs}/" class="related-card"><strong>{title_short} in {cd["name"]} →</strong><span>{cd["county"]} · {len(cd["neighborhoods"])}+ neighborhoods</span></a>')
-        city_links_html = f"""<section class="related">
+    cards = []
+    for cs, cd in CITIES.items():
+        cards.append(f'<a href="/{slug}/{cs}/" class="related-card"><strong>{title_short} in {cd["name"]} →</strong><span>{cd["county"]} · {len(cd["neighborhoods"])}+ neighborhoods</span></a>')
+    city_links_html = f"""<section class="related">
   <div class="container">
     <div class="section-head"><span class="eyebrow">By City</span><h2>{title_short} Service Areas</h2></div>
     <div class="related-grid">{"".join(cards)}</div>
@@ -545,15 +584,13 @@ def build_service_city(svc_slug, city_slug):
 
 <p>Local landmarks we work near regularly: {city['landmarks']}. We typically respond to {city['name']} estimate requests within 24 hours and can begin most projects within 1–2 weeks of contract sign-off.</p>"""
 
-    # Related: link to other services in this city + same service in other cities
+    # Related: link to other services in this city (now ALL services have city pages)
     related_cards = []
+    related_cards.append(f'<a href="/{city_slug}/" class="related-card" style="background:linear-gradient(135deg,var(--navy-light),#fff);border-color:var(--cerulean)"><strong>📍 All Services in {city["name"]} →</strong><span>Complete city overview &amp; service area</span></a>')
     for other_svc_slug, other_svc in SERVICES.items():
         if other_svc_slug == svc_slug: continue
-        if other_svc_slug in ["hardwood-flooring","vinyl-plank-flooring"]:
-            related_cards.append(f'<a href="/{other_svc_slug}/{city_slug}/" class="related-card"><strong>{other_svc["short"]} in {city["name"]} →</strong><span>{other_svc["intro_lead"][:75]}</span></a>')
-        else:
-            related_cards.append(f'<a href="/{other_svc_slug}/" class="related-card"><strong>{other_svc["short"]} →</strong><span>{other_svc["intro_lead"][:75]}</span></a>')
-    related_html = "".join(related_cards[:4])
+        related_cards.append(f'<a href="/{other_svc_slug}/{city_slug}/" class="related-card"><strong>{other_svc["short"]} in {city["name"]} →</strong><span>{other_svc["intro_lead"][:75]}</span></a>')
+    related_html = "".join(related_cards[:6])
 
     # Same service in OTHER cities
     other_city_cards = []
@@ -678,8 +715,8 @@ print("\n→ Building service hub pages:")
 for slug, svc in SERVICES.items():
     build_service_hub(slug, svc)
 
-print("\n→ Building service+city pages (hardwood + vinyl plank × 3 cities):")
-for svc_slug in ["hardwood-flooring","vinyl-plank-flooring"]:
+print("\n→ Building service+city pages (ALL 6 services × 8 cities = 48 pages):")
+for svc_slug in SERVICES:
     for city_slug in CITIES:
         build_service_city(svc_slug, city_slug)
 

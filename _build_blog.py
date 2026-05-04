@@ -38,6 +38,46 @@ ARTICLES = [
         "category": "Comparisons",
         "excerpt": "Lakewood Ranch homeowners ask us this every week. We break down the real differences — cost, durability, resale value, and which one wins for new builds vs renovations.",
     },
+    {
+        "slug": "flooring-vacation-rental-florida",
+        "title": "Best Flooring for Florida Vacation Rentals (2026 Guide)",
+        "h1": "Best Flooring for Florida Vacation Rentals — STR Owner's Guide",
+        "description": "Choosing flooring for an Anna Maria, Siesta Key, or AirBnB property? Compare LVP, tile & hardwood for STR durability, ROI, and guest experience.",
+        "image": "card-vinyl.webp",
+        "date": "2026-04-15",
+        "category": "Investor Guides",
+        "excerpt": "STR flooring needs to survive sand, suitcases, spills, and turnover cleaning. We break down what actually works for Anna Maria, Siesta Key, and other Tampa Bay rentals.",
+    },
+    {
+        "slug": "tile-installation-cost-sarasota",
+        "title": "Tile Installation Cost in Sarasota, FL (2026 Pricing)",
+        "h1": "Tile Installation Cost in Sarasota, FL — 2026 Pricing Guide",
+        "description": "What does tile installation cost in Sarasota? Full 2026 pricing breakdown for porcelain, ceramic, large-format & natural stone — from a local Sarasota installer.",
+        "image": "card-tile.webp",
+        "date": "2026-04-22",
+        "category": "Pricing Guides",
+        "excerpt": "Tile is one of the most variable flooring categories — pricing depends on size, substrate, and waterproofing. We break down 2026 Sarasota tile installation costs in detail.",
+    },
+    {
+        "slug": "hardwood-floor-refinishing-tampa-bay",
+        "title": "Hardwood Floor Refinishing in Tampa Bay (When & How)",
+        "h1": "Hardwood Floor Refinishing in Tampa Bay — Complete Guide",
+        "description": "Should you refinish or replace your hardwood floors? A Tampa Bay flooring contractor explains when refinishing makes sense, costs, and the full process.",
+        "image": "card-hardwood.webp",
+        "date": "2026-04-29",
+        "category": "How-To Guides",
+        "excerpt": "Old hardwood doesn't always need replacement — sometimes a refinish brings it back to life. We explain when refinishing is worth it, when it isn't, and what the process costs.",
+    },
+    {
+        "slug": "stair-tread-replacement-guide",
+        "title": "Stair Tread Replacement Guide: Hardwood vs LVP vs Tile",
+        "h1": "Stair Tread Replacement: Hardwood vs LVP vs Tile (2026 Guide)",
+        "description": "Replacing carpet on stairs? Compare hardwood, LVP-clad, and tile stair treads for cost, durability, slip resistance, and Florida compatibility.",
+        "image": "card-stairs.webp",
+        "date": "2026-04-08",
+        "category": "How-To Guides",
+        "excerpt": "Stair treads are the most demanding flooring work in any home — and the choice between hardwood, LVP-clad, and tile makes a big difference. Here's what to know.",
+    },
 ]
 
 # Extra blog-specific CSS
@@ -592,11 +632,676 @@ ARTICLE_FAQS = {
         ("Which is better for a Lakewood Ranch rental property?", "Premium SPC, every time. The waterproof, scratch-resistant, and damage-replaceable nature makes it the clear winner for STR or long-term rentals. Hardwood's resale advantage doesn't apply to rental property."),
         ("Will hardwood give me a better resale value than vinyl plank?", "Yes, in most cases. Hardwood typically returns 75-90% of installation cost at resale, while premium SPC returns 65-75%. For a $22,000 hardwood install vs $14,000 SPC install, hardwood typically returns $7,000-9,000 more at sale — essentially making the upgrade 'free' at resale time."),
     ],
+    "flooring-vacation-rental-florida": [
+        ("What flooring lasts longest in a Florida vacation rental?", "Large-format porcelain tile, by a significant margin. Properly installed porcelain lasts 50+ years even in heavy STR use. SPC vinyl plank is second, with 15-20 year life expectancy in STR conditions (vs 25-30 in residential)."),
+        ("How much does flooring affect my STR booking rate?", "Significantly. Listings with tired or outdated flooring book 20-40% fewer nights than comparable listings with modern flooring. Floors are also one of the most-mentioned items in 1-star reviews when they look bad."),
+        ("Should I install the same flooring my own home has?", "Probably not — STRs face conditions your private home doesn't. Even if you love the engineered hardwood in your residence, premium SPC is usually a better choice for a rental. The property is an investment vehicle, not your personal aesthetic statement."),
+        ("Can I do flooring work on a property that's currently booking?", "Yes, with planning. We typically need 4-7 days of vacancy for a full STR floor replacement. Coordinate with your property manager to block off a low-season window. We can sometimes phase the work room-by-room if absolute closure isn't possible."),
+        ("How do you handle pet damage in STR flooring?", "If your property allows pets, premium SPC with 22-mil+ wear layer is essential. We've had pet-friendly STRs running on premium SPC for 5+ years with zero pet-related damage."),
+    ],
+    "tile-installation-cost-sarasota": [
+        ("Why is large-format tile so much more expensive in Sarasota?", "Three reasons: (1) the tiles themselves cost more per square foot, (2) they require nearly perfect substrate flatness — typically self-leveling compound across the entire floor before tile goes down, and (3) they require specialized large-format mortars and leveling-clip systems to prevent lippage."),
+        ("Can I install tile over existing tile in Sarasota?", "Sometimes — if the existing tile is well-bonded, the floor is reasonably flat, and the height increase doesn't bind your doors. Removing existing tile is usually cleaner and gives a better long-term result, but it adds $2.50-$5 per sq ft to the project."),
+        ("How long does a tile shower take to install in Sarasota?", "A standard tile shower takes 4-6 days when done correctly: Day 1 demo, Day 2 framing & backer board, Day 3 Schluter-Kerdi waterproofing & flood test, Day 4-5 tile install, Day 6 grout & silicone."),
+        ("Should I use epoxy or cementitious grout?", "For showers and high-stain areas, we strongly recommend epoxy grout — color-stable, stain-proof, never needs sealing. Cementitious grout is fine for standard floor installs but requires periodic resealing every 1-2 years."),
+        ("Why is tile demolition so expensive?", "Old tile, especially when set in modified thinset on concrete, doesn't come up easily. Each tile must be broken up, removed, and the residual thinset ground or scraped flush. Sarasota tile demo averages $2.50-$5 per sq ft."),
+    ],
+    "hardwood-floor-refinishing-tampa-bay": [
+        ("How many times can hardwood be refinished?", "Solid 3/4-inch hardwood can typically be refinished 4-8 times over its lifespan (50-100+ years). Quality engineered hardwood with 3mm+ wear layer can usually be refinished 1-3 times. Cheap engineered hardwood (2mm or less wear layer) cannot be refinished."),
+        ("How can I tell if my engineered hardwood is thick enough to refinish?", "Look at the side of a board where it meets a vent or transition strip — you should be able to see the layered construction. If you can identify a clear top hardwood layer that's 3mm or thicker (about 1/8 inch), refinishing is usually possible."),
+        ("Can I refinish water-damaged hardwood?", "It depends. Surface water staining can usually be sanded out. Cupping or buckling from prolonged water exposure typically can't be fixed by refinishing alone — those boards need to be replaced first, then the floor refinished as a whole."),
+        ("Will refinishing my hardwood floors increase my home's value?", "Yes — refinished hardwood typically returns 70-100% of refinishing cost in resale value. If your floors look tired and dated, refinishing is one of the highest-ROI home improvements you can make before selling."),
+        ("How long should I wait between refinishing cycles?", "Quality refinishing should last 8-15 years before needing redoing. Heavy-traffic areas may need spot refinishing or screen-and-recoat treatments at 4-7 years to extend the full refinish timeline."),
+    ],
+    "stair-tread-replacement-guide": [
+        ("Can I replace carpet on stairs with hardwood?", "Yes — this is one of our most common stair projects. We remove the carpet, padding, and tack strips; check the existing pine treads for level and squeaks; install solid hardwood treads on top with matching wood or painted risers. The whole conversion typically takes 2-3 days for a standard 14-step staircase."),
+        ("How long do stair treads last?", "Solid hardwood treads last 30-50+ years with refinishing every 8-15 years. LVP-clad treads last 15-25 years. Porcelain tile treads last 30-50+ years."),
+        ("Can stair treads be matched to my existing hardwood floor?", "Yes, in most cases. If your existing floor is from a major manufacturer (Anderson, Mirage, Mohawk, etc.), we can usually order matching solid stair treads from the same manufacturer. If your floor is LVP, we use the LVP planks themselves to clad pre-fabricated wood treads with custom-cut bullnose."),
+        ("Do I need slip-resistant treads in Florida?", "For interior residential stairs, slip resistance is mostly about finish choice (matte/satin = better grip than gloss). For exterior stairs, pool-side stairs, and commercial properties, we install proper non-slip nosing strips."),
+        ("How much does it cost to replace stair treads in Tampa Bay?", "For a typical 14-step staircase: LVP-clad treads + painted risers $1,150-$1,800; standard hardwood treads + painted risers $1,800-$3,500; premium hardwood treads + matching wood risers $3,000-$5,500. Add $200-$420 for carpet removal if applicable."),
+    ],
 }
 
 # ============================================================================
 # RENDER FUNCTIONS
 # ============================================================================
+
+# ============================================================================
+# ARTICLE 4 — FLOORING FOR FL VACATION RENTALS (STR)
+# ============================================================================
+
+def article_4_str_florida():
+    return """<div class="article-toc">
+  <strong>What's in this guide</strong>
+  <ol>
+    <li><a href="#why-different">Why STR Flooring Choices Are Different</a></li>
+    <li><a href="#top-picks">Top Picks: What Actually Works in Florida STRs</a></li>
+    <li><a href="#by-property-type">Recommendations by Property Type</a></li>
+    <li><a href="#roi-math">The ROI Math: Flooring as an Investment</a></li>
+    <li><a href="#install-considerations">Installation Considerations for Active Rentals</a></li>
+    <li><a href="#maintenance">Maintenance &amp; Turnover Cleaning</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+  </ol>
+</div>
+
+<p>Tampa Bay's vacation rental market is one of the most competitive in Florida — Anna Maria Island, Siesta Key, Lido Key, St. Pete Beach, Treasure Island, and the booming inland STR market in Lakewood Ranch and Bradenton all compete for guests who can choose between hundreds of properties. <strong>Your flooring is one of the first things every guest notices in listing photos and at check-in</strong>, and it's also one of the most expensive things to replace mid-season if you choose wrong.</p>
+
+<p>We've completed flooring installations in 100+ Tampa Bay short-term rentals over the past three years — beachfront condos, single-family Airbnbs, multi-unit STR conversions, and luxury rental properties. Below is what actually works.</p>
+
+<h2 id="why-different">Why STR Flooring Choices Are Different</h2>
+
+<p>The flooring you'd choose for your own forever home is rarely the right choice for a vacation rental. STRs face conditions that don't exist in primary residences:</p>
+
+<ul>
+  <li><strong>Constant turnover.</strong> A typical Anna Maria Island rental hosts 20-40 different guests per year. That's 20-40 different luggage drops, sand-tracking incidents, spill events, and "unfamiliar with this floor" moments. Cumulative wear is 3-5x what a private home experiences.</li>
+  <li><strong>Cleaning intensity.</strong> Turnover cleaning happens 20-40 times per year — mopping, vacuuming, scrubbing, sometimes with stronger cleaners than a homeowner would use. Floors that look great after 100 cleanings need to look great after 1,000.</li>
+  <li><strong>Photographs over feel.</strong> A guest's experience starts in your listing photos. Floors that photograph well (good light reflection, clean grain patterns, contemporary tones) book more nights than functionally identical but visually weaker floors.</li>
+  <li><strong>Repair urgency.</strong> A damaged floor in your own home can wait until you have time to fix it. A damaged floor in your STR needs to be repaired between bookings — sometimes within 24 hours.</li>
+  <li><strong>Insurance and liability.</strong> A guest tripping on a loose plank or slipping on a wet tile is a liability issue. Professional installation matters more in STRs than in any other type of property.</li>
+</ul>
+
+<div class="key-callout">
+  <strong>The single most important STR flooring decision:</strong> waterproof or not. Bathrooms flood. AC condensate lines drip. Coolers leak. Champagne gets spilled. Floors that cannot recover from water exposure (hardwood, laminate) require either constant vigilance or eventual expensive replacement.
+</div>
+
+<h2 id="top-picks">Top Picks: What Actually Works in Florida STRs</h2>
+
+<h3>1. Premium Stone-Plastic Composite (SPC) Vinyl Plank — The MVP</h3>
+
+<p>SPC vinyl plank wins more STR projects than any other material we install. Reasons:</p>
+
+<ul>
+  <li><strong>100% waterproof.</strong> Survives spills, AC leaks, even brief flooding events.</li>
+  <li><strong>22-mil+ wear layer.</strong> Handles luggage drag, sand abrasion, pet claws, and stiletto heels.</li>
+  <li><strong>Easy single-plank repair.</strong> When damage does occur, individual planks can be replaced without redoing the whole floor.</li>
+  <li><strong>Cleaner-friendly.</strong> Tolerates standard cleaners that turnover crews use, doesn't show streaks under afternoon light.</li>
+  <li><strong>Photographs beautifully.</strong> Modern wide-plank SPC has the visual appeal of hardwood without the maintenance.</li>
+  <li><strong>Faster installation.</strong> Click-lock SPC installs in 2-3 days for a typical 1,200 sq ft STR — minimizing booking gap.</li>
+</ul>
+
+<p><strong>2026 cost in Tampa Bay:</strong> $5.50-$9 per sq ft installed. For a 1,200 sq ft STR conversion, expect $7,000-$11,000 total.</p>
+
+<h3>2. Large-Format Porcelain Tile — Premium Coastal Choice</h3>
+
+<p>For waterfront STR properties (Anna Maria Island, Siesta Key, Longboat Key, St. Pete Beach), large-format porcelain tile (24×48 or larger) is the most durable choice possible. Reasons:</p>
+
+<ul>
+  <li><strong>Lifetime durability.</strong> Properly installed porcelain tile lasts 50+ years.</li>
+  <li><strong>Naturally cool.</strong> Florida summers are hot — tile feels great underfoot when guests walk in from the beach.</li>
+  <li><strong>Sand-friendly.</strong> Doesn't show micro-scratches from beach sand the way wood-look products can.</li>
+  <li><strong>Photographs as luxury.</strong> Marble-look or terrazzo-look porcelain immediately signals "premium" in listing photos.</li>
+  <li><strong>Survives flooding.</strong> Critical in beachfront properties where storm surge is a real risk.</li>
+</ul>
+
+<p><strong>2026 cost in Tampa Bay:</strong> $13-$20 per sq ft installed for large-format porcelain. Higher upfront cost than SPC, but the lifetime makes the per-year cost lower.</p>
+
+<h3>3. Mid-Range LVP — Budget-Conscious STR Option</h3>
+
+<p>For inland STRs, smaller condos, or properties with tight rehab budgets, mid-range vinyl plank (4-5mm thickness, 12-20 mil wear layer) can deliver solid performance at lower upfront cost.</p>
+
+<p><strong>2026 cost in Tampa Bay:</strong> $4-$6 per sq ft installed. For a 900 sq ft STR conversion, $3,600-$5,400 total.</p>
+
+<h3>What We DON'T Recommend for STRs</h3>
+
+<ul>
+  <li><strong>Hardwood (any type).</strong> Even engineered hardwood is too vulnerable to spills, scratches from suitcase drops, and constant cleaning. The repair costs eat the rental income.</li>
+  <li><strong>Laminate.</strong> Not waterproof. Period. STRs have too many ways for water to find a floor.</li>
+  <li><strong>Carpet.</strong> Stains from spills, holds sand and pet hair, allergic reactions from previous guests' pets, ages visibly. Carpet is essentially STR poison in 2026.</li>
+  <li><strong>Builder-grade vinyl (12-mil wear or less).</strong> Will look worn within 12-18 months in STR use. The savings disappear in repair costs.</li>
+</ul>
+
+<h2 id="by-property-type">Recommendations by Property Type</h2>
+
+<h3>Beachfront Condos (Anna Maria, Siesta Key, Lido, St. Pete Beach)</h3>
+<p><strong>Recommendation:</strong> Large-format porcelain tile throughout, OR premium SPC with porcelain in bathrooms and entryways. Salt air and elevated humidity make moisture management critical. The tile premium pays back in lifetime and repair-free operation.</p>
+
+<h3>Inland Single-Family STR Houses (Bradenton, Sarasota, Lakewood Ranch)</h3>
+<p><strong>Recommendation:</strong> Premium SPC throughout living areas + porcelain tile in bathrooms. Best balance of cost, durability, and visual appeal. This is our most-installed configuration.</p>
+
+<h3>Luxury STR Properties ($500+/night)</h3>
+<p><strong>Recommendation:</strong> Wide-plank engineered hardwood in living/dining rooms (with vigilant water-spill protocols) + premium SPC in kitchens and entryways + porcelain tile in bathrooms. The hardwood premium is a marketing differentiator that justifies higher nightly rates.</p>
+
+<h3>Conversion Projects (Older Home → STR)</h3>
+<p><strong>Recommendation:</strong> Almost always premium SPC. Faster install (less revenue lost), more forgiving of older subfloors, and offers the visual transformation that makes a tired home look new in listing photos.</p>
+
+<h3>Multi-Unit STR Properties (Duplexes, Triplexes)</h3>
+<p><strong>Recommendation:</strong> Match all units with the same SPC product. Simplifies repair logistics, lets you order in larger quantities for better pricing, and creates a cohesive brand experience for guests booking multiple units.</p>
+
+<h2 id="roi-math">The ROI Math: Flooring as an Investment</h2>
+
+<p>STR owners often ask: "Is upgrading flooring worth it for an existing rental?" Here's the framework we walk through:</p>
+
+<table>
+  <thead><tr><th>Scenario</th><th>Cost</th><th>Annual Revenue Increase</th><th>Payback Period</th></tr></thead>
+  <tbody>
+    <tr><td>Replace tired carpet → SPC (1,200 sq ft)</td><td>~$8,000</td><td>$3,000-$6,000 (better photos = more bookings, fewer 1-star reviews about flooring)</td><td>~16-32 months</td></tr>
+    <tr><td>Replace cheap LVP → premium SPC (1,200 sq ft)</td><td>~$3,500 (delta)</td><td>$1,500-$2,500 (avoids replacement cycles, improved durability)</td><td>~16-28 months</td></tr>
+    <tr><td>SPC → Large-format porcelain (1,200 sq ft)</td><td>~$8,000 (delta)</td><td>$2,000-$4,000 (premium positioning, no replacement for 30+ years)</td><td>~24-48 months</td></tr>
+    <tr><td>Replace hardwood with SPC (after damage)</td><td>~$8,000</td><td>$4,000+ (eliminates ongoing repair costs)</td><td>~12-24 months</td></tr>
+  </tbody>
+</table>
+
+<p>Most STR flooring upgrades pay back in 1-3 years through some combination of:</p>
+<ul>
+  <li>Better listing photos → higher booking rates</li>
+  <li>Fewer maintenance interruptions → fewer lost booking days</li>
+  <li>Higher nightly rates justified by visible quality upgrades</li>
+  <li>Better reviews (no more "the floors looked tired" complaints)</li>
+</ul>
+
+<div class="cta-inline">
+  <strong>Planning an STR flooring project?</strong>
+  <p>We've installed flooring in 100+ Tampa Bay vacation rentals — Anna Maria, Siesta Key, Lakewood Ranch, and beyond. Free in-home consultation including ROI estimates for your specific property.</p>
+  <a href="/contact/">Get My STR Quote →</a>
+</div>
+
+<h2 id="install-considerations">Installation Considerations for Active Rentals</h2>
+
+<p>If your property is already booking, scheduling around guests is the biggest constraint. Here's how we minimize lost revenue:</p>
+
+<ul>
+  <li><strong>Block 5-7 days during a low-demand period.</strong> January-February and September are ideal in Tampa Bay. We can typically install a 1,500 sq ft SPC project in 3-4 days.</li>
+  <li><strong>Coordinate with your property manager.</strong> We work directly with property managers (Vacasa, Evolve, AirBnb co-hosts, local agencies) to schedule efficiently around the booking calendar.</li>
+  <li><strong>Phase larger projects.</strong> A 4-bedroom STR can be done floor-by-floor or even room-by-room if absolute closure isn't an option. Less efficient, but maintains some bookings during the work.</li>
+  <li><strong>Plan around storm season.</strong> June-October hurricane season brings unpredictable weather and potential storm damage. We avoid scheduling new installs during peak storm window unless absolutely necessary.</li>
+</ul>
+
+<h2 id="maintenance">Maintenance &amp; Turnover Cleaning</h2>
+
+<p>STR flooring lasts much longer when turnover crews use the right products and techniques. Recommendations to share with your cleaning team:</p>
+
+<ul>
+  <li><strong>Vacuum first, mop second.</strong> Sand and grit cause more wear than any other factor. Always remove dry debris before introducing moisture.</li>
+  <li><strong>Use manufacturer-approved cleaners.</strong> Most SPC and tile manufacturers approve Bona Stone Tile &amp; Laminate Cleaner or similar pH-neutral products. Avoid vinegar, ammonia, bleach (these void warranties).</li>
+  <li><strong>Damp mop, not wet mop.</strong> Standing water finds seams. A damp microfiber mop cleans effectively without flooding the floor.</li>
+  <li><strong>Felt pads on all furniture.</strong> Including the moveable items guests reposition (dining chairs, side tables, stools). Bulk-buy 100-pack felt pads for $20.</li>
+  <li><strong>Entry mats inside and outside.</strong> Catches sand, salt, and grit before it reaches your floor. Replace annually.</li>
+  <li><strong>House rules: no shoes inside.</strong> Posted rule, signage, and a designated shoe storage area near the entry. Reduces sand abrasion dramatically and is becoming standard in luxury STRs.</li>
+</ul>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>What flooring lasts longest in a Florida vacation rental?</h3>
+<p>Large-format porcelain tile, by a significant margin. Properly installed porcelain lasts 50+ years even in heavy STR use. SPC vinyl plank is second, with 15-20 year life expectancy in STR conditions (vs 25-30 in residential).</p>
+
+<h3>How much does flooring affect my STR booking rate?</h3>
+<p>Significantly. Listings with tired or outdated flooring (visible carpet wear, scuffed laminate, dated vinyl) book 20-40% fewer nights than comparable listings with modern flooring. Floors are also one of the most-mentioned items in 1-star reviews when they look bad.</p>
+
+<h3>Should I install the same flooring my own home has?</h3>
+<p>Probably not — STRs face conditions your private home doesn't. Even if you love the engineered hardwood in your residence, premium SPC is usually a better choice for a rental. The property is an investment vehicle, not your personal aesthetic statement.</p>
+
+<h3>Can I do flooring work on a property that's currently booking?</h3>
+<p>Yes, with planning. We typically need 4-7 days of vacancy for a full STR floor replacement. Coordinate with your property manager to block off a low-season window. We can sometimes phase the work room-by-room if absolute closure isn't possible.</p>
+
+<h3>How do you handle pet damage in STR flooring?</h3>
+<p>If your property allows pets, premium SPC with 22-mil+ wear layer is essential. We've had pet-friendly STRs running on premium SPC for 5+ years with zero pet-related damage. The combination of waterproof construction and thick wear layer handles claws, accidents, and chew incidents.</p>
+
+<p>Have a vacation rental flooring project in mind? <a href="/vinyl-plank-flooring/">Browse our vinyl plank services</a>, <a href="/tile-installation/">explore our tile installation options</a>, or <a href="/contact/">request a free in-home consultation</a> with our team. We'll work directly with your property manager to schedule around bookings and keep your rental earning while we work.</p>"""
+
+# ============================================================================
+# ARTICLE 5 — TILE INSTALLATION COST IN SARASOTA
+# ============================================================================
+
+def article_5_tile_sarasota_cost():
+    return """<div class="article-toc">
+  <strong>What's in this guide</strong>
+  <ol>
+    <li><a href="#price-ranges">2026 Tile Installation Pricing in Sarasota</a></li>
+    <li><a href="#tile-types">The 5 Tile Types &amp; Their Costs</a></li>
+    <li><a href="#labor-factors">What Drives Sarasota Tile Labor Costs</a></li>
+    <li><a href="#rooms">Costs by Room Type</a></li>
+    <li><a href="#hidden-costs">Hidden Costs Most Contractors Don't Mention</a></li>
+    <li><a href="#real-projects">Real Sarasota Project Examples</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+  </ol>
+</div>
+
+<p>Tile is the most variable flooring category in pricing. Two tile installations in the same Sarasota neighborhood can have wildly different total costs depending on the size of tile chosen, the substrate condition, and the specific waterproofing requirements. This guide breaks down 2026 Sarasota pricing in detail so you can read quotes intelligently.</p>
+
+<p>We're a Sarasota-area tile installer with 100+ tile projects completed across the city — from 1950s mid-century homes in West of Trail neighborhoods to brand-new luxury construction in Lakewood Ranch (Sarasota side) and Wellen Park. Below is what we actually see in 2026 quotes.</p>
+
+<h2 id="price-ranges">2026 Tile Installation Cost in Sarasota, FL</h2>
+
+<p>For 2026, the all-in installed cost of tile in Sarasota ranges from <strong>$8 to $25+ per square foot</strong>, with most residential projects landing in the $10-$16 range. Here's how that breaks down:</p>
+
+<table>
+  <thead><tr><th>Tile Project Type</th><th>Cost / Sq Ft (Installed)</th><th>200 Sq Ft Bathroom</th></tr></thead>
+  <tbody>
+    <tr><td>Standard Ceramic Tile</td><td>$8 – $12</td><td>$1,600 – $2,400</td></tr>
+    <tr><td>Porcelain Tile (12×24)</td><td>$10 – $15</td><td>$2,000 – $3,000</td></tr>
+    <tr><td>Large-Format Porcelain (24×48+)</td><td>$13 – $20</td><td>$2,600 – $4,000</td></tr>
+    <tr><td>Natural Stone (marble, travertine)</td><td>$15 – $25</td><td>$3,000 – $5,000</td></tr>
+    <tr><td>Mosaic / Decorative Tile</td><td>$18 – $30+</td><td>$3,600 – $6,000+</td></tr>
+  </tbody>
+</table>
+
+<p>These ranges include both materials and professional installation labor for typical Sarasota residential conditions. Below we explain what changes those numbers significantly.</p>
+
+<h2 id="tile-types">The 5 Tile Types &amp; Their Costs in Sarasota</h2>
+
+<h3>1. Standard Ceramic Tile</h3>
+<p><strong>Material cost:</strong> $1.50-$4 per sq ft. <strong>Total installed:</strong> $8-$12/sq ft.</p>
+<p>Pros: Affordable, easy to clean, plenty of design options. Cons: More porous than porcelain (can stain in some conditions), less durable for high-traffic floors. Best for: Bathroom walls, backsplashes, low-traffic floors. Most popular sizes in Sarasota: 12×12, 12×24, 4×4 mosaic.</p>
+
+<h3>2. Porcelain Tile (Standard Format)</h3>
+<p><strong>Material cost:</strong> $2.50-$6 per sq ft. <strong>Total installed:</strong> $10-$15/sq ft.</p>
+<p>Pros: Denser and harder than ceramic, virtually waterproof, excellent for floors. Cons: Slightly more expensive, harder to cut. Best for: Bathroom and kitchen floors, entryways, laundry rooms. Most popular sizes: 12×24, 16×32, 18×18.</p>
+
+<h3>3. Large-Format Porcelain Tile</h3>
+<p><strong>Material cost:</strong> $4-$10 per sq ft. <strong>Total installed:</strong> $13-$20/sq ft.</p>
+<p>Pros: Modern luxury aesthetic, fewer grout lines (looks cleaner, easier to maintain), creates the illusion of larger spaces. Cons: Requires extremely flat substrate (often needs self-leveling compound), heavier and more difficult to install, requires premium adhesives. Best for: Premium homes in Sarasota, large-format kitchens, master bathrooms with luxury aesthetic.</p>
+<p>Most popular sizes in Sarasota: 24×48, 32×32, 48×48. We've also installed plank-format porcelain (16×60) that mimics large-plank hardwood for a contemporary look.</p>
+
+<h3>4. Natural Stone (Marble, Travertine, Slate)</h3>
+<p><strong>Material cost:</strong> $5-$15 per sq ft. <strong>Total installed:</strong> $15-$25/sq ft.</p>
+<p>Pros: Unique character, premium aesthetic, irreplaceable when patina develops. Cons: Requires sealing (initial + every 2-3 years), more porous than porcelain, can stain from acidic spills (wine, citrus, vinegar). Best for: Luxury bathroom floors and walls, fireplaces, signature design moments. Most common in Sarasota: Carrara marble, travertine in entryways and pool decks.</p>
+
+<h3>5. Mosaic and Decorative Tile</h3>
+<p><strong>Material cost:</strong> $8-$25+ per sq ft. <strong>Total installed:</strong> $18-$30+/sq ft.</p>
+<p>Pros: Customization possibilities (patterns, colors, custom layouts), creates focal points. Cons: Very labor-intensive (longer install time = higher labor cost), grout-line heavy. Best for: Backsplashes, shower accent walls, foyer medallions.</p>
+
+<h2 id="labor-factors">What Drives Sarasota Tile Labor Costs</h2>
+
+<p>Tile labor in Sarasota runs <strong>$5.50 to $11+ per square foot</strong>. The variance is huge because so many factors affect installation difficulty:</p>
+
+<ul>
+  <li><strong>Tile size.</strong> Large-format tile (24×48+) requires perfectly flat substrate (often self-leveling compound), specialized large-format mortars, and leveling clip systems. Adds $2-3/sq ft to labor.</li>
+  <li><strong>Substrate condition.</strong> Old homes in Historic Downtown Sarasota or West of Trail often need substantial subfloor prep. New construction in Lakewood Ranch or Wellen Park typically has clean, flat slabs ready for tile.</li>
+  <li><strong>Layout complexity.</strong> Straight-set installation is fastest. Diagonal layouts, herringbone patterns, mixed-tile mosaics, or custom medallions can double the labor cost.</li>
+  <li><strong>Wet area waterproofing.</strong> Showers and tub surrounds require Schluter-Kerdi or Hydro-Ban waterproofing membranes ($600-$1,500 per shower for materials + labor).</li>
+  <li><strong>Niches, benches, curbless showers.</strong> Custom shower features add $300-$1,500 each depending on complexity.</li>
+  <li><strong>Demolition.</strong> Existing tile removal in Sarasota averages $2.50-$5 per sq ft (more than the new tile material itself in many cases).</li>
+</ul>
+
+<h2 id="rooms">Costs by Room Type in Sarasota</h2>
+
+<table>
+  <thead><tr><th>Room</th><th>Typical Square Footage</th><th>Cost Range (Standard Porcelain)</th><th>Cost Range (Premium)</th></tr></thead>
+  <tbody>
+    <tr><td>Powder room</td><td>20-30 sqft</td><td>$300-$500</td><td>$700-$1,200</td></tr>
+    <tr><td>Standard bathroom</td><td>50-80 sqft</td><td>$650-$1,200</td><td>$1,500-$3,000</td></tr>
+    <tr><td>Master bathroom</td><td>120-200 sqft</td><td>$1,500-$3,000</td><td>$3,500-$7,000</td></tr>
+    <tr><td>Kitchen floor</td><td>200-300 sqft</td><td>$2,500-$4,500</td><td>$5,500-$9,000</td></tr>
+    <tr><td>Kitchen backsplash</td><td>30-50 sqft</td><td>$700-$1,200</td><td>$1,500-$2,500</td></tr>
+    <tr><td>Tile shower (alone)</td><td>40-50 sqft</td><td>$2,500-$4,000</td><td>$4,500-$8,000+</td></tr>
+    <tr><td>Whole-home tile (1,500 sqft)</td><td>1,500 sqft</td><td>$15,000-$22,500</td><td>$25,000-$45,000+</td></tr>
+  </tbody>
+</table>
+
+<h2 id="hidden-costs">Hidden Costs Most Contractors Don't Mention</h2>
+
+<p>The "low quote" you got for $9/sq ft installed often becomes $13/sq ft after these line items get added mid-project. Always ask:</p>
+
+<table>
+  <thead><tr><th>Hidden Cost Item</th><th>Typical Sarasota Range</th></tr></thead>
+  <tbody>
+    <tr><td>Self-leveling compound</td><td>$300-$900 per room</td></tr>
+    <tr><td>Backer board (for shower walls)</td><td>$2.50-$4.50/sq ft</td></tr>
+    <tr><td>Schluter-Kerdi waterproofing</td><td>$5-$8/sq ft</td></tr>
+    <tr><td>Premium grout (epoxy)</td><td>$1.50-$3/sq ft upcharge</td></tr>
+    <tr><td>Tile demolition</td><td>$2.50-$5/sq ft</td></tr>
+    <tr><td>Toilet pull and reset</td><td>$120-$200 per toilet</td></tr>
+    <tr><td>Linear drain (curbless shower)</td><td>$400-$900 each</td></tr>
+    <tr><td>Schluter Strip transitions</td><td>$25-$95 each</td></tr>
+    <tr><td>Custom shower niches</td><td>$300-$900 each</td></tr>
+    <tr><td>Stone sealing (natural stone)</td><td>$1-$3/sq ft</td></tr>
+  </tbody>
+</table>
+
+<div class="cta-inline">
+  <strong>Want a real Sarasota tile quote?</strong>
+  <p>Free in-home measurement and itemized written quote within 24 hours. We cover all of Sarasota County.</p>
+  <a href="/contact/">Get My Free Quote →</a>
+</div>
+
+<h2 id="real-projects">Real Sarasota Tile Project Examples</h2>
+
+<h3>Project A: Master bathroom renovation in West of Trail</h3>
+<p><strong>Scope:</strong> Demo existing 4×4 ceramic tile, install 24×24 porcelain floor (140 sq ft), 12×24 wall tile in shower (90 sq ft), Schluter-Kerdi waterproofing, custom niche, linear drain. <strong>Material:</strong> $1,820. <strong>Labor:</strong> $2,640. <strong>Self-leveling:</strong> $480. <strong>Demo:</strong> $1,150. <strong>Schluter-Kerdi:</strong> $720. <strong>Linear drain &amp; niche:</strong> $1,100. <strong>Total: $7,910 (~$34/sq ft of installed tile).</strong></p>
+
+<h3>Project B: Whole-home porcelain tile in Palmer Ranch</h3>
+<p><strong>Scope:</strong> 1,800 sq ft of 24×24 porcelain throughout main living areas, all kitchen, foyer (excluding bedrooms which kept hardwood). Includes tile demolition of existing 16×16 builder-grade tile. <strong>Material:</strong> $7,920 ($4.40/sq ft). <strong>Labor:</strong> $10,800 ($6/sq ft). <strong>Self-leveling:</strong> $2,400. <strong>Demolition:</strong> $5,400. <strong>Transitions to bedrooms:</strong> $480. <strong>Total: $27,000 (~$15/sq ft all-in).</strong></p>
+
+<h3>Project C: Curbless shower + master bath floor in The Meadows</h3>
+<p><strong>Scope:</strong> 60×60 curbless shower with linear drain, large-format 32×32 porcelain floor (180 sq ft master bath), Schluter-Kerdi shower waterproofing, custom shower bench, niche. <strong>Material:</strong> $2,250. <strong>Labor:</strong> $3,600. <strong>Curbless shower system:</strong> $2,700. <strong>Schluter-Kerdi:</strong> $920. <strong>Custom bench &amp; niche:</strong> $1,400. <strong>Self-leveling:</strong> $560. <strong>Demolition:</strong> $980. <strong>Total: $12,410.</strong></p>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>Why is large-format tile so much more expensive in Sarasota?</h3>
+<p>Three reasons: (1) the tiles themselves cost more per square foot, (2) they require nearly perfect substrate flatness — typically self-leveling compound across the entire floor before tile goes down, and (3) they require specialized large-format mortars and leveling-clip systems to prevent lippage. The labor premium is roughly $2-3/sq ft over standard format.</p>
+
+<h3>Can I install tile over existing tile in Sarasota?</h3>
+<p>Sometimes — if the existing tile is well-bonded, the floor is reasonably flat, and the height increase doesn't bind your doors. We assess this case-by-case. Removing existing tile is usually cleaner and gives a better long-term result, but it adds $2.50-$5 per sq ft to the project.</p>
+
+<h3>How long does a tile shower take to install in Sarasota?</h3>
+<p>A standard tile shower (60×36 with one accent wall and a niche) takes 4-6 days when done correctly: Day 1 demo, Day 2 framing &amp; backer board, Day 3 Schluter-Kerdi waterproofing &amp; flood test, Day 4-5 tile install, Day 6 grout &amp; silicone. Curbless or larger custom showers can take 7-10 days.</p>
+
+<h3>Should I use epoxy or cementitious grout?</h3>
+<p>For showers and high-stain areas (kitchen backsplashes), we strongly recommend <strong>epoxy grout</strong> — it's color-stable, stain-proof, and never needs sealing. Cementitious grout is fine for standard floor installs but requires periodic resealing (every 1-2 years). Epoxy adds $1.50-$3/sq ft to the project but pays back in maintenance savings.</p>
+
+<h3>Why is tile demolition so expensive?</h3>
+<p>Old tile, especially when set in modified thinset on concrete, doesn't come up easily. Each tile must be broken up, removed, and the residual thinset ground or scraped flush. It's labor-intensive, dusty work that often takes longer than the new tile installation itself. Sarasota tile demo averages $2.50-$5 per sq ft.</p>
+
+<p>Have a Sarasota tile project in mind? <a href="/tile-installation/sarasota/">See our Sarasota tile services</a> or <a href="/contact/">request a free in-home consultation</a> with our team. We'll measure your space, assess substrate conditions, and provide an itemized written quote within 24 hours.</p>"""
+
+# ============================================================================
+# ARTICLE 6 — HARDWOOD REFINISHING IN TAMPA BAY
+# ============================================================================
+
+def article_6_hardwood_refinishing():
+    return """<div class="article-toc">
+  <strong>What's in this guide</strong>
+  <ol>
+    <li><a href="#refinish-vs-replace">Refinish or Replace? The Decision Framework</a></li>
+    <li><a href="#process">The Refinishing Process Step-by-Step</a></li>
+    <li><a href="#cost">2026 Refinishing Cost in Tampa Bay</a></li>
+    <li><a href="#timeline">How Long It Takes (Day-by-Day)</a></li>
+    <li><a href="#finish-types">Finish Options: Oil-Based vs Water-Based vs Wax</a></li>
+    <li><a href="#living-through-it">Living Through the Project</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+  </ol>
+</div>
+
+<p>Hardwood floors don't have to be replaced when they look tired. <strong>If your hardwood is solid (3/4-inch thick) or quality engineered (3-6mm wear layer), refinishing can bring it back to like-new condition for 30-50% of replacement cost</strong> — and it preserves the original wood's character that you can never replicate with new flooring.</p>
+
+<p>That said, refinishing isn't always the right answer. This guide walks through how to decide, what the process looks like, and what it actually costs in 2026 Tampa Bay.</p>
+
+<h2 id="refinish-vs-replace">Refinish or Replace? The Decision Framework</h2>
+
+<p>Here's the framework we walk every Tampa Bay client through:</p>
+
+<h3>Refinish makes sense if:</h3>
+<ul>
+  <li><strong>The wood is solid hardwood (3/4-inch thick).</strong> Solid hardwood can typically be refinished 4-8 times over its lifespan.</li>
+  <li><strong>The wood is quality engineered hardwood with a thick wear layer (3mm+).</strong> These can usually be refinished 1-3 times. Cheap engineered hardwood (2mm or less) generally cannot be refinished — the wear layer is too thin to sand.</li>
+  <li><strong>Damage is mostly cosmetic.</strong> Surface scratches, dull finish, light water staining, faded color — these are all addressable through refinishing.</li>
+  <li><strong>Underlying structure is sound.</strong> No buckling, no large gaps from improper acclimation, no soft spots from water damage to subfloor.</li>
+  <li><strong>You like the wood species.</strong> Refinishing keeps the existing wood. If you wanted oak instead of maple, refinishing won't change that.</li>
+</ul>
+
+<h3>Replacement is the better choice if:</h3>
+<ul>
+  <li><strong>The wear layer is too thin to sand.</strong> Old engineered hardwood with 2mm or less of usable surface, or solid hardwood that's already been refinished 5+ times.</li>
+  <li><strong>Major water damage or warping.</strong> Cupped or buckled boards from flooding can't be saved by refinishing.</li>
+  <li><strong>Significant gaps from poor original install.</strong> If boards were installed without proper expansion gaps and now have permanent spacing issues.</li>
+  <li><strong>You want to change the look completely.</strong> Different species, different plank widths, different finish style.</li>
+  <li><strong>The home is being prepared for sale and the floors are too dated.</strong> 1980s-1990s narrow-strip oak is harder to refinish into a contemporary look — replacement with wide-plank may have better resale ROI.</li>
+</ul>
+
+<div class="key-callout">
+  <strong>The 30% rule:</strong> If refinishing costs more than 30% of replacement cost, replacement usually makes more sense long-term. Refinishing saves 50-70% upfront, but adds another refinishing cycle in 8-15 years that replacement avoids.
+</div>
+
+<h2 id="process">The Refinishing Process Step-by-Step</h2>
+
+<h3>Step 1: Inspection and Prep (Day 1, AM)</h3>
+<p>We walk through the home, identify any boards that need replacement (badly damaged ones we'll cut out and replace with matching wood), measure the project, and confirm the desired finish color/sheen. Then we move all furniture out (typically to the garage or another room), remove existing baseboards or quarter-round, and protect non-floor surfaces with plastic and tape.</p>
+
+<h3>Step 2: First Sanding Pass (Day 1, PM)</h3>
+<p>We use a heavy-grit drum sander (typically 36-grit) to remove the existing finish and any surface damage. Edge sanders handle areas the drum can't reach (along walls, around obstacles). This produces a lot of dust — modern dust-containment systems capture about 90%, but plan for some dust to escape.</p>
+
+<h3>Step 3: Repairs and Replacements (Day 1, late PM / Day 2, AM)</h3>
+<p>If any boards need replacement, this happens after the first sanding. We use matching wood from the same species, then sand the new boards to blend with the existing.</p>
+
+<h3>Step 4: Subsequent Sanding Passes (Day 2)</h3>
+<p>We progressively use finer grits (60, 80, 120) to remove drum-sander marks and prepare a smooth surface for finishing. The final pass uses 120-grit and produces a glass-smooth surface.</p>
+
+<h3>Step 5: Vacuum and Tack (Day 2, late PM)</h3>
+<p>Multiple passes with HEPA vacuum and tack cloth to remove every speck of dust. Even one piece of dust can show through the finish — this step is critical and time-consuming.</p>
+
+<h3>Step 6: Stain Application (Day 3, AM) — if changing color</h3>
+<p>If you want to change the color, stain is applied first and allowed to dry per the manufacturer specification (4-12 hours). If keeping natural wood color, this step is skipped.</p>
+
+<h3>Step 7: First Finish Coat (Day 3, PM)</h3>
+<p>The first coat of polyurethane (water-based or oil-based) is applied. Water-based dries in 2-4 hours; oil-based takes 8-12 hours.</p>
+
+<h3>Step 8: Light Sanding Between Coats (Day 4, AM)</h3>
+<p>Once the first coat is dry, a light pass with very fine sandpaper (220-grit) removes any dust nibs or minor imperfections.</p>
+
+<h3>Step 9: Second and Third Coats (Day 4, PM through Day 5)</h3>
+<p>Second and third finish coats applied with light sanding between. By the end of Day 5, the finish is fully applied and beginning to cure.</p>
+
+<h3>Step 10: Cure and Reinstall (Days 5-7)</h3>
+<p>The finish needs 2-7 days to fully cure (depending on the finish type) before furniture can be moved back. Foot traffic in socks is okay after 24 hours; pets and furniture need 48-72 hours minimum. Full cure (when you can put down area rugs) is 7-30 days depending on finish.</p>
+
+<h2 id="cost">2026 Refinishing Cost in Tampa Bay</h2>
+
+<table>
+  <thead><tr><th>Project</th><th>Cost / Sq Ft</th><th>1,000 Sq Ft Project</th></tr></thead>
+  <tbody>
+    <tr><td>Standard refinish (sand + 3 coats poly, no stain)</td><td>$3.50 - $5</td><td>$3,500 - $5,000</td></tr>
+    <tr><td>Refinish + stain change</td><td>$4.50 - $7</td><td>$4,500 - $7,000</td></tr>
+    <tr><td>Refinish + minor board replacement (5-15 boards)</td><td>$5 - $8</td><td>$5,000 - $8,000</td></tr>
+    <tr><td>Refinish + stair treads (per typical 14-step staircase)</td><td>+$800 - $1,400</td><td>+$800 - $1,400</td></tr>
+  </tbody>
+</table>
+
+<p><strong>Compare to replacement:</strong> $9-18/sq ft for engineered hardwood, $10-22/sq ft for solid hardwood. Refinishing typically saves 50-70% over replacement on a per-square-foot basis.</p>
+
+<h2 id="timeline">How Long It Takes (Day-by-Day)</h2>
+
+<p>For a typical 1,200-1,500 sq ft Tampa Bay refinishing project:</p>
+<ul>
+  <li><strong>Day 1:</strong> Furniture removal, baseboards off, first sanding (heavy grit). Floors are unwalkable.</li>
+  <li><strong>Day 2:</strong> Subsequent sanding passes, vacuum/tack. Dust everywhere — wear shoes and stay out of the house if possible.</li>
+  <li><strong>Day 3:</strong> Stain application (if applicable). First poly coat. Floors off-limits.</li>
+  <li><strong>Day 4:</strong> Light sanding between coats. Second poly coat. Floors off-limits.</li>
+  <li><strong>Day 5:</strong> Third (final) poly coat. Floors off-limits.</li>
+  <li><strong>Day 6:</strong> Sock-foot only. Move light items back.</li>
+  <li><strong>Day 7-10:</strong> Move furniture back (with felt pads). Avoid area rugs for 2-4 weeks total.</li>
+</ul>
+
+<p>Total project time: 5-7 working days for the active work, plus another 2-3 weeks before you can put down area rugs.</p>
+
+<h2 id="finish-types">Finish Options: Oil-Based vs Water-Based vs Wax</h2>
+
+<h3>Water-Based Polyurethane (Most Common Today)</h3>
+<p><strong>Look:</strong> Crystal clear, doesn't yellow over time. <strong>Durability:</strong> Excellent. <strong>Drying time:</strong> 2-4 hours per coat. <strong>Smell:</strong> Mild, dissipates quickly. <strong>Cost:</strong> Slightly more expensive. <strong>Best for:</strong> Most modern Tampa Bay homes, especially those wanting natural-looking finish.</p>
+
+<h3>Oil-Based Polyurethane (Traditional)</h3>
+<p><strong>Look:</strong> Warm amber tone, deepens grain, ambers over time. <strong>Durability:</strong> Excellent (slightly tougher than water-based for some uses). <strong>Drying time:</strong> 8-12 hours per coat. <strong>Smell:</strong> Strong, lingers for days. <strong>Cost:</strong> Slightly less expensive. <strong>Best for:</strong> Traditional homes wanting a warm amber finish, lowest-cost option.</p>
+
+<h3>Penetrating Oil/Hardwax Oil</h3>
+<p><strong>Look:</strong> Very natural, matte finish, shows wood grain. <strong>Durability:</strong> Good, but requires periodic re-oiling (every 1-3 years). <strong>Drying time:</strong> 8-24 hours per coat. <strong>Smell:</strong> Pleasant, woody. <strong>Cost:</strong> Premium ($1-2/sq ft more). <strong>Best for:</strong> Premium homes wanting European-style natural finish (becoming popular in Lakewood Ranch and Sarasota luxury homes).</p>
+
+<div class="cta-inline">
+  <strong>Considering refinishing your hardwood in Tampa Bay?</strong>
+  <p>Free in-home assessment to determine if refinishing or replacement makes more sense for your specific floors. We'll check wear layer thickness, identify board replacement needs, and quote both options.</p>
+  <a href="/contact/">Get My Free Assessment →</a>
+</div>
+
+<h2 id="living-through-it">Living Through the Project</h2>
+
+<p>Hardwood refinishing is the most disruptive flooring project we do. The dust, the chemical smell (especially with oil-based), and the fact that floors are unwalkable for 5+ days make it hard to live in the home during the work. Realistic options:</p>
+
+<ul>
+  <li><strong>Whole-house refinish:</strong> Plan to stay elsewhere (hotel, family, vacation home) for 5-7 days. This is the most common approach for our clients with the option to relocate.</li>
+  <li><strong>Phase the project room-by-room:</strong> Refinish bedrooms first (living elsewhere temporarily), then living areas. Doubles the project length but lets you stay in the home.</li>
+  <li><strong>Stay in unaffected areas:</strong> If you have second-floor bedrooms and only the first floor is being refinished, you can sometimes stay upstairs (with limitations on how often you go downstairs).</li>
+  <li><strong>Hardwax oil finish:</strong> Faster drying time means a 4-day project instead of 6-7. Worth considering if you can't relocate for a week.</li>
+</ul>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>How many times can hardwood be refinished?</h3>
+<p>Solid 3/4-inch hardwood can typically be refinished 4-8 times over its lifespan (50-100+ years). Quality engineered hardwood with 3mm+ wear layer can usually be refinished 1-3 times. Cheap engineered hardwood (2mm or less wear layer) cannot be refinished.</p>
+
+<h3>How can I tell if my engineered hardwood is thick enough to refinish?</h3>
+<p>Look at the side of a board where it meets a vent or transition strip — you should be able to see the layered construction. If you can identify a clear top hardwood layer that's 3mm or thicker (about 1/8 inch), refinishing is usually possible. If you can't tell, we can usually determine this during a free assessment by examining the floor at a transition point.</p>
+
+<h3>Can I refinish water-damaged hardwood?</h3>
+<p>It depends. Surface water staining can usually be sanded out. Cupping or buckling from prolonged water exposure typically can't be fixed by refinishing alone — those boards need to be replaced first, then the floor refinished as a whole.</p>
+
+<h3>Will refinishing my hardwood floors increase my home's value?</h3>
+<p>Yes — refinished hardwood typically returns 70-100% of refinishing cost in resale value. If your floors look tired and dated, refinishing is one of the highest-ROI home improvements you can make before selling.</p>
+
+<h3>How long should I wait between refinishing cycles?</h3>
+<p>Quality refinishing should last 8-15 years before needing redoing. Heavy-traffic homes (entryways, kitchens) may need spot refinishing or screen-and-recoat treatments at 4-7 years to extend the full refinish timeline.</p>
+
+<p>Have hardwood floors that need attention? <a href="/hardwood-flooring/">Browse our hardwood services</a> or <a href="/contact/">request a free in-home assessment</a> with our team. We'll examine your floors, recommend whether refinishing or replacement makes more sense for your situation, and provide an itemized written quote.</p>"""
+
+# ============================================================================
+# ARTICLE 7 — STAIR TREAD REPLACEMENT GUIDE
+# ============================================================================
+
+def article_7_stair_treads():
+    return """<div class="article-toc">
+  <strong>What's in this guide</strong>
+  <ol>
+    <li><a href="#why-stairs-different">Why Stair Treads Are Different from Floor Installation</a></li>
+    <li><a href="#material-comparison">Hardwood vs LVP vs Tile: Side-by-Side</a></li>
+    <li><a href="#cost">2026 Cost Per Tread in Tampa Bay</a></li>
+    <li><a href="#process">The Replacement Process</a></li>
+    <li><a href="#design-decisions">Design Decisions That Matter</a></li>
+    <li><a href="#common-mistakes">Common Mistakes to Avoid</a></li>
+    <li><a href="#faq">Frequently Asked Questions</a></li>
+  </ol>
+</div>
+
+<p>Stair treads are the highest-skill flooring work in any home. <strong>Every tread is a custom-cut piece</strong> — measured, scribed to fit, mitered at the nosing, and finished to match your existing flooring. There's almost no margin for error: a 1/16-inch gap is glaringly visible on a stair, where the same gap on a bedroom floor would never be noticed.</p>
+
+<p>That precision is why stair tread installations cost more per square foot than any other flooring work, and why so many homeowners regret hiring the cheapest available installer. Below is what to know before you commit.</p>
+
+<h2 id="why-stairs-different">Why Stair Treads Are Different from Floor Installation</h2>
+
+<p>If you've installed flooring in your home before, you might assume stair treads are just a continuation of that work. They're not. Five things make stairs uniquely demanding:</p>
+
+<ul>
+  <li><strong>Each tread is a custom carpentry project.</strong> A 14-step staircase is essentially 14 mini cabinet-grade carpentry installations. Each one is measured, scribed, mitered, and fitted individually.</li>
+  <li><strong>The nosing is exposed.</strong> The front edge of each tread (the "nosing") is one of the most-touched, most-seen parts of any tread. Nosings need to be precisely cut, mitered to wrap around any open sides, and either solid hardwood or capped with a quality bullnose.</li>
+  <li><strong>Visibility is constant.</strong> You see the entire face of every stair tread every time you go up or down. Cuts and gaps are immediately obvious.</li>
+  <li><strong>Slip resistance matters.</strong> Stairs are a higher fall-risk surface than flat floors. Finish choice (matte vs gloss) and any non-slip treatment matter for safety.</li>
+  <li><strong>Code requirements.</strong> Florida residential building code has specific requirements for stair tread depth, riser height, and (in some commercial contexts) non-slip treatment. We follow whatever is required for your project.</li>
+</ul>
+
+<h2 id="material-comparison">Hardwood vs LVP vs Tile: Side-by-Side</h2>
+
+<table>
+  <thead><tr><th>Factor</th><th>Solid Hardwood Treads</th><th>LVP-Clad Treads</th><th>Porcelain Tile Treads</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Cost per tread</strong></td><td>$95-$220</td><td>$45-$85</td><td>$80-$150</td></tr>
+    <tr><td><strong>14-step staircase</strong></td><td>$1,330-$3,080</td><td>$630-$1,190</td><td>$1,120-$2,100</td></tr>
+    <tr><td><strong>Visual quality</strong></td><td>Premium / authentic</td><td>Good (matches LVP floor)</td><td>Modern / commercial feel</td></tr>
+    <tr><td><strong>Durability</strong></td><td>30-50+ years (refinishable)</td><td>15-25 years</td><td>30-50+ years</td></tr>
+    <tr><td><strong>Slip resistance</strong></td><td>Moderate (depends on finish)</td><td>Good (textured)</td><td>Variable (rough vs polished)</td></tr>
+    <tr><td><strong>Sound</strong></td><td>Quietest</td><td>Slightly hollow</td><td>Loudest (hard surface)</td></tr>
+    <tr><td><strong>Refinishable?</strong></td><td>Yes, 4-8 times</td><td>No (replace damaged planks)</td><td>No</td></tr>
+    <tr><td><strong>Best for</strong></td><td>Forever homes, premium aesthetic</td><td>Matching LVP main floors, budget</td><td>Modern designs, outdoor stairs</td></tr>
+  </tbody>
+</table>
+
+<h3>Solid Hardwood Treads (1-inch Thick)</h3>
+<p>The premium choice. Made from solid wood (typically white oak, red oak, maple, hickory, or Brazilian cherry), 1-inch thick treads are heavy, substantial-feeling, and can be sanded and refinished multiple times. They typically have a built-in or laminated bullnose for the front edge.</p>
+<p>Best for: Forever homes, premium new construction in Lakewood Ranch and Sarasota luxury communities, restoration projects where matching original hardwood character matters. We work most often with white oak and red oak for these projects.</p>
+
+<h3>LVP-Clad Treads</h3>
+<p>A pre-fabricated wood tread (typically pine or poplar) clad with LVP planks cut to fit. The bullnose is either a custom-mitered LVP nosing or a complementary stair-nosing molding. Most affordable option, and the only choice that visually matches an LVP floor.</p>
+<p>Best for: Continuing an LVP main floor onto stairs, budget-conscious renovations, rental properties, homes that already have LVP throughout. We've cut LVP-clad treads for 200+ Tampa Bay projects.</p>
+
+<h3>Porcelain Tile Treads</h3>
+<p>Custom-cut porcelain tile with a non-slip nosing strip (Schluter-TREP or aluminum/brass). Best for outdoor stairs, modern-aesthetic interior stairs, and any application where extreme durability and water resistance matter.</p>
+<p>Best for: Modern homes (especially in Sarasota and downtown St. Pete), exterior stairs, pool-side stairs, commercial properties.</p>
+
+<h2 id="cost">2026 Cost Per Tread in Tampa Bay</h2>
+
+<table>
+  <thead><tr><th>Component</th><th>Cost Per Unit</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>Hardwood tread (red/white oak)</td><td>$95-$165 each</td><td>Stained or natural finish</td></tr>
+    <tr><td>Hardwood tread (premium species)</td><td>$125-$220 each</td><td>Brazilian cherry, walnut, hickory</td></tr>
+    <tr><td>LVP-clad tread (custom bullnose)</td><td>$45-$85 each</td><td>Matches LVP main floor</td></tr>
+    <tr><td>Porcelain tile tread</td><td>$80-$150 each</td><td>With non-slip nosing strip</td></tr>
+    <tr><td>Matching painted risers</td><td>$25-$45 each</td><td>Primed and painted white</td></tr>
+    <tr><td>Matching wood risers</td><td>$45-$85 each</td><td>Same species as treads</td></tr>
+    <tr><td>Skirt board / stringer trim</td><td>$35-$70 / linear ft</td><td>Wall-side staircase trim</td></tr>
+    <tr><td>Carpet demolition (per stair)</td><td>$15-$30 each</td><td>Removes carpet and tack strips</td></tr>
+    <tr><td>Custom mitered returns (open side)</td><td>$45-$95 each</td><td>For visible side of treads</td></tr>
+  </tbody>
+</table>
+
+<h3>Total project examples (typical 14-step staircase):</h3>
+<ul>
+  <li><strong>LVP-clad treads + painted risers:</strong> $1,150-$1,800</li>
+  <li><strong>Standard hardwood treads + painted risers:</strong> $1,800-$3,500</li>
+  <li><strong>Premium hardwood treads + matching wood risers:</strong> $3,000-$5,500</li>
+  <li><strong>Carpet removal + new hardwood:</strong> Add $200-$420 for demolition</li>
+</ul>
+
+<h2 id="process">The Replacement Process</h2>
+
+<h3>Step 1: Measurement and Material Selection (Day 0)</h3>
+<p>We come out for a precise measurement of every tread, riser, and stringer. Each step is measured individually because old staircases often have minor variations. We confirm material choice, finish, and any custom features (like wrapped returns on open-side treads).</p>
+
+<h3>Step 2: Demolition (Day 1, AM)</h3>
+<p>If replacing carpet, we remove the carpet, padding, and tack strips. If replacing existing wood treads, we pry up the old treads (often without damaging the existing risers). We inspect the substrate (typically pine or plywood treads) for level, squeaks, and damage.</p>
+
+<h3>Step 3: Substrate Repair (Day 1, PM)</h3>
+<p>Any squeaks are addressed by screwing the existing pine treads to the stringers. Loose or damaged substrate gets replaced. The substrate is leveled and sanded to provide a perfect surface for the new treads.</p>
+
+<h3>Step 4: New Riser Installation (Day 2, AM)</h3>
+<p>If installing new risers (wood or painted), these go in first. They're cut to height, scribed to fit any wall-side variations, and nailed/glued in place.</p>
+
+<h3>Step 5: Tread Installation (Day 2, PM through Day 3)</h3>
+<p>Each tread is custom-cut, scribed to fit, and mitered at any open-side returns. Treads are bonded to the substrate with construction adhesive and mechanically fastened. The nosing wraps over the riser below, creating a seamless visual transition.</p>
+
+<h3>Step 6: Skirt Board / Stringer Trim (Day 3 or Day 4)</h3>
+<p>Wall-side stringer trim ("skirt board") goes on after the treads. This trim covers the rough stringer and creates a finished look at the wall.</p>
+
+<h3>Step 7: Quarter-Round and Caulk (Day 4)</h3>
+<p>Small details — quarter-round at the wall edges of treads, caulk lines at the riser-tread joints, touch-up paint on adjacent baseboards. These small things make the difference between "okay" and "professional" installations.</p>
+
+<h3>Step 8: Final Walk-Through (Day 4 PM)</h3>
+<p>We walk every step with you, looking for any tiny issues. We check that every tread is solidly installed, every nosing is perfectly aligned, every miter joint is tight. Anything you flag, we address before we leave.</p>
+
+<h2 id="design-decisions">Design Decisions That Matter</h2>
+
+<h3>Painted vs Wood Risers</h3>
+<p>Painted white risers (with stained wood treads) is the most popular look in Tampa Bay — it's clean, contemporary, and showcases the wood. Wood risers (matching the treads) is more traditional and creates a continuous wood appearance. Both are valid; the choice is aesthetic.</p>
+
+<h3>Stain Color</h3>
+<p>If you have existing hardwood floors in your home, matching the stair stain to your floors is usually the right call (continuous flooring transitions look more intentional). If you're starting fresh, popular 2026 stains in Tampa Bay are: medium-light "natural" tones, light gray-washed white oak, and warm honey-medium browns.</p>
+
+<h3>Open Side vs Closed Side</h3>
+<p>"Closed" stairs have walls on both sides — simpler installation. "Open" stairs (one or both sides exposed to a railing) require custom mitered returns on every visible tread end, which adds significantly to labor cost.</p>
+
+<h3>Bullnose Style</h3>
+<p>The front edge of each tread can be: rounded (most common, traditional), square (modern), beveled (contemporary), or custom-routed (premium). Different bullnose styles change the entire visual feel of the staircase.</p>
+
+<div class="cta-inline">
+  <strong>Replacing carpet or worn treads on your stairs?</strong>
+  <p>Free in-home consultation across Tampa Bay. We'll measure your stairs, recommend the right material, and provide a written itemized quote within 24 hours.</p>
+  <a href="/contact/">Get My Free Quote →</a>
+</div>
+
+<h2 id="common-mistakes">Common Mistakes to Avoid</h2>
+
+<ul>
+  <li><strong>Hiring a "regular" flooring installer for stairs.</strong> Stair work is custom carpentry, not floor laying. Make sure the contractor specifically does stair treads regularly. Ask to see photos of recent stair work.</li>
+  <li><strong>Skipping the substrate prep.</strong> Squeaky stairs that don't get fixed before new treads go on will still squeak afterward — and the new treads will eventually loosen at the squeak point. Always address substrate issues first.</li>
+  <li><strong>Mismatched stain/color between treads and main floor.</strong> Stair treads should match your main hardwood floor as closely as possible. Even small mismatches are visible at every transition.</li>
+  <li><strong>Forgetting about light. </strong>Stairs in dim hallways (typical of older Florida homes) look dramatically different in installer-shop lighting vs. your home. Always look at samples in your actual home, in your actual light.</li>
+  <li><strong>Skimping on bullnose quality.</strong> The nosing is the most-touched, most-seen part of every tread. Cheap bullnose looks cheap forever — it's worth paying for solid hardwood or quality LVP nosing.</li>
+  <li><strong>Glossy finish on stairs.</strong> Glossy finishes are slippery (especially in socks). Matte or satin is safer for stairs.</li>
+</ul>
+
+<h2 id="faq">Frequently Asked Questions</h2>
+
+<h3>Can I replace carpet on stairs with hardwood?</h3>
+<p>Yes — this is one of our most common stair projects. We remove the carpet, padding, and tack strips; check the existing pine treads for level and squeaks; install solid hardwood treads on top with matching wood or painted risers. The whole conversion typically takes 2-3 days for a standard 14-step staircase.</p>
+
+<h3>How long do stair treads last?</h3>
+<p>Solid hardwood treads last 30-50+ years with refinishing every 8-15 years. LVP-clad treads last 15-25 years. Porcelain tile treads last 30-50+ years.</p>
+
+<h3>Can stair treads be matched to my existing hardwood floor?</h3>
+<p>Yes, in most cases. If your existing floor is from a major manufacturer (Anderson, Mirage, Mohawk, etc.), we can usually order matching solid stair treads from the same manufacturer. If your floor is LVP, we use the LVP planks themselves to clad pre-fabricated wood treads with custom-cut bullnose.</p>
+
+<h3>Do I need slip-resistant treads in Florida?</h3>
+<p>For interior residential stairs, slip resistance is mostly about finish choice (matte/satin = better grip than gloss). For exterior stairs, pool-side stairs, and commercial properties, we install proper non-slip nosing strips — either Schluter-TREP for tile, or aluminum/brass strips for hardwood.</p>
+
+<h3>How much does it cost to replace stair treads in Tampa Bay?</h3>
+<p>For a typical 14-step staircase: LVP-clad treads + painted risers $1,150-$1,800; standard hardwood treads + painted risers $1,800-$3,500; premium hardwood treads + matching wood risers $3,000-$5,500. Add $200-$420 for carpet removal if applicable.</p>
+
+<p>Have a stair tread project in mind? <a href="/stair-treads/">Browse our stair tread services</a> or <a href="/contact/">request a free in-home consultation</a>. We'll measure your specific staircase, recommend the right material for your home, and provide an itemized written quote.</p>"""
 
 def get_article_html(slug):
     if slug == "vinyl-plank-flooring-cost-bradenton-2026":
@@ -605,6 +1310,14 @@ def get_article_html(slug):
         return article_2_florida_humidity()
     if slug == "hardwood-vs-vinyl-plank-lakewood-ranch":
         return article_3_hardwood_vs_vinyl_lakewood()
+    if slug == "flooring-vacation-rental-florida":
+        return article_4_str_florida()
+    if slug == "tile-installation-cost-sarasota":
+        return article_5_tile_sarasota_cost()
+    if slug == "hardwood-floor-refinishing-tampa-bay":
+        return article_6_hardwood_refinishing()
+    if slug == "stair-tread-replacement-guide":
+        return article_7_stair_treads()
     return ""
 
 def build_article(article):
