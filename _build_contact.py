@@ -176,94 +176,63 @@ content = f"""{page_head(TITLE, DESC, PATH)}
 {menu_script()}
 
 <script>
-/* Robust quote-form handler — guarantees visible feedback on every click */
+/* Quote form: simple, reliable, native submission with visual feedback.
+   Strategy: Let the browser do the form POST naturally — that's the most
+   reliable approach for cross-origin forms. We only add a "Sending..."
+   state for UX. Web3Forms processes the POST and redirects to /thanks/.
+
+   We do NOT use fetch() because:
+   - It's blocked by CORS unless the domain is whitelisted in Web3Forms
+   - Even our fallback (form.submit() programmatically) is sometimes
+     blocked by browsers when called from async functions (user-activation
+     requirements). Native submission via the user's click never has
+     this problem. */
 (function(){{
   var form = document.getElementById('quoteForm');
   var btn = document.getElementById('quoteSubmit');
   var statusBox = document.getElementById('formStatus');
   if (!form || !btn) return;
 
-  function showStatus(message, type) {{
-    statusBox.style.display = 'block';
-    statusBox.style.padding = '14px 18px';
-    if (type === 'error') {{
-      statusBox.style.background = '#FEE2E2';
-      statusBox.style.color = '#991B1B';
-      statusBox.style.border = '1px solid #FCA5A5';
-    }} else if (type === 'info') {{
+  form.addEventListener('submit', function() {{
+    /* Important: NOT calling e.preventDefault() — let the browser submit
+       natively. We just add visual feedback while the POST happens.
+       The browser will then navigate to Web3Forms which redirects to /thanks/ */
+    btn.disabled = true;
+    btn.innerHTML = '⏳ Sending your request...';
+    btn.style.opacity = '.78';
+    btn.style.cursor = 'not-allowed';
+    if (statusBox) {{
+      statusBox.style.display = 'block';
+      statusBox.style.padding = '14px 18px';
       statusBox.style.background = '#DBEAFE';
       statusBox.style.color = '#1E40AF';
       statusBox.style.border = '1px solid #93C5FD';
-    }} else {{
-      statusBox.style.background = '#D1FAE5';
-      statusBox.style.color = '#065F46';
-      statusBox.style.border = '1px solid #6EE7B7';
+      statusBox.style.borderRadius = '10px';
+      statusBox.innerHTML = '⏳ Submitting your quote — redirecting in a moment...';
     }}
-    statusBox.innerHTML = message;
-  }}
 
-  form.addEventListener('submit', async function(e) {{
-    e.preventDefault();
-    var originalText = btn.innerHTML;
-    btn.disabled = true;
-    btn.innerHTML = '⏳ Sending your request...';
-    btn.style.opacity = '.75';
-    btn.style.cursor = 'not-allowed';
-    showStatus('⏳ Submitting your quote request — this takes 2-5 seconds...', 'info');
-
-    try {{
-      var formData = new FormData(form);
-      var response = await fetch('https://api.web3forms.com/submit', {{
-        method: 'POST',
-        body: formData,
-        headers: {{ 'Accept': 'application/json' }}
-      }});
-
-      var result = await response.json();
-      console.log('[Quote Form] Response:', result);
-
-      if (result.success) {{
-        showStatus('✅ <strong>Thanks!</strong> Your quote request was sent successfully. Redirecting you...', 'success');
-        setTimeout(function(){{ window.location.href = '/thanks/'; }}, 1200);
-      }} else {{
-        throw new Error(result.message || 'Server returned an error');
-      }}
-    }} catch (err) {{
-      console.error('[Quote Form] fetch() failed:', err);
-      console.log('[Quote Form] Falling back to native form submission (no CORS)...');
-
-      // FALLBACK: native form submit. The browser does a normal POST
-      // (no preflight, no CORS check) and follows the redirect to /thanks/.
-      // This works in cases where fetch() is blocked by extensions, CORS,
-      // or domain restrictions on the Web3Forms account.
-      showStatus('⏳ Retrying with direct submission...', 'info');
-
-      // Remove our submit handler so the next submit() call uses native
-      form.removeEventListener('submit', arguments.callee);
-
-      // Do native submission — browser POSTs to action URL and follows redirect
-      try {{
-        HTMLFormElement.prototype.submit.call(form);
-        return; // Native submit takes over the page
-      }} catch (fallbackErr) {{
-        // If native fallback also fails, show the original error
-        console.error('[Quote Form] Native fallback also failed:', fallbackErr);
+    /* Failsafe: if browser hasn't navigated within 12 seconds (something
+       blocked the submission), re-enable the button and tell the user. */
+    setTimeout(function(){{
+      if (document.body.contains(btn) && btn.disabled) {{
         btn.disabled = false;
-        btn.innerHTML = originalText;
+        btn.innerHTML = 'Send My Request →';
         btn.style.opacity = '1';
         btn.style.cursor = 'pointer';
-        showStatus(
-          '❌ <strong>Both submission methods failed:</strong> ' + (err.message || 'Network error') +
-          '<br><br>This is usually caused by:<br>' +
-          '• Web3Forms requires this domain to be whitelisted at <a href="https://web3forms.com/dashboard" target="_blank" style="color:#991B1B;text-decoration:underline">web3forms.com/dashboard</a><br>' +
-          '• A browser extension (adblocker, privacy tool) is blocking the request<br><br>' +
-          'Please contact us directly:<br>' +
-          '📞 <a href="tel:+19414026861" style="color:#991B1B;text-decoration:underline;font-weight:600">(941) 402-6861</a> · ' +
-          '📧 <a href="mailto:trianglefloor@gmail.com?subject=Free%20Quote%20Request" style="color:#991B1B;text-decoration:underline;font-weight:600">trianglefloor@gmail.com</a>',
-          'error'
-        );
+        if (statusBox) {{
+          statusBox.style.background = '#FEE2E2';
+          statusBox.style.color = '#991B1B';
+          statusBox.style.border = '1px solid #FCA5A5';
+          statusBox.innerHTML =
+            '⚠️ <strong>Submission is taking longer than expected.</strong>' +
+            '<br><br>This is usually a network/extension issue. Please try:<br>' +
+            '• Disable any adblocker on this site and try again<br>' +
+            '• Or contact us directly:<br>' +
+            '📞 <a href="tel:+19414026861" style="color:#991B1B;text-decoration:underline;font-weight:600">(941) 402-6861</a>' +
+            ' · 📧 <a href="mailto:trianglefloor@gmail.com?subject=Free%20Quote%20Request" style="color:#991B1B;text-decoration:underline;font-weight:600">trianglefloor@gmail.com</a>';
+        }}
       }}
-    }}
+    }}, 12000);
   }});
 }})();
 </script>
