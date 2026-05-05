@@ -57,7 +57,7 @@ content = f"""{page_head(TITLE, DESC, PATH)}
   <div class="container">
     <span class="eyebrow">Get In Touch</span>
     <h1>Free Estimate <span>Within 24 Hours</span></h1>
-    <p>Call, text, WhatsApp, or fill out the form below — whichever works best. We respond same-day, 7 days a week.</p>
+    <p>Call, text, WhatsApp, or fill out the form below — whichever works best. We respond same-day Monday through Saturday.</p>
   </div>
 </section>
 
@@ -86,13 +86,13 @@ content = f"""{page_head(TITLE, DESC, PATH)}
 
         <h3 style="margin:1.8rem 0 .8rem;font-size:1.1rem">Business Hours</h3>
         <ul class="hours-list">
-          <li><strong>Monday – Friday</strong><span>7:00 AM – 8:00 PM</span></li>
-          <li><strong>Saturday</strong><span>7:00 AM – 8:00 PM</span></li>
-          <li><strong>Sunday</strong><span>7:00 AM – 8:00 PM</span></li>
+          <li><strong>Monday – Friday</strong><span>7:00 AM – 7:00 PM</span></li>
+          <li><strong>Saturday</strong><span>7:00 AM – 7:00 PM</span></li>
+          <li><strong>Sunday</strong><span>Closed</span></li>
         </ul>
       </div>
 
-      <div class="contact-card">
+      <div class="contact-card" id="quote">
         <h2>Request a Free Quote</h2>
         <p>Tell us about your project — we'll respond within 24 hours with a no-obligation written estimate.</p>
         <form action="https://api.web3forms.com/submit" method="POST">
