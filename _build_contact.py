@@ -95,7 +95,12 @@ content = f"""{page_head(TITLE, DESC, PATH)}
       <div class="contact-card">
         <h2>Request a Free Quote</h2>
         <p>Tell us about your project — we'll respond within 24 hours with a no-obligation written estimate.</p>
-        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="d811c86f-d17c-4768-baaa-e6f55aceeb57">
+          <input type="hidden" name="subject" value="New Quote Request — Triangle Flooring">
+          <input type="hidden" name="from_name" value="Triangle Flooring Website">
+          <input type="hidden" name="redirect" value="https://triangle-floor.com/thanks/">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
           <div class="form-row">
             <div class="form-group"><label for="name">Name *</label><input type="text" id="name" name="name" required autocomplete="name"></div>
             <div class="form-group"><label for="phone">Phone *</label><input type="tel" id="phone" name="phone" required autocomplete="tel"></div>
