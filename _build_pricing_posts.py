@@ -81,10 +81,10 @@ SVC_PRICING = {
         "card_image": "card-vinyl.webp",
         "unit": "sq ft",
         "tiers": [
-            ("Builder-Grade LVP (12-mil wear)",     1.80, 3.20, 1.80, 2.50),
-            ("Mid-Range SPC (20-mil wear)",          3.20, 5.00, 2.00, 3.00),
-            ("Premium SPC (22-30 mil wear)",         5.00, 7.50, 2.20, 3.20),
-            ("Luxury Wide-Plank LVP/SPC",            7.50, 11.00, 2.50, 3.50),
+            ("Builder-Grade LVP (12-mil wear)",     0.30, 1.20, 1.80, 2.50),
+            ("Mid-Range SPC (20-mil wear)",          1.20, 3.00, 2.00, 3.00),
+            ("Premium SPC (22-30 mil wear)",         3.00, 5.50, 2.20, 3.20),
+            ("Luxury Wide-Plank LVP/SPC",            5.50, 9.00, 2.50, 3.50),
         ],
         "premium_factor": "premium SPC with 22-mil+ wear layer",
         "cost_factors": [
@@ -125,10 +125,10 @@ SVC_PRICING = {
         "card_image": "card-tile.webp",
         "unit": "sq ft",
         "tiers": [
-            ("Standard Ceramic Tile",                 1.50,  4.00, 5.00,  8.00),
-            ("Standard Porcelain Tile (12×24)",       2.50,  6.00, 5.50,  9.00),
-            ("Large-Format Porcelain (24×48+)",       4.00, 10.00, 8.00, 12.00),
-            ("Natural Stone (marble, travertine)",    5.00, 15.00, 8.00, 12.00),
+            ("Standard Ceramic Tile",                 0.50,  3.00, 5.00,  8.00),
+            ("Standard Porcelain Tile (12×24)",       1.50,  5.00, 5.50,  9.00),
+            ("Large-Format Porcelain (24×48+)",       3.00,  9.00, 8.00, 12.00),
+            ("Natural Stone (marble, travertine)",    4.00, 14.00, 8.00, 12.00),
         ],
         "premium_factor": "large-format porcelain (24×48 or larger)",
         "cost_factors": [
