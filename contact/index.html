@@ -528,18 +528,40 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:3.5rem 0 0;font-si
         throw new Error(result.message || 'Server returned an error');
       }
     } catch (err) {
-      console.error('[Quote Form] Error:', err);
-      btn.disabled = false;
-      btn.innerHTML = originalText;
-      btn.style.opacity = '1';
-      btn.style.cursor = 'pointer';
-      showStatus(
-        '❌ <strong>Something went wrong:</strong> ' + (err.message || 'Network error') +
-        '<br><br>Please try again, or contact us directly:<br>' +
-        '📞 <a href="tel:+19414026861" style="color:#991B1B;text-decoration:underline;font-weight:600">(941) 402-6861</a> · ' +
-        '📧 <a href="mailto:trianglefloor@gmail.com?subject=Free%20Quote%20Request" style="color:#991B1B;text-decoration:underline;font-weight:600">trianglefloor@gmail.com</a>',
-        'error'
-      );
+      console.error('[Quote Form] fetch() failed:', err);
+      console.log('[Quote Form] Falling back to native form submission (no CORS)...');
+
+      // FALLBACK: native form submit. The browser does a normal POST
+      // (no preflight, no CORS check) and follows the redirect to /thanks/.
+      // This works in cases where fetch() is blocked by extensions, CORS,
+      // or domain restrictions on the Web3Forms account.
+      showStatus('⏳ Retrying with direct submission...', 'info');
+
+      // Remove our submit handler so the next submit() call uses native
+      form.removeEventListener('submit', arguments.callee);
+
+      // Do native submission — browser POSTs to action URL and follows redirect
+      try {
+        HTMLFormElement.prototype.submit.call(form);
+        return; // Native submit takes over the page
+      } catch (fallbackErr) {
+        // If native fallback also fails, show the original error
+        console.error('[Quote Form] Native fallback also failed:', fallbackErr);
+        btn.disabled = false;
+        btn.innerHTML = originalText;
+        btn.style.opacity = '1';
+        btn.style.cursor = 'pointer';
+        showStatus(
+          '❌ <strong>Both submission methods failed:</strong> ' + (err.message || 'Network error') +
+          '<br><br>This is usually caused by:<br>' +
+          '• Web3Forms requires this domain to be whitelisted at <a href="https://web3forms.com/dashboard" target="_blank" style="color:#991B1B;text-decoration:underline">web3forms.com/dashboard</a><br>' +
+          '• A browser extension (adblocker, privacy tool) is blocking the request<br><br>' +
+          'Please contact us directly:<br>' +
+          '📞 <a href="tel:+19414026861" style="color:#991B1B;text-decoration:underline;font-weight:600">(941) 402-6861</a> · ' +
+          '📧 <a href="mailto:trianglefloor@gmail.com?subject=Free%20Quote%20Request" style="color:#991B1B;text-decoration:underline;font-weight:600">trianglefloor@gmail.com</a>',
+          'error'
+        );
+      }
     }
   });
 })();
