@@ -1419,14 +1419,15 @@ def build_article(article):
 
 def build_blog_index():
     PATH = "/blog/"
-    TITLE = "Flooring Blog | Tampa Bay Installation Guides | Triangle Flooring"
-    DESC = "Florida flooring guides from a local installer. Pricing, comparisons, and how-tos for hardwood, vinyl plank, tile, and more in Bradenton, Sarasota, and Tampa Bay."
+    TITLE = "Flooring Blog | Tampa Bay Pricing & Guides | Triangle Flooring"
+    DESC = "Florida flooring guides + 2026 pricing for every service in every Tampa Bay city. Hardwood, vinyl plank, tile, laminate, stair treads, repair. From a local installer."
     
     if len(TITLE) > 65: TITLE = "Flooring Blog | Triangle Flooring Tampa Bay"
 
     bc_items = [("Home","/"),("Blog",None)]
     bc_schema = render_breadcrumb_schema(bc_items)
 
+    # Featured guides (the 7 main blog articles)
     cards_html = ""
     item_list = []
     for i, a in enumerate(ARTICLES, 1):
@@ -1441,6 +1442,50 @@ def build_blog_index():
         </a>"""
         item_list.append({"@type":"ListItem","position":i,"url":f"https://{DOMAIN}/blog/{a['slug']}/","name":a['title']})
 
+    # Pricing matrix — 6 services × 8 cities (skipping 2 with custom URLs)
+    pricing_services = [
+        ("hardwood-flooring", "Hardwood Flooring", "card-hardwood.webp"),
+        ("vinyl-plank-flooring", "Vinyl Plank (LVP/SPC)", "card-vinyl.webp"),
+        ("tile-installation", "Tile Installation", "card-tile.webp"),
+        ("laminate-flooring", "Laminate Flooring", "card-laminate.webp"),
+        ("stair-treads", "Stair Treads", "card-stairs.webp"),
+        ("floor-repair", "Floor Repair", "card-repair.webp"),
+    ]
+    pricing_cities = [
+        ("bradenton", "Bradenton"),
+        ("sarasota", "Sarasota"),
+        ("lakewood-ranch", "Lakewood Ranch"),
+        ("palmetto", "Palmetto"),
+        ("parrish", "Parrish"),
+        ("venice", "Venice"),
+        ("tampa", "Tampa"),
+        ("st-petersburg", "St. Petersburg"),
+    ]
+    
+    pricing_sections_html = ""
+    for svc_slug, svc_name, svc_img in pricing_services:
+        city_links = []
+        for city_slug, city_name in pricing_cities:
+            # Determine actual URL (custom for the 2 existing, generated for others)
+            if svc_slug == "vinyl-plank-flooring" and city_slug == "bradenton":
+                url = "/blog/vinyl-plank-flooring-cost-bradenton-2026/"
+            elif svc_slug == "tile-installation" and city_slug == "sarasota":
+                url = "/blog/tile-installation-cost-sarasota/"
+            else:
+                url = f"/blog/{svc_slug}-cost-{city_slug}/"
+            city_links.append(f'<a href="{url}" class="pricing-city-pill">{city_name}</a>')
+        
+        pricing_sections_html += f"""<div class="pricing-section">
+          <div class="pricing-svc-head">
+            <img src="/images/{svc_img}" alt="{svc_name}" width="100" height="62">
+            <div>
+              <h3>{svc_name} — 2026 Pricing by City</h3>
+              <p>Detailed cost breakdowns, real project examples, and city-specific labor rates.</p>
+            </div>
+          </div>
+          <div class="pricing-cities">{"".join(city_links)}</div>
+        </div>"""
+
     blog_schema = {
         "@context":"https://schema.org",
         "@type":"Blog",
@@ -1454,20 +1499,52 @@ def build_blog_index():
     itemlist_schema = {"@context":"https://schema.org","@type":"ItemList","itemListElement":item_list}
 
     content = f"""{page_head(TITLE, DESC, PATH)}
-<style>{BLOG_CSS}</style>
+<style>{BLOG_CSS}
+.pricing-section{{background:#fff;border:1px solid var(--gray-border);border-radius:18px;padding:1.6rem 1.8rem;margin-bottom:1.4rem;box-shadow:var(--shadow-sm);transition:all var(--transition)}}
+.pricing-section:hover{{box-shadow:var(--shadow);border-color:var(--cerulean)}}
+.pricing-svc-head{{display:flex;align-items:center;gap:1.2rem;margin-bottom:1.2rem;padding-bottom:1.2rem;border-bottom:1px solid var(--gray-border)}}
+.pricing-svc-head img{{width:100px;height:62px;object-fit:cover;border-radius:10px;flex-shrink:0}}
+.pricing-svc-head h3{{margin:0 0 .25rem;color:var(--navy);font-size:1.18rem}}
+.pricing-svc-head p{{margin:0;font-size:.9rem;color:var(--gray)}}
+.pricing-cities{{display:flex;flex-wrap:wrap;gap:.6rem}}
+.pricing-city-pill{{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;background:var(--gray-light);border-radius:50px;font-size:.88rem;color:var(--navy);font-family:var(--font-head);font-weight:500;text-decoration:none;transition:all .2s ease;border:1px solid transparent}}
+.pricing-city-pill::before{{content:"📍";font-size:.85rem}}
+.pricing-city-pill:hover{{background:var(--cerulean);color:#fff;transform:translateY(-2px);border-color:var(--cerulean)}}
+@media(max-width:560px){{
+  .pricing-svc-head{{flex-direction:column;text-align:center;gap:.8rem}}
+}}
+</style>
 {header()}
 {breadcrumbs(bc_items)}
 
 <section class="page-hero">
   <div class="container">
     <span class="eyebrow">Resources</span>
-    <h1>Florida Flooring <span>Guides &amp; Insights</span></h1>
-    <p>Pricing, comparisons, and installation guides — written by the contractor who actually does the work.</p>
+    <h1>Florida Flooring <span>Guides &amp; 2026 Pricing</span></h1>
+    <p>53 articles · Pricing breakdowns for every service in every Tampa Bay city · Buyer guides · How-tos · From a contractor who actually does the work.</p>
   </div>
 </section>
 
-<section style="background:var(--gray-light)">
+<section style="background:var(--gray-light);padding:3rem 0">
   <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">2026 Pricing Guides</span>
+      <h2>Cost by Service &amp; City</h2>
+      <p>Real 2026 pricing for every service in every market we cover — material, labor, hidden costs, and 3 actual project examples per city.</p>
+    </div>
+    <div style="max-width:920px;margin:0 auto">
+      {pricing_sections_html}
+    </div>
+  </div>
+</section>
+
+<section style="background:#fff;padding:3rem 0">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Featured Guides</span>
+      <h2>Buyer Guides &amp; How-Tos</h2>
+      <p>Comparisons, room-by-room recommendations, and step-by-step process guides for Florida flooring.</p>
+    </div>
     <div class="blog-list">{cards_html}</div>
   </div>
 </section>
