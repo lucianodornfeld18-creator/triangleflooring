@@ -124,7 +124,6 @@ content = f"""{page_head(TITLE, DESC, PATH)}
           <div class="form-group"><label for="sqft">Approx. Square Footage (optional)</label><input type="text" id="sqft" name="sqft" placeholder="e.g. 1,200 sqft"></div>
           <div class="form-group"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Tell us about your project — rooms, timeline, any specific products in mind..."></textarea></div>
           <button type="submit" id="quoteSubmit" class="btn btn-primary" style="width:100%;font-size:1rem">Send My Request →</button>
-          <div id="formStatus" style="margin-top:1rem;padding:0;display:none;border-radius:10px;font-size:.92rem;line-height:1.5"></div>
           <p style="font-size:.78rem;color:var(--gray);text-align:center;margin-top:.85rem">By submitting, you agree to be contacted about your project. We never spam.</p>
         </form>
         <p style="font-size:.85rem;color:var(--gray);text-align:center;margin-top:1.4rem;padding-top:1.4rem;border-top:1px dashed var(--gray-border)">Form not working? Email us directly at <a href="mailto:trianglefloor@gmail.com?subject=Free%20Flooring%20Quote%20Request" style="color:var(--cerulean);font-weight:600">trianglefloor@gmail.com</a> or call <a href="tel:+19414026861" style="color:var(--cerulean);font-weight:600">(941) 402-6861</a>.</p>
@@ -176,63 +175,16 @@ content = f"""{page_head(TITLE, DESC, PATH)}
 {menu_script()}
 
 <script>
-/* Quote form: simple, reliable, native submission with visual feedback.
-   Strategy: Let the browser do the form POST naturally — that's the most
-   reliable approach for cross-origin forms. We only add a "Sending..."
-   state for UX. Web3Forms processes the POST and redirects to /thanks/.
-
-   We do NOT use fetch() because:
-   - It's blocked by CORS unless the domain is whitelisted in Web3Forms
-   - Even our fallback (form.submit() programmatically) is sometimes
-     blocked by browsers when called from async functions (user-activation
-     requirements). Native submission via the user's click never has
-     this problem. */
+/* Minimal form enhancement: just shows "Sending..." while browser submits.
+   Form is pure HTML — submits natively to Web3Forms which redirects to /thanks/ */
 (function(){{
   var form = document.getElementById('quoteForm');
   var btn = document.getElementById('quoteSubmit');
-  var statusBox = document.getElementById('formStatus');
   if (!form || !btn) return;
-
   form.addEventListener('submit', function() {{
-    /* Important: NOT calling e.preventDefault() — let the browser submit
-       natively. We just add visual feedback while the POST happens.
-       The browser will then navigate to Web3Forms which redirects to /thanks/ */
     btn.disabled = true;
-    btn.innerHTML = '⏳ Sending your request...';
+    btn.innerHTML = '⏳ Sending...';
     btn.style.opacity = '.78';
-    btn.style.cursor = 'not-allowed';
-    if (statusBox) {{
-      statusBox.style.display = 'block';
-      statusBox.style.padding = '14px 18px';
-      statusBox.style.background = '#DBEAFE';
-      statusBox.style.color = '#1E40AF';
-      statusBox.style.border = '1px solid #93C5FD';
-      statusBox.style.borderRadius = '10px';
-      statusBox.innerHTML = '⏳ Submitting your quote — redirecting in a moment...';
-    }}
-
-    /* Failsafe: if browser hasn't navigated within 12 seconds (something
-       blocked the submission), re-enable the button and tell the user. */
-    setTimeout(function(){{
-      if (document.body.contains(btn) && btn.disabled) {{
-        btn.disabled = false;
-        btn.innerHTML = 'Send My Request →';
-        btn.style.opacity = '1';
-        btn.style.cursor = 'pointer';
-        if (statusBox) {{
-          statusBox.style.background = '#FEE2E2';
-          statusBox.style.color = '#991B1B';
-          statusBox.style.border = '1px solid #FCA5A5';
-          statusBox.innerHTML =
-            '⚠️ <strong>Submission is taking longer than expected.</strong>' +
-            '<br><br>This is usually a network/extension issue. Please try:<br>' +
-            '• Disable any adblocker on this site and try again<br>' +
-            '• Or contact us directly:<br>' +
-            '📞 <a href="tel:+19414026861" style="color:#991B1B;text-decoration:underline;font-weight:600">(941) 402-6861</a>' +
-            ' · 📧 <a href="mailto:trianglefloor@gmail.com?subject=Free%20Quote%20Request" style="color:#991B1B;text-decoration:underline;font-weight:600">trianglefloor@gmail.com</a>';
-        }}
-      }}
-    }}, 12000);
   }});
 }})();
 </script>
