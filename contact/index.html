@@ -329,7 +329,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:3.5rem 0 0;font-si
       <div class="contact-card" id="quote">
         <h2>Request a Free Quote</h2>
         <p>Tell us about your project — we'll respond within 24 hours with a no-obligation written estimate.</p>
-        <form action="https://api.web3forms.com/submit" method="POST">
+        <form id="quoteForm" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="d811c86f-d17c-4768-baaa-e6f55aceeb57">
           <input type="hidden" name="subject" value="New Quote Request — Triangle Flooring">
           <input type="hidden" name="from_name" value="Triangle Flooring Website">
@@ -357,7 +357,8 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:3.5rem 0 0;font-si
           </div>
           <div class="form-group"><label for="sqft">Approx. Square Footage (optional)</label><input type="text" id="sqft" name="sqft" placeholder="e.g. 1,200 sqft"></div>
           <div class="form-group"><label for="message">Project Details</label><textarea id="message" name="message" placeholder="Tell us about your project — rooms, timeline, any specific products in mind..."></textarea></div>
-          <button type="submit" class="btn btn-primary" style="width:100%;font-size:1rem">Send My Request →</button>
+          <button type="submit" id="quoteSubmit" class="btn btn-primary" style="width:100%;font-size:1rem">Send My Request →</button>
+          <div id="formStatus" style="margin-top:1rem;padding:0;display:none;border-radius:10px;font-size:.92rem;line-height:1.5"></div>
           <p style="font-size:.78rem;color:var(--gray);text-align:center;margin-top:.85rem">By submitting, you agree to be contacted about your project. We never spam.</p>
         </form>
         <p style="font-size:.85rem;color:var(--gray);text-align:center;margin-top:1.4rem;padding-top:1.4rem;border-top:1px dashed var(--gray-border)">Form not working? Email us directly at <a href="mailto:trianglefloor@gmail.com?subject=Free%20Flooring%20Quote%20Request" style="color:var(--cerulean);font-weight:600">trianglefloor@gmail.com</a> or call <a href="tel:+19414026861" style="color:var(--cerulean);font-weight:600">(941) 402-6861</a>.</p>
@@ -471,6 +472,77 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:3.5rem 0 0;font-si
 
 <script>
 (function(){var t=document.getElementById('menuToggle'),m=document.getElementById('navMenu');if(!t||!m)return;t.addEventListener('click',function(){var o=m.classList.toggle('open');t.setAttribute('aria-expanded',o);if(!o)m.querySelectorAll('li.expanded').forEach(function(l){l.classList.remove('expanded')})});m.querySelectorAll('a[data-toggle]').forEach(function(a){a.addEventListener('click',function(e){if(window.innerWidth>960)return;e.preventDefault();var l=a.parentElement,w=l.classList.contains('expanded');m.querySelectorAll('li.expanded').forEach(function(x){x.classList.remove('expanded')});if(!w)l.classList.add('expanded')})});m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){if(a.hasAttribute('data-toggle')&&window.innerWidth<=960)return;m.classList.remove('open');t.setAttribute('aria-expanded','false');m.querySelectorAll('li.expanded').forEach(function(l){l.classList.remove('expanded')})})});window.addEventListener('resize',function(){if(window.innerWidth>960){m.classList.remove('open');t.setAttribute('aria-expanded','false');m.querySelectorAll('li.expanded').forEach(function(l){l.classList.remove('expanded')})}})})();
+</script>
+
+<script>
+/* Robust quote-form handler — guarantees visible feedback on every click */
+(function(){
+  var form = document.getElementById('quoteForm');
+  var btn = document.getElementById('quoteSubmit');
+  var statusBox = document.getElementById('formStatus');
+  if (!form || !btn) return;
+
+  function showStatus(message, type) {
+    statusBox.style.display = 'block';
+    statusBox.style.padding = '14px 18px';
+    if (type === 'error') {
+      statusBox.style.background = '#FEE2E2';
+      statusBox.style.color = '#991B1B';
+      statusBox.style.border = '1px solid #FCA5A5';
+    } else if (type === 'info') {
+      statusBox.style.background = '#DBEAFE';
+      statusBox.style.color = '#1E40AF';
+      statusBox.style.border = '1px solid #93C5FD';
+    } else {
+      statusBox.style.background = '#D1FAE5';
+      statusBox.style.color = '#065F46';
+      statusBox.style.border = '1px solid #6EE7B7';
+    }
+    statusBox.innerHTML = message;
+  }
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    var originalText = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '⏳ Sending your request...';
+    btn.style.opacity = '.75';
+    btn.style.cursor = 'not-allowed';
+    showStatus('⏳ Submitting your quote request — this takes 2-5 seconds...', 'info');
+
+    try {
+      var formData = new FormData(form);
+      var response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+        headers: { 'Accept': 'application/json' }
+      });
+
+      var result = await response.json();
+      console.log('[Quote Form] Response:', result);
+
+      if (result.success) {
+        showStatus('✅ <strong>Thanks!</strong> Your quote request was sent successfully. Redirecting you...', 'success');
+        setTimeout(function(){ window.location.href = '/thanks/'; }, 1200);
+      } else {
+        throw new Error(result.message || 'Server returned an error');
+      }
+    } catch (err) {
+      console.error('[Quote Form] Error:', err);
+      btn.disabled = false;
+      btn.innerHTML = originalText;
+      btn.style.opacity = '1';
+      btn.style.cursor = 'pointer';
+      showStatus(
+        '❌ <strong>Something went wrong:</strong> ' + (err.message || 'Network error') +
+        '<br><br>Please try again, or contact us directly:<br>' +
+        '📞 <a href="tel:+19414026861" style="color:#991B1B;text-decoration:underline;font-weight:600">(941) 402-6861</a> · ' +
+        '📧 <a href="mailto:trianglefloor@gmail.com?subject=Free%20Quote%20Request" style="color:#991B1B;text-decoration:underline;font-weight:600">trianglefloor@gmail.com</a>',
+        'error'
+      );
+    }
+  });
+})();
 </script>
 </body>
 </html>
