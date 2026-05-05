@@ -235,8 +235,8 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:3.5rem 0 0;font-si
 .hours-list li:last-child{border-bottom:none}
 .hours-list strong{font-family:var(--font-head);color:var(--text);font-weight:600}
 .hours-list span{color:var(--gray)}
-.map-wrap{margin-top:2rem;border-radius:18px;overflow:hidden;box-shadow:var(--shadow);height:380px;border:1px solid var(--gray-border)}
-.map-wrap iframe{width:100%;height:100%;border:0;display:block}
+.service-area-showcase a[href^="/"]:hover{background:rgba(255,255,255,.28) !important;transform:translateY(-2px);border-color:rgba(255,255,255,.35) !important}
+.service-area-showcase a[href^="tel"]:hover,.service-area-showcase a[href*="wa.me"]:hover{transform:translateY(-2px);filter:brightness(1.08)}
 @media(max-width:880px){.contact-grid{grid-template-columns:1fr;gap:2rem}.form-row{grid-template-columns:1fr}}
 </style>
 <header class="site-header">
@@ -364,8 +364,36 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:3.5rem 0 0;font-si
       </div>
     </div>
 
-    <div class="map-wrap" style="margin-top:3rem;max-width:1100px;margin-left:auto;margin-right:auto">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=8737+Royal+Acacia+Ave,+Palmetto,+FL+34221&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Triangle Flooring location map" allowfullscreen></iframe>
+    <div class="service-area-showcase" style="margin-top:3rem;max-width:1100px;margin-left:auto;margin-right:auto;background:linear-gradient(135deg,#0F3A6E 0%,#1A4F8C 50%,#2E8DD9 100%);color:#fff;border-radius:18px;padding:2.6rem 2rem;text-align:center;box-shadow:var(--shadow-lg);position:relative;overflow:hidden">
+      <div style="position:absolute;top:-50px;right:-50px;width:300px;height:300px;background:rgba(255,255,255,.06);border-radius:50%"></div>
+      <div style="position:absolute;bottom:-80px;left:-80px;width:240px;height:240px;background:rgba(46,141,217,.15);border-radius:50%"></div>
+
+      <div style="position:relative;z-index:1">
+        <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.18);padding:8px 18px;border-radius:50px;font-size:.78rem;font-family:var(--font-head);font-weight:600;letter-spacing:.1em;text-transform:uppercase;margin-bottom:1.2rem">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8 2 5 5 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-4-3-7-7-7zm0 9.5a2.5 2.5 0 110-5 2.5 2.5 0 010 5z"/></svg>
+          We Come To You
+        </div>
+        <h2 style="color:#fff;font-size:clamp(1.5rem,3vw,2rem);margin-bottom:.6rem;font-family:var(--font-head)">Free In-Home Flooring Estimates Across Tampa Bay</h2>
+        <p style="color:rgba(255,255,255,.92);font-size:1rem;max-width:640px;margin:0 auto 1.8rem;line-height:1.6">
+          Triangle Flooring is a mobile flooring contractor — we come to your home for a free measurement and provide an itemized written quote within 24 hours. No showroom visits required.
+        </p>
+
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:.7rem;max-width:880px;margin:0 auto 2rem">
+          <a href="/bradenton/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 Bradenton</a>
+          <a href="/sarasota/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 Sarasota</a>
+          <a href="/lakewood-ranch/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 Lakewood Ranch</a>
+          <a href="/palmetto/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 Palmetto</a>
+          <a href="/parrish/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 Parrish</a>
+          <a href="/venice/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 Venice</a>
+          <a href="/tampa/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 Tampa</a>
+          <a href="/st-petersburg/" style="background:rgba(255,255,255,.13);color:#fff;padding:13px 12px;border-radius:12px;font-family:var(--font-head);font-weight:600;font-size:.92rem;text-decoration:none;transition:all .25s ease;border:1px solid rgba(255,255,255,.15)">📍 St. Petersburg</a>
+        </div>
+
+        <div style="display:flex;gap:.9rem;justify-content:center;flex-wrap:wrap;padding-top:1.4rem;border-top:1px solid rgba(255,255,255,.18)">
+          <a href="tel:+19414026861" style="background:#E07A2B;color:#fff;padding:13px 28px;border-radius:50px;font-family:var(--font-head);font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px;box-shadow:0 6px 20px rgba(224,122,43,.4)">📞 (941) 402-6861</a>
+          <a href="https://wa.me/19414026861?text=Hi%20Triangle%20Flooring%2C%20I%27d%20like%20a%20free%20flooring%20estimate." target="_blank" rel="noopener" style="background:#25D366;color:#fff;padding:13px 28px;border-radius:50px;font-family:var(--font-head);font-weight:700;text-decoration:none;display:inline-flex;align-items:center;gap:8px">💬 WhatsApp</a>
+        </div>
+      </div>
     </div>
 
   </div>
