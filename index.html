@@ -901,7 +901,7 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
         </div>
         <div class="footer-contact-item">
           <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          <span>Mon–Sun · 7AM – 8PM</span>
+          <span>Mon–Sat · 7 AM – 7 PM</span>
         </div>
       </div>
     </div>
@@ -1149,6 +1149,43 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
       menu.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
       menu.querySelectorAll('li.expanded').forEach(function(l){ l.classList.remove('expanded'); });
+    }
+  });
+})();
+
+/* Anchor scroll handler — guarantees correct positioning even when arriving from another page with #hash in URL */
+(function(){
+  function scrollToAnchor(hash){
+    if (!hash || hash.length < 2) return;
+    var el = document.getElementById(hash.slice(1));
+    if (!el) return;
+    var rect = el.getBoundingClientRect();
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    var headerOffset = window.innerWidth <= 960 ? 70 : 90;
+    window.scrollTo({ top: rect.top + scrollTop - headerOffset, behavior: 'smooth' });
+  }
+  if (window.location.hash) {
+    setTimeout(function(){ scrollToAnchor(window.location.hash); }, 80);
+    window.addEventListener('load', function(){
+      setTimeout(function(){ scrollToAnchor(window.location.hash); }, 150);
+    });
+  }
+  document.querySelectorAll('a[href*="#"]').forEach(function(link){
+    var href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    var hashIndex = href.indexOf('#');
+    if (hashIndex < 0) return;
+    var path = href.substring(0, hashIndex);
+    var hash = href.substring(hashIndex);
+    if (path === '' || path === window.location.pathname) {
+      link.addEventListener('click', function(e){
+        var el = document.getElementById(hash.slice(1));
+        if (el) {
+          e.preventDefault();
+          history.pushState(null, '', hash);
+          scrollToAnchor(hash);
+        }
+      });
     }
   });
 })();
