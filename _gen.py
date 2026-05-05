@@ -39,22 +39,22 @@ p{margin:0 0 1rem}
 .btn-ghost:hover{background:#fff;color:var(--navy);border-color:#fff}
 .site-header{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--gray-border)}
 .nav-bar{display:flex;align-items:center;justify-content:space-between;padding:14px 20px;max-width:var(--container);margin:0 auto;gap:1rem}
-.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;flex-shrink:0}
 .brand img{height:46px;width:auto}
 .brand-text{display:flex;flex-direction:column;line-height:1}
-.brand-name{font-family:var(--font-head);font-weight:800;font-size:1.18rem;color:var(--navy);letter-spacing:-.02em}
-.brand-tag{font-size:.7rem;letter-spacing:.16em;color:var(--cerulean);text-transform:uppercase;margin-top:2px}
-.nav-menu{display:flex;align-items:center;gap:1.4rem;list-style:none}
+.brand-name{font-family:var(--font-head);font-weight:800;font-size:1.18rem;color:var(--navy);letter-spacing:-.02em;white-space:nowrap}
+.brand-tag{font-size:.7rem;letter-spacing:.16em;color:var(--cerulean);text-transform:uppercase;margin-top:2px;white-space:nowrap}
+.nav-menu{display:flex;align-items:center;gap:1.25rem;list-style:none;flex-wrap:nowrap}
 .nav-menu li{position:relative}
-.nav-menu a{font-family:var(--font-head);font-weight:500;color:var(--text);font-size:.95rem;padding:8px 4px}
+.nav-menu a{font-family:var(--font-head);font-weight:500;color:var(--text);font-size:.94rem;padding:8px 4px;white-space:nowrap}
 .nav-menu a:hover{color:var(--navy)}
 .dropdown{position:absolute;top:calc(100% + 6px);left:50%;transform:translateX(-50%) translateY(-8px);background:#fff;min-width:240px;border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:.6rem 0;opacity:0;visibility:hidden;transition:all var(--transition);z-index:99;border:1px solid var(--gray-border)}
 .nav-menu li:hover .dropdown{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
-.dropdown a{display:block;padding:9px 18px;font-size:.92rem;font-weight:400;border-radius:0}
+.dropdown a{display:block;padding:9px 18px;font-size:.92rem;font-weight:400;border-radius:0;white-space:nowrap}
 .dropdown a:hover{background:var(--navy-light);color:var(--navy)}
-.nav-cta{display:flex;align-items:center;gap:.85rem}
-.nav-phone{display:flex;align-items:center;gap:6px;color:var(--navy);font-family:var(--font-head);font-weight:600;font-size:.95rem}
-.nav-phone svg{width:16px;height:16px}
+.nav-cta{display:flex;align-items:center;gap:.85rem;flex-shrink:0}
+.nav-phone{display:flex;align-items:center;gap:6px;color:var(--navy);font-family:var(--font-head);font-weight:600;font-size:.95rem;white-space:nowrap}
+.nav-phone svg{width:16px;height:16px;flex-shrink:0}
 .menu-toggle{display:none;background:none;border:none;cursor:pointer;padding:8px;color:var(--navy)}
 .menu-toggle svg{width:26px;height:26px}
 .breadcrumbs{background:var(--gray-light);padding:14px 0;font-size:.85rem;border-bottom:1px solid var(--gray-border)}
@@ -163,6 +163,13 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:3.5rem 0 0;font-si
 .whatsapp-float{position:fixed;bottom:22px;right:22px;z-index:9999;background:var(--whatsapp);color:#fff;padding:13px 20px;border-radius:50px;font-family:var(--font-head);font-weight:600;font-size:.92rem;display:inline-flex;align-items:center;gap:8px;box-shadow:0 6px 22px rgba(37,211,102,.45);text-decoration:none;transition:all var(--transition)}
 .whatsapp-float:hover{transform:translateY(-3px) scale(1.04);color:#fff}
 .whatsapp-float svg{width:20px;height:20px}
+@media(max-width:1200px){
+  .brand-tag{display:none}
+  .nav-menu{gap:1rem}
+  .nav-menu a{font-size:.9rem}
+  .nav-phone{font-size:.9rem}
+  .brand-name{font-size:1.08rem}
+}
 @media(max-width:960px){
   .footer-grid{grid-template-columns:1fr 1fr;gap:1.8rem}
   .nav-menu{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;background:#fff;padding:.5rem 0;box-shadow:var(--shadow-lg);align-items:stretch;border-top:1px solid var(--gray-border);max-height:calc(100vh - 80px);overflow-y:auto}
