@@ -942,8 +942,9 @@ def build_pricing_post(svc_slug, city_slug):
 .article-hero .eyebrow{{background:rgba(255,255,255,.14);color:#fff}}
 .article-hero h1{{color:#fff;margin-bottom:.85rem;max-width:880px;margin-left:auto;margin-right:auto}}
 .article-meta{{display:flex;justify-content:center;gap:1.2rem;flex-wrap:wrap;color:rgba(255,255,255,.85);font-size:.88rem;margin-top:1rem;font-family:var(--font-head);font-weight:500}}
-.article-feature-img{{max-width:1100px;margin:-2rem auto 0;padding:0 20px}}
-.article-feature-img img{{width:100%;border-radius:14px;box-shadow:var(--shadow-lg);aspect-ratio:8/5;object-fit:cover}}
+.article-feature-img{{max-width:850px;margin:-1.5rem auto 0;padding:0 20px}}
+.article-feature-img img{{width:100%;border-radius:14px;box-shadow:var(--shadow-lg);aspect-ratio:16/9;object-fit:cover;object-position:center 60%;max-height:430px}}
+@media(max-width:768px){{.article-feature-img img{{aspect-ratio:16/10;max-height:240px}}}}
 .article-body{{max-width:780px;margin:0 auto;padding:3rem 20px;font-size:1.05rem;line-height:1.8;color:var(--text)}}
 .article-body p{{margin-bottom:1.3rem}}
 .article-body h2{{font-size:1.7rem;margin:2.5rem 0 1rem;color:var(--navy);scroll-margin-top:80px}}
