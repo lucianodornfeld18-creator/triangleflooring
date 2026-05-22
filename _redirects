@@ -24,15 +24,11 @@
 /repair                     /floor-repair/                       301
 /floor-replacement          /floor-repair/                       301
 
-# City variation redirects
-/bradenton                  /hardwood-flooring/bradenton/        301
-/sarasota                   /hardwood-flooring/sarasota/         301
-/lakewood-ranch             /hardwood-flooring/lakewood-ranch/   301
-/palmetto                   /contact/                            301
-/parrish                    /contact/                            301
-/venice                     /contact/                            301
-/tampa                      /contact/                            301
-/st-petersburg              /contact/                            301
+# City variation redirects — REMOVED
+# As páginas /bradenton/, /sarasota/, /lakewood-ranch/, /palmetto/,
+# /parrish/, /venice/, /tampa/, /st-petersburg/ JÁ EXISTEM como hub pages
+# multi-serviço e estão no sitemap. O Cloudflare Pages serve elas
+# automaticamente quando o usuário acessa /tampa, /sarasota, etc.
 
 # Misc
 /quote                      /contact/                            301
