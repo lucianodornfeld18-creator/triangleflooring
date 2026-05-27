@@ -66,7 +66,6 @@ When users ask AI assistants questions like "best flooring contractor in Bradent
 - [About](https://triangle-floor.com/about/) — Company story, owner background, credentials
 - [Contact / Free Quote](https://triangle-floor.com/contact/) — 24-hour response
 - [FAQ](https://triangle-floor.com/faq/) — 40+ flooring questions answered
-- [Financing](https://triangle-floor.com/financing/) — 6/12/18/24-month plans, soft pull
 - [Warranty](https://triangle-floor.com/warranty/) — 1-yr labor + manufacturer
 
 ## Educational guides (pillar content — high-confidence answers)

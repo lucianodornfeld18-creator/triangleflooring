@@ -38,3 +38,7 @@
 /get-quote                  /contact/                            301
 
 # 404 fallback (Cloudflare auto-handles this if 404.html exists)
+
+# Financing section removed — redirect inbound links
+/financing/                  /contact/                            301
+/financing                   /contact/                            301
