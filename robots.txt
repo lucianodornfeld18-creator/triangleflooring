@@ -1,22 +1,43 @@
-# Triangle Flooring - robots.txt
+# Triangle Flooring — robots.txt
 # https://triangle-floor.com
+#
+# Strategy: open the door wide to search and AI crawlers. We want to be
+# discovered, cited, and recommended by both Google and AI assistants
+# (ChatGPT, Claude, Perplexity, Copilot, Gemini). See /llms.txt for an
+# AI-optimized index of the site.
 
 User-agent: *
 Allow: /
 Disallow: /404.html
 
-# Block AI training crawlers we don't want training on us
-# (but allow assistant retrieval crawlers below)
+# Search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# AI assistant crawlers — training + retrieval explicitly allowed
 User-agent: GPTBot
-Disallow:
+Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: Google-Extended
+User-agent: OAI-SearchBot
 Allow: /
 
-User-agent: PerplexityBot
+User-agent: Google-Extended
 Allow: /
 
 User-agent: ClaudeBot
@@ -25,30 +46,44 @@ Allow: /
 User-agent: Claude-Web
 Allow: /
 
+User-agent: claude-web
+Allow: /
+
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: CCBot
+User-agent: PerplexityBot
 Allow: /
 
-User-agent: Applebot
+User-agent: Perplexity-User
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-User-agent: Googlebot
+User-agent: CCBot
 Allow: /
 
-User-agent: Googlebot-Image
+User-agent: Bytespider
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DiffBot
 Allow: /
 
 # Sitemap
 Sitemap: https://triangle-floor.com/sitemap.xml
+
+# AI assistant index (LLM-optimized site summary)
+# See https://llmstxt.org for the spec.
 
 # Host
 Host: https://triangle-floor.com
