@@ -19,7 +19,6 @@
       "service-special (problema): hoje so 2 (emergency, water-damage) -> espaco p/ pillars de problema"
     ]
   },
-
   "backlog_new": [
     {
       "slug": "/blog/shower-waterproofing-kerdi-vs-redgard-florida/",
@@ -27,12 +26,15 @@
       "type": "blog-standalone",
       "intent": "informational-comparison",
       "funnel_to": "/tile-installation/",
-      "supports": ["/tile-installation/", "/floor-repair/water-damage/"],
+      "supports": [
+        "/tile-installation/",
+        "/floor-repair/water-damage/"
+      ],
       "service": "tile-installation",
       "city": null,
       "ticket": "alto",
       "canibal_check": "clear",
-      "status": "approved",
+      "status": "published",
       "note": "Post #2 ja aprovado no gate na sessao anterior. Proximo a gerar."
     },
     {
@@ -41,7 +43,11 @@
       "type": "blog-standalone",
       "intent": "informational-decision",
       "funnel_to": "/hardwood-refinishing/",
-      "supports": ["/hardwood-refinishing/", "/hardwood-flooring/", "/floor-repair/"],
+      "supports": [
+        "/hardwood-refinishing/",
+        "/hardwood-flooring/",
+        "/floor-repair/"
+      ],
       "service": "hardwood-refinishing",
       "city": null,
       "ticket": "alto",
@@ -55,7 +61,11 @@
       "type": "blog-standalone",
       "intent": "informational-howto",
       "funnel_to": "/floor-repair/water-damage/",
-      "supports": ["/floor-repair/", "/hardwood-flooring/", "/hardwood-refinishing/"],
+      "supports": [
+        "/floor-repair/",
+        "/hardwood-flooring/",
+        "/hardwood-refinishing/"
+      ],
       "service": "floor-repair",
       "city": null,
       "ticket": "medio",
@@ -68,7 +78,11 @@
       "type": "blog-standalone",
       "intent": "informational-comparison",
       "funnel_to": "/vinyl-plank-flooring/",
-      "supports": ["/vinyl-plank-flooring/", "/tile-installation/", "/guides/waterproof-flooring-florida/"],
+      "supports": [
+        "/vinyl-plank-flooring/",
+        "/tile-installation/",
+        "/guides/waterproof-flooring-florida/"
+      ],
       "service": null,
       "city": null,
       "ticket": "medio",
@@ -81,7 +95,10 @@
       "type": "blog-standalone",
       "intent": "informational-howto",
       "funnel_to": "/vinyl-plank-flooring/",
-      "supports": ["/vinyl-plank-flooring/", "/laminate-flooring/"],
+      "supports": [
+        "/vinyl-plank-flooring/",
+        "/laminate-flooring/"
+      ],
       "service": null,
       "city": null,
       "ticket": "medio",
@@ -94,7 +111,11 @@
       "type": "blog-standalone",
       "intent": "informational-decision",
       "funnel_to": "/floor-repair/",
-      "supports": ["/floor-repair/", "/hardwood-refinishing/", "/guides/pet-friendly-flooring-florida/"],
+      "supports": [
+        "/floor-repair/",
+        "/hardwood-refinishing/",
+        "/guides/pet-friendly-flooring-florida/"
+      ],
       "service": "floor-repair",
       "city": null,
       "ticket": "medio",
@@ -107,7 +128,11 @@
       "type": "blog-standalone",
       "intent": "informational-buyer",
       "funnel_to": "/vinyl-plank-flooring/",
-      "supports": ["/vinyl-plank-flooring/", "/tile-installation/", "/laminate-flooring/"],
+      "supports": [
+        "/vinyl-plank-flooring/",
+        "/tile-installation/",
+        "/laminate-flooring/"
+      ],
       "service": null,
       "city": null,
       "ticket": "medio",
@@ -120,7 +145,10 @@
       "type": "blog-standalone",
       "intent": "informational-howto",
       "funnel_to": "/tile-installation/",
-      "supports": ["/tile-installation/", "/floor-repair/"],
+      "supports": [
+        "/tile-installation/",
+        "/floor-repair/"
+      ],
       "service": "tile-installation",
       "city": null,
       "ticket": "baixo",
@@ -133,7 +161,11 @@
       "type": "blog-standalone",
       "intent": "informational-howto",
       "funnel_to": "/hardwood-flooring/",
-      "supports": ["/hardwood-flooring/", "/laminate-flooring/", "/vinyl-plank-flooring/"],
+      "supports": [
+        "/hardwood-flooring/",
+        "/laminate-flooring/",
+        "/vinyl-plank-flooring/"
+      ],
       "service": null,
       "city": null,
       "ticket": "baixo",
@@ -146,7 +178,9 @@
       "type": "blog-standalone",
       "intent": "informational-howto",
       "funnel_to": "/floor-repair/",
-      "supports": ["/floor-repair/"],
+      "supports": [
+        "/floor-repair/"
+      ],
       "service": "floor-repair",
       "city": null,
       "ticket": "baixo",
@@ -159,7 +193,9 @@
       "type": "blog-standalone",
       "intent": "informational-comparison",
       "funnel_to": "/tile-installation/",
-      "supports": ["/tile-installation/"],
+      "supports": [
+        "/tile-installation/"
+      ],
       "service": "tile-installation",
       "city": null,
       "ticket": "medio",
@@ -172,7 +208,12 @@
       "type": "blog-standalone",
       "intent": "informational-howto",
       "funnel_to": "/floor-repair/",
-      "supports": ["/hardwood-flooring/", "/tile-installation/", "/vinyl-plank-flooring/", "/laminate-flooring/"],
+      "supports": [
+        "/hardwood-flooring/",
+        "/tile-installation/",
+        "/vinyl-plank-flooring/",
+        "/laminate-flooring/"
+      ],
       "service": null,
       "city": null,
       "ticket": "baixo",
@@ -180,7 +221,6 @@
       "status": "queued"
     }
   ],
-
   "backlog_new_secondary": {
     "note": "Vertical refinishing comercial — entra depois que o post pilar 'refinish-vs-replace' estiver no ar. Tratar paginas de cidade como commercial-local e cost como intencao NOVA. Validar canibal contra hardwood-flooring antes.",
     "candidates": [
@@ -188,7 +228,6 @@
       "/blog/hardwood-floor-refinishing-cost-{cidade}/ x8 (blog-cost, intencao NOVA refinishing != install)"
     ]
   },
-
   "topic_ideas_pool": [
     "Engineered hardwood over concrete in Florida — yes/no",
     "Best hardwood species for Florida humidity",
@@ -203,17 +242,43 @@
     "Gaps/separation in plank floors (seasonal movement)",
     "Laminate vs LVP in Florida — which holds up"
   ],
-
   "refresh_queue": {
     "rule": "1 por semana. Pegar o post-de-custo com lastmod mais ANTIGO no sitemap.xml. Refresh = atualizar precos 2026, adicionar/expandir FAQ, checar speakable, reforcar interlinks p/ pilar comercial e cidade. NAO muda a URL. Atualiza lastmod no sitemap.",
     "scope": "os 48 blog-cost",
     "order": "por lastmod ascendente (consultar sitemap.xml em runtime)"
   },
-
   "schedule_preview": [
-    { "week": 1, "new": ["/blog/shower-waterproofing-kerdi-vs-redgard-florida/", "/blog/refinish-vs-replace-hardwood-floors-florida/"], "refresh": "oldest blog-cost" },
-    { "week": 2, "new": ["/blog/cupping-buckling-hardwood-florida-humidity/", "/blog/lvp-vs-porcelain-tile-florida/"], "refresh": "next oldest blog-cost" },
-    { "week": 3, "new": ["/blog/install-lvp-laminate-over-existing-tile/", "/blog/pet-urine-damage-hardwood-repair-or-replace/"], "refresh": "next oldest blog-cost" },
-    { "week": 4, "new": ["/blog/best-flooring-concrete-slab-florida/", "/blog/cracked-grout-repair-vs-regrout/"], "refresh": "next oldest blog-cost" }
+    {
+      "week": 1,
+      "new": [
+        "/blog/shower-waterproofing-kerdi-vs-redgard-florida/",
+        "/blog/refinish-vs-replace-hardwood-floors-florida/"
+      ],
+      "refresh": "oldest blog-cost"
+    },
+    {
+      "week": 2,
+      "new": [
+        "/blog/cupping-buckling-hardwood-florida-humidity/",
+        "/blog/lvp-vs-porcelain-tile-florida/"
+      ],
+      "refresh": "next oldest blog-cost"
+    },
+    {
+      "week": 3,
+      "new": [
+        "/blog/install-lvp-laminate-over-existing-tile/",
+        "/blog/pet-urine-damage-hardwood-repair-or-replace/"
+      ],
+      "refresh": "next oldest blog-cost"
+    },
+    {
+      "week": 4,
+      "new": [
+        "/blog/best-flooring-concrete-slab-florida/",
+        "/blog/cracked-grout-repair-vs-regrout/"
+      ],
+      "refresh": "next oldest blog-cost"
+    }
   ]
 }
