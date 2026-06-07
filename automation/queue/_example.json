@@ -1,0 +1,57 @@
+{
+  "slug": "example-flooring-topic-florida",
+  "title": "Example Flooring Topic in Florida (Short, <60 chars)",
+  "meta_desc": "A unique under-155-character meta description that answers the query and mentions Tampa Bay / Florida.",
+  "h1": "Example Flooring Topic in Florida (Full H1 With the Hook)",
+  "card_title": "Example Flooring Topic in Florida",
+  "card_blurb": "One-sentence blurb shown on the blog index card.",
+  "category": "Buyer Guides",
+  "og_image": "card-repair.webp",
+  "date": "2026-06-09",
+  "read_min": 9,
+  "breadcrumb_short": "Example Flooring Topic...",
+  "keyword_primary": "example flooring topic florida",
+  "answer_first": "<strong>Lead with the direct answer in 40-60 words.</strong> State the bottom line a homeowner needs, then the one nuance that changes it. This block is marked data-speakable and is what voice assistants and AI overviews read aloud.",
+  "author_knows_about": [
+    "Hardwood flooring installation",
+    "Tile installation",
+    "Floor repair",
+    "Florida humidity and slab construction"
+  ],
+  "toc": [
+    {"id": "section-one", "label": "First question heading"},
+    {"id": "section-two", "label": "Second question heading"},
+    {"id": "cost", "label": "2026 cost comparison"}
+  ],
+  "sections": [
+    {
+      "id": "section-one",
+      "h2": "First question-style H2?",
+      "html": "<p>Two to four short paragraphs of genuinely useful, specific Florida content. Use <strong>bold</strong> for the key takeaway.</p><ul><li>Concrete point one</li><li>Concrete point two</li></ul>"
+    },
+    {
+      "id": "section-two",
+      "h2": "Second question-style H2?",
+      "html": "<p>Answer-first paragraph, then detail. Interlink naturally to a real page like <a href=\"/floor-repair/\">floor repair</a>.</p>"
+    },
+    {
+      "id": "cost",
+      "h2": "What does it cost in 2026?",
+      "html": "<p>Frame the numbers, then the table.</p><table><thead><tr><th>Scenario</th><th>Approach</th><th>Typical 2026 cost</th></tr></thead><tbody><tr><td>Light case</td><td>Spot fix</td><td class=\"price\">$X - $Y</td></tr><tr><td>Heavy case</td><td>Full replace</td><td class=\"price\">$X - $Y / sq ft</td></tr></tbody></table>"
+    }
+  ],
+  "faqs": [
+    {"q": "First real homeowner question?", "a": "Direct 2-4 sentence answer."},
+    {"q": "Second question?", "a": "Answer."},
+    {"q": "Third question?", "a": "Answer."},
+    {"q": "Fourth question?", "a": "Answer."},
+    {"q": "Fifth question?", "a": "Answer."},
+    {"q": "Sixth question?", "a": "Answer."}
+  ],
+  "interlinks": ["/floor-repair/", "/hardwood-flooring/", "/guides/waterproof-flooring-florida/"],
+  "related_cards": [
+    {"href": "/blog/best-flooring-florida-humidity/", "img": "card-tile.webp", "cat": "Buyer Guides", "date": "2026-05-03", "title": "Best Flooring for Florida Humidity (2026 Comparison)", "blurb": "Which flooring survives Florida humidity and floods."},
+    {"href": "/hardwood-flooring/", "img": "card-hardwood.webp", "cat": "Service", "date": "2026-06-09", "title": "Hardwood Flooring Installation", "blurb": "Engineered & solid hardwood for Florida slab homes."},
+    {"href": "/floor-repair/", "img": "card-repair.webp", "cat": "Service", "date": "2026-06-09", "title": "Floor Repair & Replacement", "blurb": "Written repair-or-replace plans across Tampa Bay."}
+  ]
+}
