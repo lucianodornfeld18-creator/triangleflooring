@@ -211,7 +211,7 @@ def render(data):
                                   "postalCode": "34221", "addressCountry": "US"},
                       "geo": {"@type": "GeoCoordinates", "latitude": 27.5214, "longitude": -82.5723},
                       "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0",
-                                          "reviewCount": "13", "bestRating": "5"},
+                                          "reviewCount": "21", "bestRating": "5"},
                       "priceRange": "$$",
                       "areaServed": [{"@type": "City", "name": c} for c in CITIES],
                       "openingHoursSpecification": [{"@type": "OpeningHoursSpecification",

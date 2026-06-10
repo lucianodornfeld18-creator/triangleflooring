@@ -551,7 +551,7 @@ def build_service_city(svc_slug, city_slug):
     city = CITIES[city_slug]
     PATH = f"/{svc_slug}/{city_slug}/"
     title_short = svc["short"]
-    TITLE = f"{title_short} {city['name']} FL | Triangle Flooring 5★"
+    TITLE = f"{title_short} {city['name']} FL | Triangle Flooring"
     if len(TITLE) > 65: TITLE = f"{title_short} in {city['name']} FL | Triangle Flooring"
     DESC = f"{svc['h1_phrase']} in {city['name']}, FL. Hardwood-quality install in {len(city['neighborhoods'])}+ neighborhoods. 5★ rated · 1-yr warranty · Free estimate in 24h."
     if len(DESC) > 158: DESC = DESC[:155] + "..."
