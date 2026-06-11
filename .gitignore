@@ -46,3 +46,9 @@ Auditoria-Internal-Linking.docx
 Auditoria-SEO-triangle-floor.docx
 CITATION-PACK.md
 HANDOFF-BLOG-AUTOMATION.md
+
+# Local-only artifacts (covers para redes sociais + relatorios lighthouse)
+_social-covers/
+_lh-*.json
+_lh-final-screenshot.png
+_fonts-css2.txt
