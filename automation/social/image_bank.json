@@ -1,0 +1,20 @@
+[
+  {"file": "hardwood-herringbone-hallway.jpg", "service": "hardwood", "city": "Lakewood Ranch", "desc": "Custom herringbone hardwood meeting wide-plank in a luxury Lakewood Ranch waterfront home"},
+  {"file": "hardwood-herringbone-luxury.jpg", "service": "hardwood", "city": null, "desc": "Wide-plank European White Oak hardwood in an open-concept living area"},
+  {"file": "hardwood-venice-cherry.jpg", "service": "hardwood", "city": "Venice", "desc": "Solid cherry hardwood flooring installation in a Venice FL home"},
+  {"file": "vinyl-plank-bradenton-light-oak.jpg", "service": "vinyl", "city": "Bradenton", "desc": "Light oak luxury vinyl plank in a Bradenton FL home"},
+  {"file": "vinyl-tampa-gray.jpg", "service": "vinyl", "city": "Tampa", "desc": "Gray waterproof luxury vinyl plank in a Tampa FL condo"},
+  {"file": "vinyl-sarasota-gray-wash.jpg", "service": "vinyl", "city": "Sarasota", "desc": "Gray-wash luxury vinyl plank in a Sarasota FL home"},
+  {"file": "vinyl-palmetto-light.jpg", "service": "vinyl", "city": "Palmetto", "desc": "Light luxury vinyl plank installation in Palmetto FL"},
+  {"file": "vinyl-living-room.jpg", "service": "vinyl", "city": null, "desc": "Luxury vinyl plank living room installation"},
+  {"file": "vinyl-living-room-2.jpg", "service": "vinyl", "city": null, "desc": "Wide-plank LVP in a bright Florida living room"},
+  {"file": "vinyl-hotel-commercial.jpg", "service": "vinyl", "city": null, "desc": "Commercial-grade LVP installation in a Florida hotel"},
+  {"file": "tile-sarasota-marble.jpg", "service": "tile", "city": "Sarasota", "desc": "Marble-look porcelain tile flooring in Sarasota FL"},
+  {"file": "stairs-venice-white-oak.jpg", "service": "stairs", "city": "Venice", "desc": "White Oak stair treads custom installed in a Venice FL home"},
+  {"file": "stairs-white-oak-herringbone-landing.jpg", "service": "stairs", "city": "Sarasota", "desc": "White Oak stair treads with herringbone landing"},
+  {"file": "stairs-tampa-traditional.jpg", "service": "stairs", "city": "Tampa", "desc": "Traditional hardwood staircase remodel in Tampa FL"},
+  {"file": "stairs-modern-cable-railing.jpg", "service": "stairs", "city": null, "desc": "Modern stair treads with cable railing"},
+  {"file": "stairs-cable-modern-2.jpg", "service": "stairs", "city": null, "desc": "Floating-look stair treads with modern cable railing"},
+  {"file": "laminate-dark-walnut.jpg", "service": "laminate", "city": null, "desc": "Dark walnut laminate flooring installation"},
+  {"file": "hero-bg.jpg", "service": "vinyl", "city": null, "desc": "Wood-look plank flooring across an open Florida living space"}
+]
