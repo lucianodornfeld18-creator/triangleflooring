@@ -87,7 +87,7 @@
       "city": null,
       "ticket": "medio",
       "canibal_check": "clear",
-      "status": "queued"
+      "status": "published"
     },
     {
       "slug": "/blog/install-lvp-laminate-over-existing-tile/",
