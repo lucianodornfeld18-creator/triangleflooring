@@ -123,7 +123,7 @@ def preview_html(posts: list[dict]) -> str:
 body{{font-family:'Segoe UI',sans-serif;background:#F7F9FC;padding:24px;color:#1B2939}}
 h1{{color:#0F3A6E}}.grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px;margin-top:18px}}
 .card{{background:#fff;border-radius:12px;overflow:hidden;border:1px solid #E2E8F0;box-shadow:0 1px 3px rgba(15,58,110,.08)}}
-.card img{{width:100%;height:200px;object-fit:cover}}.body{{padding:14px}}
+.card img{{width:100%;aspect-ratio:1/1;height:auto;object-fit:cover;display:block}}.body{{padding:14px}}
 .ch{{font-size:.72rem;font-weight:700;text-transform:uppercase;padding:2px 10px;border-radius:20px}}
 .gbp .ch{{background:#D1FAE5;color:#065F46}}.fbig .ch{{background:#E0E7FF;color:#3730A3}}
 .dt{{float:right;font-size:.8rem;color:#5B6B7E}}
