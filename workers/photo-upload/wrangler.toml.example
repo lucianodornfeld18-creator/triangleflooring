@@ -1,0 +1,10 @@
+﻿name = "triangle-photo-upload"
+main = "index.js"
+compatibility_date = "2026-01-01"
+
+kv_namespaces = [
+  { binding = "PHOTOS", id = "95c5827496d448eca0c11178e647a325" }
+]
+# Este arquivo fica fora do git (token). Modelo: wrangler.toml.example
+[vars]
+TOKEN = "COLOQUE-SEU-TOKEN-AQUI"

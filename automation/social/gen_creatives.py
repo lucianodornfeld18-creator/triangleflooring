@@ -37,7 +37,7 @@ def t1_showcase(ctx):
 img.ph{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
 .ov{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,32,56,.30) 0%,rgba(14,32,56,0) 28%,rgba(13,26,46,0) 46%,rgba(13,26,46,.94) 100%)}}
 .logo-chip{{position:absolute;top:44px;left:48px;background:rgba(13,26,46,.74);border-radius:22px;padding:16px 24px;backdrop-filter:blur(8px)}}
-.logo-chip img{{height:96px;display:block;mix-blend-mode:screen}}
+.logo-chip img{{height:96px;display:block}}
 .bt{{position:absolute;left:64px;right:64px;bottom:60px;color:#fff}}
 .eyebrow{{font-size:30px;font-weight:700;letter-spacing:7px;text-transform:uppercase;color:#FF9D4D;margin-bottom:14px}}
 h1{{font-size:88px;font-weight:800;line-height:1.04;letter-spacing:-2px;margin-bottom:26px}}
@@ -47,7 +47,7 @@ h1{{font-size:88px;font-weight:800;line-height:1.04;letter-spacing:-2px;margin-b
 .site{{position:absolute;right:64px;bottom:24px;font-size:24px;font-weight:600;color:rgba(255,255,255,.85);letter-spacing:1px}}
 </style></head><body><div class="c">
 <img class="ph" src="{ctx['photo']}"><div class="ov"></div>
-<div class="logo-chip"><img src="../../../images/logo-dark.png"></div>
+<div class="logo-chip"><img src="../../../images/logo-white.png"></div>
 <div class="bt">
 <div class="eyebrow">{ctx['svc']}</div>
 <h1>{ctx['city']}, Florida</h1>
@@ -67,7 +67,7 @@ def t2_panel(ctx):
 .panel::after{{content:"";position:absolute;top:0;right:-70px;width:140px;height:100%;background:inherit;clip-path:polygon(0 0,100% 0,50% 100%,0 100%)}}
 .ph-wrap{{position:relative;width:54%;z-index:1}}
 img.ph{{width:100%;height:100%;object-fit:cover}}
-.logo{{height:128px;mix-blend-mode:screen;align-self:flex-start;margin-left:-10px}}
+.logo{{height:128px;align-self:flex-start;margin-left:-10px}}
 .eyebrow{{margin-top:64px;font-size:27px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:#FF9D4D}}
 h1{{font-size:78px;font-weight:800;line-height:1.05;letter-spacing:-2px;margin-top:14px}}
 .sub{{margin-top:22px;font-size:30px;font-weight:500;color:#BCD7F2;line-height:1.4}}
@@ -77,7 +77,7 @@ h1{{font-size:78px;font-weight:800;line-height:1.05;letter-spacing:-2px;margin-t
 .site{{margin-top:18px;font-size:25px;font-weight:600;color:#9FC3E8;letter-spacing:1px}}
 </style></head><body><div class="c">
 <div class="panel">
-<img class="logo" src="../../../images/logo-dark.png">
+<img class="logo" src="../../../images/logo-white.png">
 <div class="eyebrow">{ctx['svc']}</div>
 <h1>{ctx['city']},<br>Florida</h1>
 <div class="sub">Free in-home estimate within 24 hours</div>
@@ -103,7 +103,7 @@ h1{{font-size:84px;font-weight:800;line-height:1.03;letter-spacing:-2px;color:#1
 .rule{{width:130px;height:8px;background:#E07A2B;border-radius:6px;margin:26px 0 0}}
 .foot{{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-bottom:6px}}
 .brand{{display:flex;align-items:center;gap:18px}}
-.brand img{{height:84px;background:#fff;border-radius:14px;padding:8px;box-shadow:0 4px 14px rgba(15,42,78,.18)}}
+.brand img{{height:84px;background:#11335C;border-radius:14px;padding:8px;box-shadow:0 4px 14px rgba(15,42,78,.18)}}
 .brand .nm{{font-size:30px;font-weight:800;color:#11335C;line-height:1.1}}
 .brand .ar{{font-size:21px;font-weight:600;color:#5B6B7E;letter-spacing:1px}}
 .phone{{background:#11335C;color:#fff;border-radius:16px;padding:18px 30px;font-size:31px;font-weight:800}}
@@ -115,7 +115,7 @@ h1{{font-size:84px;font-weight:800;line-height:1.03;letter-spacing:-2px;color:#1
 <h1>{ctx['city']}, Florida</h1>
 <div class="rule"></div>
 <div class="foot">
-<div class="brand"><img src="../../../images/logo.png">
+<div class="brand"><img src="../../../images/logo-white.png">
 <div><div class="nm">Triangle Flooring</div><div class="ar">triangle-floor.com</div></div></div>
 <div class="phone">{PHONE}</div>
 </div></div>
@@ -129,7 +129,7 @@ img.ph{{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}}
 .ov{{position:absolute;inset:0;background:linear-gradient(180deg,rgba(13,26,46,.62) 0%,rgba(13,26,46,.28) 30%,rgba(13,26,46,.28) 60%,rgba(13,26,46,.82) 100%)}}
 .wrap{{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;text-align:center;color:#fff;padding:56px}}
 .logo-chip{{background:rgba(13,26,46,.74);border-radius:22px;padding:14px 22px;backdrop-filter:blur(8px)}}
-.logo-chip img{{height:92px;display:block;mix-blend-mode:screen}}
+.logo-chip img{{height:92px;display:block}}
 .mid{{flex:1;display:flex;flex-direction:column;justify-content:center;align-items:center}}
 .eyebrow{{font-size:30px;font-weight:700;letter-spacing:8px;text-transform:uppercase;color:#FF9D4D}}
 h1{{font-size:96px;font-weight:800;line-height:1.04;letter-spacing:-2px;margin-top:16px;text-shadow:0 4px 30px rgba(0,0,0,.45)}}
@@ -141,7 +141,7 @@ h1{{font-size:96px;font-weight:800;line-height:1.04;letter-spacing:-2px;margin-t
 </style></head><body><div class="c">
 <img class="ph" src="{ctx['photo']}"><div class="ov"></div>
 <div class="wrap">
-<div class="logo-chip"><img src="../../../images/logo-dark.png"></div>
+<div class="logo-chip"><img src="../../../images/logo-white.png"></div>
 <div class="mid">
 <div class="eyebrow">{ctx['svc']}</div>
 <h1>{ctx['city']},<br>Florida</h1>
@@ -158,9 +158,9 @@ h1{{font-size:96px;font-weight:800;line-height:1.04;letter-spacing:-2px;margin-t
 def t5_topbar(ctx):
     return f"""<!DOCTYPE html><html><head><meta charset="UTF-8">{FONTS}<style>{BASE_CSS}
 .c{{width:1080px;height:1080px;display:flex;flex-direction:column;background:#fff}}
-.top{{height:150px;display:flex;align-items:center;justify-content:space-between;padding:0 48px}}
+.top{{height:150px;display:flex;align-items:center;justify-content:space-between;padding:0 48px;background:linear-gradient(135deg,#143A66 0%,#0E2440 100%)}}
 .top img{{height:104px}}
-.top .rate{{text-align:right;font-size:26px;font-weight:700;color:#11335C}}
+.top .rate{{text-align:right;font-size:26px;font-weight:700;color:#fff}}
 .top .rate .stars{{font-size:30px;letter-spacing:4px;display:block}}
 .ph-wrap{{flex:1;overflow:hidden}}
 img.ph{{width:100%;height:100%;object-fit:cover}}
@@ -172,13 +172,43 @@ h1{{font-size:62px;font-weight:800;letter-spacing:-1.5px;line-height:1.06;margin
 .site{{margin-top:14px;font-size:23px;font-weight:600;color:#9FC3E8;letter-spacing:1px}}
 </style></head><body><div class="c">
 <div class="top">
-<img src="../../../images/logo.png">
+<img src="../../../images/logo-white.png">
 <div class="rate"><span class="stars">★★★★★</span>5.0 Google Rated · 300+ Projects</div>
 </div>
 <div class="ph-wrap"><img class="ph" src="{ctx['photo']}"></div>
 <div class="band">
 <div><div class="eyebrow">{ctx['svc']}</div><h1>{ctx['city']}, Florida</h1></div>
 <div class="right"><div class="phone">{PHONE}</div><div class="site">triangle-floor.com</div></div>
+</div>
+</div></body></html>"""
+
+
+def t_ba(ctx):
+    return f"""<!DOCTYPE html><html><head><meta charset="UTF-8">{FONTS}<style>{BASE_CSS}
+.c{{position:relative;width:1080px;height:1080px;display:flex;flex-direction:column;background:#0E2A4A}}
+.halves{{flex:1;display:flex}}
+.half{{position:relative;width:50%;overflow:hidden}}
+.half img{{width:100%;height:100%;object-fit:cover}}
+.half.before img{{filter:saturate(.85)}}
+.lbl{{position:absolute;top:32px;left:50%;transform:translateX(-50%);border-radius:60px;padding:12px 34px;font-size:30px;font-weight:800;letter-spacing:3px;text-transform:uppercase;color:#fff;backdrop-filter:blur(6px)}}
+.before .lbl{{background:rgba(13,26,46,.78)}}
+.after .lbl{{background:#E07A2B}}
+.divider{{position:absolute;left:50%;top:0;bottom:230px;width:6px;background:#fff;transform:translateX(-50%);z-index:3;box-shadow:0 0 24px rgba(0,0,0,.35)}}
+.band{{height:230px;background:linear-gradient(135deg,#143A66 0%,#0E2440 100%);color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 52px;position:relative;z-index:4}}
+.left .eyebrow{{font-size:25px;font-weight:700;letter-spacing:6px;text-transform:uppercase;color:#FF9D4D}}
+.left h1{{font-size:58px;font-weight:800;letter-spacing:-1.5px;line-height:1.06;margin-top:6px}}
+.right{{display:flex;align-items:center;gap:24px}}
+.right img{{height:110px}}
+.phone{{background:#E07A2B;border-radius:16px;padding:16px 28px;font-size:30px;font-weight:800;white-space:nowrap}}
+</style></head><body><div class="c">
+<div class="halves">
+<div class="half before"><img src="{ctx['photo_before']}"><div class="lbl">Before</div></div>
+<div class="half after"><img src="{ctx['photo']}"><div class="lbl">After</div></div>
+<div class="divider"></div>
+</div>
+<div class="band">
+<div class="left"><div class="eyebrow">{ctx['svc']} · Before &amp; After</div><h1>{ctx['city']}, Florida</h1></div>
+<div class="right"><img src="../../../images/logo-white.png"><div class="phone">{PHONE}</div></div>
 </div>
 </div></body></html>"""
 
@@ -202,10 +232,13 @@ def main():
         key = (p["image_url"], p["city"], p["service"])
         if key not in seen:
             idx = len(seen)
-            tpl = TEMPLATES[idx % len(TEMPLATES)]
-            cid = f"c{idx + 1:02d}-{p['service']}-{p['city'].lower().replace(' ', '-').replace('.', '')}-t{idx % len(TEMPLATES) + 1}"
+            is_ba = bool(p.get("before_file"))
+            tpl = t_ba if is_ba else TEMPLATES[idx % len(TEMPLATES)]
+            suffix = "ba" if is_ba else f"t{idx % len(TEMPLATES) + 1}"
+            cid = f"c{idx + 1:02d}-{p['service']}-{p['city'].lower().replace(' ', '-').replace('.', '')}-{suffix}"
             photo_rel = p["image_url"].replace(IMG_BASE, "../../../images/social")
-            ctx = {"photo": photo_rel, "city": p["city"], "svc": SERVICES[p["service"]]["name"]}
+            ctx = {"photo": photo_rel, "city": p["city"], "svc": SERVICES[p["service"]]["name"],
+                   "photo_before": f"../../../images/social/{p.get('before_file', '')}"}
             html_file = out_html / f"{cid}.html"
             html_file.write_text(tpl(ctx), encoding="utf-8")
             png = out_img / f"{cid}.png"

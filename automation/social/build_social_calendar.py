@@ -51,6 +51,16 @@ GBP_TEMPLATES = [
     "Why {city} homeowners choose us for {kw}: real local projects, honest pricing, and floors specified for Florida humidity. {desc}. Free estimate: {phone}.",
 ]
 
+FBIG_BA_TEMPLATES = [
+    "BEFORE ➡ AFTER in {city}, FL. {desc}. This is what {kw} by a licensed contractor looks like — 300+ projects across Tampa Bay, 5.0★ on Google.\n\n📞 Free estimate in 24h: {phone}\n🔗 {link}\n\n{tags}",
+    "Swipe-stopping transformation in {city}, Florida 🔥 {desc}. Thinking about {kw} for your home? This could be your floor.\n\n📞 {phone} — free in-home estimate\n🔗 {link}\n\n{tags}",
+]
+
+GBP_BA_TEMPLATES = [
+    "Before & after in {city}, FL: {desc}. Triangle Flooring — 300+ projects, 5.0★ on Google, free in-home estimate within 24 hours. Call {phone}.",
+    "Real transformation, real local work: {desc} in {city}, Florida. Compare contractors by their results — then call {phone} for a free estimate.",
+]
+
 GENERIC_TAGS = ["#FloridaFlooring", "#TampaBay", "#FlooringContractor", "#HomeRenovation",
                 "#FloorsOfInstagram", "#BeforeAndAfter", "#FloridaHomes", "#FlooringInstallation"]
 
@@ -76,10 +86,10 @@ def build(weeks: int, start: datetime) -> list[dict]:
     posts = []
     # banco ordenado: prioriza fotos com cidade (mais sinal GEO)
     bank = sorted(BANK, key=lambda b: b["city"] is None)
-    fbig_days, gbp_days = [0, 2, 4, 5], [1, 3, 5, 6]  # seg/qua/sex/sab e ter/qui/sab/dom
+    fbig_days, gbp_days = [0, 2, 4], [1, 3, 5]  # 3x/semana: seg/qua/sex e ter/qui/sab
     img_i = 0
     for w in range(weeks):
-        for slot in range(4):
+        for slot in range(3):
             img = pick(bank, img_i)
             svc = SERVICES[img["service"]]
             city = img["city"] or pick(CITIES, img_i)
@@ -88,14 +98,18 @@ def build(weeks: int, start: datetime) -> list[dict]:
             ctx = dict(kw=svc["kw"], kw_title=svc["kw"].capitalize(), svc_name=svc["name"],
                        city=city, desc=img["desc"], phone=PHONE, link=link, tags=tags)
 
+            is_ba = bool(img.get("before"))
+            fb_tpl = pick(FBIG_BA_TEMPLATES, img_i) if is_ba else pick(FBIG_TEMPLATES, img_i)
+            g_tpl = pick(GBP_BA_TEMPLATES, img_i) if is_ba else pick(GBP_TEMPLATES, img_i)
+            extra = {"before_file": img["before"]} if is_ba else {}
             d_fb = start + timedelta(days=w * 7 + fbig_days[slot])
             posts.append({
                 "date": d_fb.strftime("%Y-%m-%dT") + ("11:30:00" if slot % 2 == 0 else "18:00:00"),
                 "channel": "fbig",
                 "service": img["service"], "city": city,
                 "image_url": f"{IMG_BASE}/{img['file']}",
-                "caption": pick(FBIG_TEMPLATES, img_i).format(**ctx),
-                "link": link,
+                "caption": fb_tpl.format(**ctx),
+                "link": link, **extra,
             })
             d_g = start + timedelta(days=w * 7 + gbp_days[slot])
             posts.append({
@@ -103,8 +117,8 @@ def build(weeks: int, start: datetime) -> list[dict]:
                 "channel": "gbp",
                 "service": img["service"], "city": city,
                 "image_url": f"{IMG_BASE}/{img['file']}",
-                "caption": pick(GBP_TEMPLATES, img_i).format(**ctx),
-                "link": link,
+                "caption": g_tpl.format(**ctx),
+                "link": link, **extra,
             })
             img_i += 1
     return posts
