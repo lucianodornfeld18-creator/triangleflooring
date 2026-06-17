@@ -134,7 +134,7 @@
   </url>
   <url>
     <loc>https://triangle-floor.com/blog/</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.90</priority>
   </url>
@@ -933,6 +933,12 @@
   <url>
     <loc>https://triangle-floor.com/blog/install-lvp-laminate-over-existing-tile/</loc>
     <lastmod>2026-06-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://triangle-floor.com/blog/pet-urine-damage-hardwood-repair-or-replace/</loc>
+    <lastmod>2026-06-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
