@@ -265,7 +265,8 @@ built = []
 for lang in ("pt","es"):
     t = L[lang]; path = f"/{lang}/"
     en_p, pt_p, es_p = "/", "/pt/", "/es/"
-    title = (t["hero_home_h1"] + " | Triangle Flooring")[:65]
+    title = t["hero_home_h1"] + " | Triangle Flooring"
+    if len(title) > 60: title = t["hero_home_h1"]
     desc = t["hero_home_sub"][:158]
     svc_cards = "".join(f'<a class="svc-card" href="/{lang}/{s[lang]}/"><h3>{s[lang+"_name"]}</h3><div class="px">{t["from"]} {s["price"]}</div><p>{s[lang+"_desc"]}</p></a>' for s in SERVICES)
     area_links = "".join(f'<a class="svc-card" style="text-align:center" href="/{c.lower().replace(". ","-").replace(" ","-")}/"><h3 style="font-size:1rem;margin:0">📍 {c}, FL</h3></a>' for c in CITIES)
@@ -291,7 +292,8 @@ for lang in ("pt","es"):
         slug = s[lang]; name = s[lang+"_name"]; desc_s = s[lang+"_desc"]
         path = f"/{lang}/{slug}/"
         en_p = f"/{s['en']}/"; pt_p = f"/pt/{s['pt']}/"; es_p = f"/es/{s['es']}/"
-        title = (f"{name} em Bradenton & Sarasota FL | Triangle Flooring" if lang=="pt" else f"{name} en Bradenton & Sarasota FL | Triangle Flooring")[:65]
+        title = (f"{name} em Bradenton, FL | Triangle Flooring" if lang=="pt" else f"{name} en Bradenton, FL | Triangle Flooring")
+        if len(title) > 60: title = (f"{name} em Bradenton, FL" if lang=="pt" else f"{name} en Bradenton, FL")
         desc = desc_s[:158]
         quick = (f"{name}: {desc_s} {t['from']} {s['price']} instalado. Orçamento itemizado grátis em 24h, atendimento em português." if lang=="pt"
                  else f"{name}: {desc_s} {t['from']} {s['price']} instalado. Presupuesto detallado gratis en 24h, atención en español.")
