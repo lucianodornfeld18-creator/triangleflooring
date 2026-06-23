@@ -56,3 +56,15 @@ diretorios-gratis-checklist.html
 workers/photo-upload/wrangler.toml
 automation/social/_test-*
 PLANO-SEO-TOP1-2026-06.html
+
+# temp de produção de criativos (local)
+automation/social/**/_h/
+automation/social/**/_html/
+automation/social/**/prof/
+automation/social/video-inbox/
+automation/social/reels/
+automation/social/statics/
+automation/social/statics2/
+automation/social/ad-concepts/
+automation/social/*.pcm
+automation/social/_frames/
