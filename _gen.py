@@ -5,7 +5,7 @@ Generates 13 production-ready HTML pages with consistent SEO/schema/design.
 """
 import os, json, re
 
-OUT_DIR = "/home/claude/triangle"
+OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 DOMAIN = "triangle-floor.com"
 PHONE = "+19414026861"
 PHONE_DISPLAY = "(941) 402-6861"
