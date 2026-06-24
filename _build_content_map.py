@@ -19,10 +19,13 @@ OUT = ROOT / "_content_map.json"
 # --- City tier model (per business GEO strategy) -----------------------------
 TIER1 = {"bradenton", "sarasota", "lakewood-ranch", "palmetto", "parrish", "venice"}
 TIER2 = {"tampa", "st-petersburg"}
+TIER3 = {"ellenton", "ruskin", "apollo-beach", "sun-city-center", "north-port", "nokomis"}
 CITY_NAME = {
     "bradenton": "Bradenton", "sarasota": "Sarasota", "lakewood-ranch": "Lakewood Ranch",
     "palmetto": "Palmetto", "parrish": "Parrish", "venice": "Venice",
     "tampa": "Tampa", "st-petersburg": "St. Petersburg",
+    "ellenton": "Ellenton", "ruskin": "Ruskin", "apollo-beach": "Apollo Beach",
+    "sun-city-center": "Sun City Center", "north-port": "North Port", "nokomis": "Nokomis",
 }
 CITIES = list(CITY_NAME.keys())
 
@@ -92,6 +95,7 @@ SUPPORT = {
 def tier_of(city):
     if city in TIER1: return 1
     if city in TIER2: return 2
+    if city in TIER3: return 3
     return None
 
 
@@ -194,7 +198,7 @@ def main():
             "generated": datetime.date.today().isoformat(),
             "source": "sitemap.xml + builder taxonomy",
             "rule": "Each primary keyword+intent belongs to exactly ONE url. Blog posts target informational/question intent and must NOT compete with /services/* or /{city}/* commercial pages for the same transactional query.",
-            "city_tiers": {"tier1": sorted(TIER1), "tier2": sorted(TIER2)},
+            "city_tiers": {"tier1": sorted(TIER1), "tier2": sorted(TIER2), "tier3": sorted(TIER3)},
             "total_urls": len(entries),
             "counts_by_type": by_type,
         },

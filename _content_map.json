@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "generated": "2026-06-07",
+    "generated": "2026-06-23",
     "source": "sitemap.xml + builder taxonomy",
     "rule": "Each primary keyword+intent belongs to exactly ONE url. Blog posts target informational/question intent and must NOT compete with /services/* or /{city}/* commercial pages for the same transactional query.",
     "city_tiers": {
@@ -15,18 +15,28 @@
       "tier2": [
         "st-petersburg",
         "tampa"
+      ],
+      "tier3": [
+        "apollo-beach",
+        "ellenton",
+        "nokomis",
+        "north-port",
+        "ruskin",
+        "sun-city-center"
       ]
     },
-    "total_urls": 132,
+    "total_urls": 237,
     "counts_by_type": {
       "home": 1,
       "support": 6,
+      "city-landing": 14,
       "index": 2,
+      "blog-unknown": 8,
       "blog-standalone": 6,
-      "blog-cost": 48,
-      "city-landing": 8,
+      "blog-cost": 84,
+      "other": 19,
       "service-hub": 7,
-      "service-city": 48,
+      "service-city": 84,
       "service-special": 2,
       "guide": 4
     }
@@ -55,11 +65,33 @@
       "language": "en"
     },
     {
+      "url": "/apollo-beach/",
+      "type": "city-landing",
+      "title": "Flooring in Apollo Beach, FL",
+      "keyword": "flooring apollo beach fl",
+      "intent": "commercial-local",
+      "service": null,
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/",
       "type": "index",
       "title": "Flooring Blog",
       "keyword": "flooring blog tampa bay",
       "intent": "index",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/best-flooring-concrete-slab-florida/",
+      "type": "blog-unknown",
+      "title": "best-flooring-concrete-slab-florida",
+      "keyword": "best flooring concrete slab florida",
+      "intent": "unknown",
       "service": null,
       "city": null,
       "tier": null,
@@ -77,6 +109,39 @@
       "language": "en"
     },
     {
+      "url": "/blog/cracked-grout-repair-vs-regrout/",
+      "type": "blog-unknown",
+      "title": "cracked-grout-repair-vs-regrout",
+      "keyword": "cracked grout repair vs regrout",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/cupping-buckling-hardwood-florida-humidity/",
+      "type": "blog-unknown",
+      "title": "cupping-buckling-hardwood-florida-humidity",
+      "keyword": "cupping buckling hardwood florida humidity",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/floor-repair-cost-apollo-beach/",
+      "type": "blog-cost",
+      "title": "Floor Repair / Replacement Cost in Apollo Beach (2026)",
+      "keyword": "floor repair cost apollo beach",
+      "intent": "commercial-cost",
+      "service": "floor-repair",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/floor-repair-cost-bradenton/",
       "type": "blog-cost",
       "title": "Floor Repair / Replacement Cost in Bradenton (2026)",
@@ -88,6 +153,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/floor-repair-cost-ellenton/",
+      "type": "blog-cost",
+      "title": "Floor Repair / Replacement Cost in Ellenton (2026)",
+      "keyword": "floor repair cost ellenton",
+      "intent": "commercial-cost",
+      "service": "floor-repair",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/floor-repair-cost-lakewood-ranch/",
       "type": "blog-cost",
       "title": "Floor Repair / Replacement Cost in Lakewood Ranch (2026)",
@@ -96,6 +172,28 @@
       "service": "floor-repair",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/blog/floor-repair-cost-nokomis/",
+      "type": "blog-cost",
+      "title": "Floor Repair / Replacement Cost in Nokomis (2026)",
+      "keyword": "floor repair cost nokomis",
+      "intent": "commercial-cost",
+      "service": "floor-repair",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/blog/floor-repair-cost-north-port/",
+      "type": "blog-cost",
+      "title": "Floor Repair / Replacement Cost in North Port (2026)",
+      "keyword": "floor repair cost north port",
+      "intent": "commercial-cost",
+      "service": "floor-repair",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -121,6 +219,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/floor-repair-cost-ruskin/",
+      "type": "blog-cost",
+      "title": "Floor Repair / Replacement Cost in Ruskin (2026)",
+      "keyword": "floor repair cost ruskin",
+      "intent": "commercial-cost",
+      "service": "floor-repair",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/floor-repair-cost-sarasota/",
       "type": "blog-cost",
       "title": "Floor Repair / Replacement Cost in Sarasota (2026)",
@@ -140,6 +249,17 @@
       "service": "floor-repair",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/blog/floor-repair-cost-sun-city-center/",
+      "type": "blog-cost",
+      "title": "Floor Repair / Replacement Cost in Sun City Center (2026)",
+      "keyword": "floor repair cost sun city center",
+      "intent": "commercial-cost",
+      "service": "floor-repair",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -187,6 +307,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/hardwood-flooring-cost-apollo-beach/",
+      "type": "blog-cost",
+      "title": "Hardwood Flooring Cost in Apollo Beach (2026)",
+      "keyword": "hardwood flooring cost apollo beach",
+      "intent": "commercial-cost",
+      "service": "hardwood-flooring",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/hardwood-flooring-cost-bradenton/",
       "type": "blog-cost",
       "title": "Hardwood Flooring Cost in Bradenton (2026)",
@@ -198,6 +329,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/hardwood-flooring-cost-ellenton/",
+      "type": "blog-cost",
+      "title": "Hardwood Flooring Cost in Ellenton (2026)",
+      "keyword": "hardwood flooring cost ellenton",
+      "intent": "commercial-cost",
+      "service": "hardwood-flooring",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/hardwood-flooring-cost-lakewood-ranch/",
       "type": "blog-cost",
       "title": "Hardwood Flooring Cost in Lakewood Ranch (2026)",
@@ -206,6 +348,28 @@
       "service": "hardwood-flooring",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/blog/hardwood-flooring-cost-nokomis/",
+      "type": "blog-cost",
+      "title": "Hardwood Flooring Cost in Nokomis (2026)",
+      "keyword": "hardwood flooring cost nokomis",
+      "intent": "commercial-cost",
+      "service": "hardwood-flooring",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/blog/hardwood-flooring-cost-north-port/",
+      "type": "blog-cost",
+      "title": "Hardwood Flooring Cost in North Port (2026)",
+      "keyword": "hardwood flooring cost north port",
+      "intent": "commercial-cost",
+      "service": "hardwood-flooring",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -231,6 +395,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/hardwood-flooring-cost-ruskin/",
+      "type": "blog-cost",
+      "title": "Hardwood Flooring Cost in Ruskin (2026)",
+      "keyword": "hardwood flooring cost ruskin",
+      "intent": "commercial-cost",
+      "service": "hardwood-flooring",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/hardwood-flooring-cost-sarasota/",
       "type": "blog-cost",
       "title": "Hardwood Flooring Cost in Sarasota (2026)",
@@ -250,6 +425,17 @@
       "service": "hardwood-flooring",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/blog/hardwood-flooring-cost-sun-city-center/",
+      "type": "blog-cost",
+      "title": "Hardwood Flooring Cost in Sun City Center (2026)",
+      "keyword": "hardwood flooring cost sun city center",
+      "intent": "commercial-cost",
+      "service": "hardwood-flooring",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -286,6 +472,28 @@
       "language": "en"
     },
     {
+      "url": "/blog/install-lvp-laminate-over-existing-tile/",
+      "type": "blog-unknown",
+      "title": "install-lvp-laminate-over-existing-tile",
+      "keyword": "install lvp laminate over existing tile",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/laminate-flooring-cost-apollo-beach/",
+      "type": "blog-cost",
+      "title": "Laminate Flooring Cost in Apollo Beach (2026)",
+      "keyword": "laminate flooring cost apollo beach",
+      "intent": "commercial-cost",
+      "service": "laminate-flooring",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/laminate-flooring-cost-bradenton/",
       "type": "blog-cost",
       "title": "Laminate Flooring Cost in Bradenton (2026)",
@@ -297,6 +505,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/laminate-flooring-cost-ellenton/",
+      "type": "blog-cost",
+      "title": "Laminate Flooring Cost in Ellenton (2026)",
+      "keyword": "laminate flooring cost ellenton",
+      "intent": "commercial-cost",
+      "service": "laminate-flooring",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/laminate-flooring-cost-lakewood-ranch/",
       "type": "blog-cost",
       "title": "Laminate Flooring Cost in Lakewood Ranch (2026)",
@@ -305,6 +524,28 @@
       "service": "laminate-flooring",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/blog/laminate-flooring-cost-nokomis/",
+      "type": "blog-cost",
+      "title": "Laminate Flooring Cost in Nokomis (2026)",
+      "keyword": "laminate flooring cost nokomis",
+      "intent": "commercial-cost",
+      "service": "laminate-flooring",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/blog/laminate-flooring-cost-north-port/",
+      "type": "blog-cost",
+      "title": "Laminate Flooring Cost in North Port (2026)",
+      "keyword": "laminate flooring cost north port",
+      "intent": "commercial-cost",
+      "service": "laminate-flooring",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -330,6 +571,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/laminate-flooring-cost-ruskin/",
+      "type": "blog-cost",
+      "title": "Laminate Flooring Cost in Ruskin (2026)",
+      "keyword": "laminate flooring cost ruskin",
+      "intent": "commercial-cost",
+      "service": "laminate-flooring",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/laminate-flooring-cost-sarasota/",
       "type": "blog-cost",
       "title": "Laminate Flooring Cost in Sarasota (2026)",
@@ -349,6 +601,17 @@
       "service": "laminate-flooring",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/blog/laminate-flooring-cost-sun-city-center/",
+      "type": "blog-cost",
+      "title": "Laminate Flooring Cost in Sun City Center (2026)",
+      "keyword": "laminate flooring cost sun city center",
+      "intent": "commercial-cost",
+      "service": "laminate-flooring",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -374,6 +637,50 @@
       "language": "en"
     },
     {
+      "url": "/blog/lvp-vs-porcelain-tile-florida/",
+      "type": "blog-unknown",
+      "title": "lvp-vs-porcelain-tile-florida",
+      "keyword": "lvp vs porcelain tile florida",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/pet-urine-damage-hardwood-repair-or-replace/",
+      "type": "blog-unknown",
+      "title": "pet-urine-damage-hardwood-repair-or-replace",
+      "keyword": "pet urine damage hardwood repair or replace",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/refinish-vs-replace-hardwood-floors-florida/",
+      "type": "blog-unknown",
+      "title": "refinish-vs-replace-hardwood-floors-florida",
+      "keyword": "refinish vs replace hardwood floors florida",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/shower-waterproofing-kerdi-vs-redgard-florida/",
+      "type": "blog-unknown",
+      "title": "shower-waterproofing-kerdi-vs-redgard-florida",
+      "keyword": "shower waterproofing kerdi vs redgard florida",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
       "url": "/blog/stair-tread-replacement-guide/",
       "type": "blog-standalone",
       "title": "Stair Tread Replacement Guide: Hardwood vs LVP vs Tile",
@@ -382,6 +689,17 @@
       "service": "stair-treads",
       "city": null,
       "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/blog/stair-treads-cost-apollo-beach/",
+      "type": "blog-cost",
+      "title": "Stair Treads Cost in Apollo Beach (2026)",
+      "keyword": "stair treads cost apollo beach",
+      "intent": "commercial-cost",
+      "service": "stair-treads",
+      "city": "apollo-beach",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -396,6 +714,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/stair-treads-cost-ellenton/",
+      "type": "blog-cost",
+      "title": "Stair Treads Cost in Ellenton (2026)",
+      "keyword": "stair treads cost ellenton",
+      "intent": "commercial-cost",
+      "service": "stair-treads",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/stair-treads-cost-lakewood-ranch/",
       "type": "blog-cost",
       "title": "Stair Treads Cost in Lakewood Ranch (2026)",
@@ -404,6 +733,28 @@
       "service": "stair-treads",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/blog/stair-treads-cost-nokomis/",
+      "type": "blog-cost",
+      "title": "Stair Treads Cost in Nokomis (2026)",
+      "keyword": "stair treads cost nokomis",
+      "intent": "commercial-cost",
+      "service": "stair-treads",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/blog/stair-treads-cost-north-port/",
+      "type": "blog-cost",
+      "title": "Stair Treads Cost in North Port (2026)",
+      "keyword": "stair treads cost north port",
+      "intent": "commercial-cost",
+      "service": "stair-treads",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -429,6 +780,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/stair-treads-cost-ruskin/",
+      "type": "blog-cost",
+      "title": "Stair Treads Cost in Ruskin (2026)",
+      "keyword": "stair treads cost ruskin",
+      "intent": "commercial-cost",
+      "service": "stair-treads",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/stair-treads-cost-sarasota/",
       "type": "blog-cost",
       "title": "Stair Treads Cost in Sarasota (2026)",
@@ -448,6 +810,17 @@
       "service": "stair-treads",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/blog/stair-treads-cost-sun-city-center/",
+      "type": "blog-cost",
+      "title": "Stair Treads Cost in Sun City Center (2026)",
+      "keyword": "stair treads cost sun city center",
+      "intent": "commercial-cost",
+      "service": "stair-treads",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -473,6 +846,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/tile-installation-cost-apollo-beach/",
+      "type": "blog-cost",
+      "title": "Tile Installation Cost in Apollo Beach (2026)",
+      "keyword": "tile installation cost apollo beach",
+      "intent": "commercial-cost",
+      "service": "tile-installation",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/tile-installation-cost-bradenton/",
       "type": "blog-cost",
       "title": "Tile Installation Cost in Bradenton (2026)",
@@ -484,6 +868,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/tile-installation-cost-ellenton/",
+      "type": "blog-cost",
+      "title": "Tile Installation Cost in Ellenton (2026)",
+      "keyword": "tile installation cost ellenton",
+      "intent": "commercial-cost",
+      "service": "tile-installation",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/tile-installation-cost-lakewood-ranch/",
       "type": "blog-cost",
       "title": "Tile Installation Cost in Lakewood Ranch (2026)",
@@ -492,6 +887,28 @@
       "service": "tile-installation",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/blog/tile-installation-cost-nokomis/",
+      "type": "blog-cost",
+      "title": "Tile Installation Cost in Nokomis (2026)",
+      "keyword": "tile installation cost nokomis",
+      "intent": "commercial-cost",
+      "service": "tile-installation",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/blog/tile-installation-cost-north-port/",
+      "type": "blog-cost",
+      "title": "Tile Installation Cost in North Port (2026)",
+      "keyword": "tile installation cost north port",
+      "intent": "commercial-cost",
+      "service": "tile-installation",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -517,6 +934,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/tile-installation-cost-ruskin/",
+      "type": "blog-cost",
+      "title": "Tile Installation Cost in Ruskin (2026)",
+      "keyword": "tile installation cost ruskin",
+      "intent": "commercial-cost",
+      "service": "tile-installation",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/tile-installation-cost-sarasota/",
       "type": "blog-cost",
       "title": "Tile Installation Cost in Sarasota (2026)",
@@ -536,6 +964,17 @@
       "service": "tile-installation",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/blog/tile-installation-cost-sun-city-center/",
+      "type": "blog-cost",
+      "title": "Tile Installation Cost in Sun City Center (2026)",
+      "keyword": "tile installation cost sun city center",
+      "intent": "commercial-cost",
+      "service": "tile-installation",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -561,6 +1000,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/vinyl-plank-flooring-cost-apollo-beach/",
+      "type": "blog-cost",
+      "title": "Luxury Vinyl Plank (LVP) Cost in Apollo Beach (2026)",
+      "keyword": "vinyl plank flooring cost apollo beach",
+      "intent": "commercial-cost",
+      "service": "vinyl-plank-flooring",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/vinyl-plank-flooring-cost-bradenton-2026/",
       "type": "blog-cost",
       "title": "Luxury Vinyl Plank (LVP) Cost in Bradenton (2026)",
@@ -572,6 +1022,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/vinyl-plank-flooring-cost-ellenton/",
+      "type": "blog-cost",
+      "title": "Luxury Vinyl Plank (LVP) Cost in Ellenton (2026)",
+      "keyword": "vinyl plank flooring cost ellenton",
+      "intent": "commercial-cost",
+      "service": "vinyl-plank-flooring",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/vinyl-plank-flooring-cost-lakewood-ranch/",
       "type": "blog-cost",
       "title": "Luxury Vinyl Plank (LVP) Cost in Lakewood Ranch (2026)",
@@ -580,6 +1041,28 @@
       "service": "vinyl-plank-flooring",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/blog/vinyl-plank-flooring-cost-nokomis/",
+      "type": "blog-cost",
+      "title": "Luxury Vinyl Plank (LVP) Cost in Nokomis (2026)",
+      "keyword": "vinyl plank flooring cost nokomis",
+      "intent": "commercial-cost",
+      "service": "vinyl-plank-flooring",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/blog/vinyl-plank-flooring-cost-north-port/",
+      "type": "blog-cost",
+      "title": "Luxury Vinyl Plank (LVP) Cost in North Port (2026)",
+      "keyword": "vinyl plank flooring cost north port",
+      "intent": "commercial-cost",
+      "service": "vinyl-plank-flooring",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -605,6 +1088,17 @@
       "language": "en"
     },
     {
+      "url": "/blog/vinyl-plank-flooring-cost-ruskin/",
+      "type": "blog-cost",
+      "title": "Luxury Vinyl Plank (LVP) Cost in Ruskin (2026)",
+      "keyword": "vinyl plank flooring cost ruskin",
+      "intent": "commercial-cost",
+      "service": "vinyl-plank-flooring",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/blog/vinyl-plank-flooring-cost-sarasota/",
       "type": "blog-cost",
       "title": "Luxury Vinyl Plank (LVP) Cost in Sarasota (2026)",
@@ -624,6 +1118,17 @@
       "service": "vinyl-plank-flooring",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/blog/vinyl-plank-flooring-cost-sun-city-center/",
+      "type": "blog-cost",
+      "title": "Luxury Vinyl Plank (LVP) Cost in Sun City Center (2026)",
+      "keyword": "vinyl plank flooring cost sun city center",
+      "intent": "commercial-cost",
+      "service": "vinyl-plank-flooring",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -693,6 +1198,105 @@
       "language": "en"
     },
     {
+      "url": "/ellenton/",
+      "type": "city-landing",
+      "title": "Flooring in Ellenton, FL",
+      "keyword": "flooring ellenton fl",
+      "intent": "commercial-local",
+      "service": null,
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/es/",
+      "type": "other",
+      "title": "es",
+      "keyword": "es",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/es/contato/",
+      "type": "other",
+      "title": "es/contato",
+      "keyword": "es contato",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/es/instalacion-de-azulejos/",
+      "type": "other",
+      "title": "es/instalacion-de-azulejos",
+      "keyword": "es instalacion de azulejos",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/es/peldanos-de-escalera/",
+      "type": "other",
+      "title": "es/peldanos-de-escalera",
+      "keyword": "es peldanos de escalera",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/es/piso-laminado/",
+      "type": "other",
+      "title": "es/piso-laminado",
+      "keyword": "es piso laminado",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/es/piso-vinilico/",
+      "type": "other",
+      "title": "es/piso-vinilico",
+      "keyword": "es piso vinilico",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/es/pisos-de-madera/",
+      "type": "other",
+      "title": "es/pisos-de-madera",
+      "keyword": "es pisos de madera",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/es/reparacion-de-pisos/",
+      "type": "other",
+      "title": "es/reparacion-de-pisos",
+      "keyword": "es reparacion de pisos",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
       "url": "/faq/",
       "type": "support",
       "title": "FAQ",
@@ -715,6 +1319,17 @@
       "language": "en"
     },
     {
+      "url": "/floor-repair/apollo-beach/",
+      "type": "service-city",
+      "title": "Floor Repair / Replacement in Apollo Beach",
+      "keyword": "floor repair apollo beach",
+      "intent": "commercial-local",
+      "service": "floor-repair",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/floor-repair/bradenton/",
       "type": "service-city",
       "title": "Floor Repair / Replacement in Bradenton",
@@ -723,6 +1338,17 @@
       "service": "floor-repair",
       "city": "bradenton",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/floor-repair/ellenton/",
+      "type": "service-city",
+      "title": "Floor Repair / Replacement in Ellenton",
+      "keyword": "floor repair ellenton",
+      "intent": "commercial-local",
+      "service": "floor-repair",
+      "city": "ellenton",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -748,6 +1374,28 @@
       "language": "en"
     },
     {
+      "url": "/floor-repair/nokomis/",
+      "type": "service-city",
+      "title": "Floor Repair / Replacement in Nokomis",
+      "keyword": "floor repair nokomis",
+      "intent": "commercial-local",
+      "service": "floor-repair",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/floor-repair/north-port/",
+      "type": "service-city",
+      "title": "Floor Repair / Replacement in North Port",
+      "keyword": "floor repair north port",
+      "intent": "commercial-local",
+      "service": "floor-repair",
+      "city": "north-port",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/floor-repair/palmetto/",
       "type": "service-city",
       "title": "Floor Repair / Replacement in Palmetto",
@@ -770,6 +1418,17 @@
       "language": "en"
     },
     {
+      "url": "/floor-repair/ruskin/",
+      "type": "service-city",
+      "title": "Floor Repair / Replacement in Ruskin",
+      "keyword": "floor repair ruskin",
+      "intent": "commercial-local",
+      "service": "floor-repair",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/floor-repair/sarasota/",
       "type": "service-city",
       "title": "Floor Repair / Replacement in Sarasota",
@@ -789,6 +1448,17 @@
       "service": "floor-repair",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/floor-repair/sun-city-center/",
+      "type": "service-city",
+      "title": "Floor Repair / Replacement in Sun City Center",
+      "keyword": "floor repair sun city center",
+      "intent": "commercial-local",
+      "service": "floor-repair",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -820,6 +1490,17 @@
       "keyword": "water damage floor repair florida",
       "intent": "commercial",
       "service": "floor-repair",
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/flooring-cost-report-2026/",
+      "type": "other",
+      "title": "flooring-cost-report-2026",
+      "keyword": "flooring cost report 2026",
+      "intent": "unknown",
+      "service": null,
       "city": null,
       "tier": null,
       "language": "en"
@@ -869,6 +1550,17 @@
       "language": "en"
     },
     {
+      "url": "/guides/how-to-fix-a-squeaky-floor/",
+      "type": "other",
+      "title": "guides/how-to-fix-a-squeaky-floor",
+      "keyword": "guides how to fix a squeaky floor",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
       "url": "/guides/pet-friendly-flooring-florida/",
       "type": "guide",
       "title": "Pet Friendly Flooring Florida",
@@ -891,6 +1583,17 @@
       "language": "en"
     },
     {
+      "url": "/guides/what-to-do-after-floor-water-damage/",
+      "type": "other",
+      "title": "guides/what-to-do-after-floor-water-damage",
+      "keyword": "guides what to do after floor water damage",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
       "url": "/hardwood-flooring/",
       "type": "service-hub",
       "title": "Hardwood Flooring — Tampa Bay",
@@ -899,6 +1602,17 @@
       "service": "hardwood-flooring",
       "city": null,
       "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/hardwood-flooring/apollo-beach/",
+      "type": "service-city",
+      "title": "Hardwood Flooring in Apollo Beach",
+      "keyword": "hardwood flooring apollo beach",
+      "intent": "commercial-local",
+      "service": "hardwood-flooring",
+      "city": "apollo-beach",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -913,6 +1627,17 @@
       "language": "en"
     },
     {
+      "url": "/hardwood-flooring/ellenton/",
+      "type": "service-city",
+      "title": "Hardwood Flooring in Ellenton",
+      "keyword": "hardwood flooring ellenton",
+      "intent": "commercial-local",
+      "service": "hardwood-flooring",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/hardwood-flooring/lakewood-ranch/",
       "type": "service-city",
       "title": "Hardwood Flooring in Lakewood Ranch",
@@ -921,6 +1646,28 @@
       "service": "hardwood-flooring",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/hardwood-flooring/nokomis/",
+      "type": "service-city",
+      "title": "Hardwood Flooring in Nokomis",
+      "keyword": "hardwood flooring nokomis",
+      "intent": "commercial-local",
+      "service": "hardwood-flooring",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/hardwood-flooring/north-port/",
+      "type": "service-city",
+      "title": "Hardwood Flooring in North Port",
+      "keyword": "hardwood flooring north port",
+      "intent": "commercial-local",
+      "service": "hardwood-flooring",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -946,6 +1693,17 @@
       "language": "en"
     },
     {
+      "url": "/hardwood-flooring/ruskin/",
+      "type": "service-city",
+      "title": "Hardwood Flooring in Ruskin",
+      "keyword": "hardwood flooring ruskin",
+      "intent": "commercial-local",
+      "service": "hardwood-flooring",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/hardwood-flooring/sarasota/",
       "type": "service-city",
       "title": "Hardwood Flooring in Sarasota",
@@ -965,6 +1723,17 @@
       "service": "hardwood-flooring",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/hardwood-flooring/sun-city-center/",
+      "type": "service-city",
+      "title": "Hardwood Flooring in Sun City Center",
+      "keyword": "hardwood flooring sun city center",
+      "intent": "commercial-local",
+      "service": "hardwood-flooring",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1023,6 +1792,17 @@
       "language": "en"
     },
     {
+      "url": "/laminate-flooring/apollo-beach/",
+      "type": "service-city",
+      "title": "Laminate Flooring in Apollo Beach",
+      "keyword": "laminate flooring apollo beach",
+      "intent": "commercial-local",
+      "service": "laminate-flooring",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/laminate-flooring/bradenton/",
       "type": "service-city",
       "title": "Laminate Flooring in Bradenton",
@@ -1034,6 +1814,17 @@
       "language": "en"
     },
     {
+      "url": "/laminate-flooring/ellenton/",
+      "type": "service-city",
+      "title": "Laminate Flooring in Ellenton",
+      "keyword": "laminate flooring ellenton",
+      "intent": "commercial-local",
+      "service": "laminate-flooring",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/laminate-flooring/lakewood-ranch/",
       "type": "service-city",
       "title": "Laminate Flooring in Lakewood Ranch",
@@ -1042,6 +1833,28 @@
       "service": "laminate-flooring",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/laminate-flooring/nokomis/",
+      "type": "service-city",
+      "title": "Laminate Flooring in Nokomis",
+      "keyword": "laminate flooring nokomis",
+      "intent": "commercial-local",
+      "service": "laminate-flooring",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/laminate-flooring/north-port/",
+      "type": "service-city",
+      "title": "Laminate Flooring in North Port",
+      "keyword": "laminate flooring north port",
+      "intent": "commercial-local",
+      "service": "laminate-flooring",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1067,6 +1880,17 @@
       "language": "en"
     },
     {
+      "url": "/laminate-flooring/ruskin/",
+      "type": "service-city",
+      "title": "Laminate Flooring in Ruskin",
+      "keyword": "laminate flooring ruskin",
+      "intent": "commercial-local",
+      "service": "laminate-flooring",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/laminate-flooring/sarasota/",
       "type": "service-city",
       "title": "Laminate Flooring in Sarasota",
@@ -1086,6 +1910,17 @@
       "service": "laminate-flooring",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/laminate-flooring/sun-city-center/",
+      "type": "service-city",
+      "title": "Laminate Flooring in Sun City Center",
+      "keyword": "laminate flooring sun city center",
+      "intent": "commercial-local",
+      "service": "laminate-flooring",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1111,6 +1946,28 @@
       "language": "en"
     },
     {
+      "url": "/nokomis/",
+      "type": "city-landing",
+      "title": "Flooring in Nokomis, FL",
+      "keyword": "flooring nokomis fl",
+      "intent": "commercial-local",
+      "service": null,
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/north-port/",
+      "type": "city-landing",
+      "title": "Flooring in North Port, FL",
+      "keyword": "flooring north port fl",
+      "intent": "commercial-local",
+      "service": null,
+      "city": "north-port",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/palmetto/",
       "type": "city-landing",
       "title": "Flooring in Palmetto, FL",
@@ -1130,6 +1987,105 @@
       "service": null,
       "city": "parrish",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/pt/",
+      "type": "other",
+      "title": "pt",
+      "keyword": "pt",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/pt/contato/",
+      "type": "other",
+      "title": "pt/contato",
+      "keyword": "pt contato",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/pt/degraus-de-escada/",
+      "type": "other",
+      "title": "pt/degraus-de-escada",
+      "keyword": "pt degraus de escada",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/pt/instalacao-de-azulejos/",
+      "type": "other",
+      "title": "pt/instalacao-de-azulejos",
+      "keyword": "pt instalacao de azulejos",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/pt/piso-laminado/",
+      "type": "other",
+      "title": "pt/piso-laminado",
+      "keyword": "pt piso laminado",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/pt/piso-vinilico/",
+      "type": "other",
+      "title": "pt/piso-vinilico",
+      "keyword": "pt piso vinilico",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/pt/pisos-de-madeira/",
+      "type": "other",
+      "title": "pt/pisos-de-madeira",
+      "keyword": "pt pisos de madeira",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/pt/reparo-de-pisos/",
+      "type": "other",
+      "title": "pt/reparo-de-pisos",
+      "keyword": "pt reparo de pisos",
+      "intent": "unknown",
+      "service": null,
+      "city": null,
+      "tier": null,
+      "language": "en"
+    },
+    {
+      "url": "/ruskin/",
+      "type": "city-landing",
+      "title": "Flooring in Ruskin, FL",
+      "keyword": "flooring ruskin fl",
+      "intent": "commercial-local",
+      "service": null,
+      "city": "ruskin",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1166,6 +2122,17 @@
       "language": "en"
     },
     {
+      "url": "/stair-treads/apollo-beach/",
+      "type": "service-city",
+      "title": "Stair Treads in Apollo Beach",
+      "keyword": "stair treads apollo beach",
+      "intent": "commercial-local",
+      "service": "stair-treads",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/stair-treads/bradenton/",
       "type": "service-city",
       "title": "Stair Treads in Bradenton",
@@ -1177,6 +2144,17 @@
       "language": "en"
     },
     {
+      "url": "/stair-treads/ellenton/",
+      "type": "service-city",
+      "title": "Stair Treads in Ellenton",
+      "keyword": "stair treads ellenton",
+      "intent": "commercial-local",
+      "service": "stair-treads",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/stair-treads/lakewood-ranch/",
       "type": "service-city",
       "title": "Stair Treads in Lakewood Ranch",
@@ -1185,6 +2163,28 @@
       "service": "stair-treads",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/stair-treads/nokomis/",
+      "type": "service-city",
+      "title": "Stair Treads in Nokomis",
+      "keyword": "stair treads nokomis",
+      "intent": "commercial-local",
+      "service": "stair-treads",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/stair-treads/north-port/",
+      "type": "service-city",
+      "title": "Stair Treads in North Port",
+      "keyword": "stair treads north port",
+      "intent": "commercial-local",
+      "service": "stair-treads",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1210,6 +2210,17 @@
       "language": "en"
     },
     {
+      "url": "/stair-treads/ruskin/",
+      "type": "service-city",
+      "title": "Stair Treads in Ruskin",
+      "keyword": "stair treads ruskin",
+      "intent": "commercial-local",
+      "service": "stair-treads",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/stair-treads/sarasota/",
       "type": "service-city",
       "title": "Stair Treads in Sarasota",
@@ -1229,6 +2240,17 @@
       "service": "stair-treads",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/stair-treads/sun-city-center/",
+      "type": "service-city",
+      "title": "Stair Treads in Sun City Center",
+      "keyword": "stair treads sun city center",
+      "intent": "commercial-local",
+      "service": "stair-treads",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1254,6 +2276,17 @@
       "language": "en"
     },
     {
+      "url": "/sun-city-center/",
+      "type": "city-landing",
+      "title": "Flooring in Sun City Center, FL",
+      "keyword": "flooring sun city center fl",
+      "intent": "commercial-local",
+      "service": null,
+      "city": "sun-city-center",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/tampa/",
       "type": "city-landing",
       "title": "Flooring in Tampa, FL",
@@ -1276,6 +2309,17 @@
       "language": "en"
     },
     {
+      "url": "/tile-installation/apollo-beach/",
+      "type": "service-city",
+      "title": "Tile Installation in Apollo Beach",
+      "keyword": "tile installation apollo beach",
+      "intent": "commercial-local",
+      "service": "tile-installation",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/tile-installation/bradenton/",
       "type": "service-city",
       "title": "Tile Installation in Bradenton",
@@ -1287,6 +2331,17 @@
       "language": "en"
     },
     {
+      "url": "/tile-installation/ellenton/",
+      "type": "service-city",
+      "title": "Tile Installation in Ellenton",
+      "keyword": "tile installation ellenton",
+      "intent": "commercial-local",
+      "service": "tile-installation",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/tile-installation/lakewood-ranch/",
       "type": "service-city",
       "title": "Tile Installation in Lakewood Ranch",
@@ -1295,6 +2350,28 @@
       "service": "tile-installation",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/tile-installation/nokomis/",
+      "type": "service-city",
+      "title": "Tile Installation in Nokomis",
+      "keyword": "tile installation nokomis",
+      "intent": "commercial-local",
+      "service": "tile-installation",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/tile-installation/north-port/",
+      "type": "service-city",
+      "title": "Tile Installation in North Port",
+      "keyword": "tile installation north port",
+      "intent": "commercial-local",
+      "service": "tile-installation",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1320,6 +2397,17 @@
       "language": "en"
     },
     {
+      "url": "/tile-installation/ruskin/",
+      "type": "service-city",
+      "title": "Tile Installation in Ruskin",
+      "keyword": "tile installation ruskin",
+      "intent": "commercial-local",
+      "service": "tile-installation",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/tile-installation/sarasota/",
       "type": "service-city",
       "title": "Tile Installation in Sarasota",
@@ -1339,6 +2427,17 @@
       "service": "tile-installation",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/tile-installation/sun-city-center/",
+      "type": "service-city",
+      "title": "Tile Installation in Sun City Center",
+      "keyword": "tile installation sun city center",
+      "intent": "commercial-local",
+      "service": "tile-installation",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1386,6 +2485,17 @@
       "language": "en"
     },
     {
+      "url": "/vinyl-plank-flooring/apollo-beach/",
+      "type": "service-city",
+      "title": "Luxury Vinyl Plank (LVP) in Apollo Beach",
+      "keyword": "vinyl plank flooring apollo beach",
+      "intent": "commercial-local",
+      "service": "vinyl-plank-flooring",
+      "city": "apollo-beach",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/vinyl-plank-flooring/bradenton/",
       "type": "service-city",
       "title": "Luxury Vinyl Plank (LVP) in Bradenton",
@@ -1397,6 +2507,17 @@
       "language": "en"
     },
     {
+      "url": "/vinyl-plank-flooring/ellenton/",
+      "type": "service-city",
+      "title": "Luxury Vinyl Plank (LVP) in Ellenton",
+      "keyword": "vinyl plank flooring ellenton",
+      "intent": "commercial-local",
+      "service": "vinyl-plank-flooring",
+      "city": "ellenton",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/vinyl-plank-flooring/lakewood-ranch/",
       "type": "service-city",
       "title": "Luxury Vinyl Plank (LVP) in Lakewood Ranch",
@@ -1405,6 +2526,28 @@
       "service": "vinyl-plank-flooring",
       "city": "lakewood-ranch",
       "tier": 1,
+      "language": "en"
+    },
+    {
+      "url": "/vinyl-plank-flooring/nokomis/",
+      "type": "service-city",
+      "title": "Luxury Vinyl Plank (LVP) in Nokomis",
+      "keyword": "vinyl plank flooring nokomis",
+      "intent": "commercial-local",
+      "service": "vinyl-plank-flooring",
+      "city": "nokomis",
+      "tier": 3,
+      "language": "en"
+    },
+    {
+      "url": "/vinyl-plank-flooring/north-port/",
+      "type": "service-city",
+      "title": "Luxury Vinyl Plank (LVP) in North Port",
+      "keyword": "vinyl plank flooring north port",
+      "intent": "commercial-local",
+      "service": "vinyl-plank-flooring",
+      "city": "north-port",
+      "tier": 3,
       "language": "en"
     },
     {
@@ -1430,6 +2573,17 @@
       "language": "en"
     },
     {
+      "url": "/vinyl-plank-flooring/ruskin/",
+      "type": "service-city",
+      "title": "Luxury Vinyl Plank (LVP) in Ruskin",
+      "keyword": "vinyl plank flooring ruskin",
+      "intent": "commercial-local",
+      "service": "vinyl-plank-flooring",
+      "city": "ruskin",
+      "tier": 3,
+      "language": "en"
+    },
+    {
       "url": "/vinyl-plank-flooring/sarasota/",
       "type": "service-city",
       "title": "Luxury Vinyl Plank (LVP) in Sarasota",
@@ -1449,6 +2603,17 @@
       "service": "vinyl-plank-flooring",
       "city": "st-petersburg",
       "tier": 2,
+      "language": "en"
+    },
+    {
+      "url": "/vinyl-plank-flooring/sun-city-center/",
+      "type": "service-city",
+      "title": "Luxury Vinyl Plank (LVP) in Sun City Center",
+      "keyword": "vinyl plank flooring sun city center",
+      "intent": "commercial-local",
+      "service": "vinyl-plank-flooring",
+      "city": "sun-city-center",
+      "tier": 3,
       "language": "en"
     },
     {

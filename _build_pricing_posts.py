@@ -26,6 +26,12 @@ CITY_LABOR_MULT = {
     "st-petersburg":    1.08,  # urban + waterfront
     "tampa":            1.10,  # urban premium
     "lakewood-ranch":   1.10,  # luxury master-planned
+    "ellenton":         0.97,  # next to HQ, value market
+    "ruskin":           0.97,  # fast-growth, builder-grade upgrades
+    "north-port":       0.98,  # high-growth value market
+    "sun-city-center":  1.02,  # 55+ retiree, carpet-replacement heavy
+    "apollo-beach":     1.08,  # affluent waterfront
+    "nokomis":          1.08,  # affluent coastal
 }
 
 # Service pricing: each tier has material range + base labor range
@@ -368,6 +374,54 @@ CITY_SCENARIOS = {
          "context": "1985-built waterfront home extensively renovated; owner upgrading to premium wide-plank hardwood and large-format porcelain."},
         {"area": "St. Pete Beach", "type": "1,500 sqft Gulf-front condo",
          "context": "1979 oceanfront condo used as vacation rental; existing floors damaged by salt-air exposure, full reflooring with waterproof materials."},
+    ],
+    "ellenton": [
+        {"area": "Colony Cove", "type": "1,400 sqft 55+ resort-community home",
+         "context": "Manufactured/resort-community home with original carpet throughout; retired owners want easy-clean, allergy-friendly waterproof vinyl plank for full-time living."},
+        {"area": "East Ellenton (riverfront)", "type": "1,800 sqft single-family home",
+         "context": "1990s deed-restricted home near the Manatee River with worn carpet in bedrooms and living areas, original tile in baths; family of three replacing carpet with LVP."},
+        {"area": "Covered Bridge Estates", "type": "2,100 sqft two-story home",
+         "context": "2006-built family home with builder-grade carpet and laminate showing wear after years of use; owner upgrading main floor to porcelain tile and SPC."},
+    ],
+    "ruskin": [
+        {"area": "Hawks Point", "type": "2,200 sqft new-construction home",
+         "context": "2022-built family home with builder-grade carpet and basic LVP; young family upgrading to premium waterproof vinyl plank throughout main floor."},
+        {"area": "Mira Lago", "type": "1,950 sqft single-family home",
+         "context": "2018 home with builder carpet in bedrooms wearing fast with two kids and a dog; owners switching to scratch-resistant SPC and tile."},
+        {"area": "Bahia Lakes", "type": "2,600 sqft two-story home",
+         "context": "2015-built home with original carpet on stairs and second floor; owner adding matching engineered hardwood and stair treads for a seamless look."},
+    ],
+    "apollo-beach": [
+        {"area": "MiraBay", "type": "2,800 sqft waterfront single-family home",
+         "context": "2016 canal-front home with builder tile and carpet; affluent owners upgrading to wide-plank engineered hardwood and large-format porcelain, with attention to canal humidity."},
+        {"area": "Waterset", "type": "2,400 sqft new-build home",
+         "context": "Brand-new 2024 home with builder-grade LVP and carpet; family upgrading to premium SPC and tile before fully moving in."},
+        {"area": "Bimini Bay", "type": "1,600 sqft waterfront condo",
+         "context": "Older waterfront condo near the marina with laminate failing from salt-air humidity; owner reflooring with fully waterproof vinyl plank."},
+    ],
+    "sun-city-center": [
+        {"area": "Kings Point", "type": "1,500 sqft 55+ gated-community villa",
+         "context": "Original 1990s carpet throughout; retired owners want slip-resistant, easy-clean waterproof vinyl plank with low-profile transitions for safe, accessible aging-in-place."},
+        {"area": "The Preserve at La Paloma", "type": "1,900 sqft single-story home",
+         "context": "2015-built home with builder carpet in bedrooms and living areas; snowbird owners replacing all carpet with allergy-friendly SPC before full-time retirement."},
+        {"area": "Renaissance", "type": "2,200 sqft golf-community home",
+         "context": "Active-adult home with worn carpet and dated tile; owners upgrading to premium wood-look porcelain and luxury vinyl plank throughout."},
+    ],
+    "north-port": [
+        {"area": "Wellen Park (West Villages)", "type": "2,300 sqft new-construction home",
+         "context": "2023-built home with builder-grade carpet and basic LVP; growing family upgrading to premium waterproof vinyl plank and tile throughout main floor."},
+        {"area": "Bobcat Trail", "type": "2,000 sqft golf-community home",
+         "context": "2004-built home with original carpet in bedrooms and living areas, tile in wet areas; owners replacing carpet with scratch-resistant SPC."},
+        {"area": "Heron Creek", "type": "2,650 sqft executive home",
+         "context": "2008 luxury build with worn carpet on stairs and second floor; owner adding matching engineered hardwood and stair treads throughout."},
+    ],
+    "nokomis": [
+        {"area": "Calusa Lakes", "type": "2,500 sqft Mediterranean golf-community home",
+         "context": "Deed-restricted home with original tile and carpet; affluent owners upgrading to wide-plank European white oak and large-format porcelain."},
+        {"area": "Sorrento East", "type": "1,900 sqft single-family home",
+         "context": "1990s home near the water with worn carpet and dated tile; owner reflooring with premium waterproof vinyl plank and porcelain tile."},
+        {"area": "Casey Key", "type": "2,800 sqft barrier-island luxury home",
+         "context": "Gulf-front home with elevated salt-air humidity; owner installing premium herringbone hardwood in living areas and waterproof materials in coastal-exposed rooms."},
     ],
 }
 
