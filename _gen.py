@@ -363,6 +363,8 @@ def page_head(title, description, canonical_path, og_image="hero-bg.jpg"):
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="geo.region" content="US-FL">
 <meta name="geo.placename" content="Palmetto, Florida">
+<meta name="geo.position" content="27.5214;-82.5721">
+<meta name="ICBM" content="27.5214, -82.5721">
 <meta property="og:type" content="website">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{description}">
