@@ -126,6 +126,7 @@ sameas_urls = [
     "https://www.instagram.com/flooringtriangle",
     "https://www.facebook.com/people/Triangle-Flooring/61567334333950/",
     "https://share.google/TVRjAYdnZR3TS8Kzq",
+    "https://br.pinterest.com/trianglefloor/",
 ] + [url for _label, url, _note in ALL_CITATIONS]
 
 localbusiness_schema = {
