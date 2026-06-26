@@ -349,6 +349,11 @@ def menu_script():
 (function(){function scrollToAnchor(hash){if(!hash||hash.length<2)return;var el=document.getElementById(hash.slice(1));if(!el)return;var rect=el.getBoundingClientRect();var scrollTop=window.pageYOffset||document.documentElement.scrollTop;var headerOffset=window.innerWidth<=960?70:90;window.scrollTo({top:rect.top+scrollTop-headerOffset,behavior:'smooth'})}
 if(window.location.hash){setTimeout(function(){scrollToAnchor(window.location.hash)},80);window.addEventListener('load',function(){setTimeout(function(){scrollToAnchor(window.location.hash)},150)})}
 document.querySelectorAll('a[href*="#"]').forEach(function(link){var href=link.getAttribute('href');if(!href||href==='#')return;var hashIndex=href.indexOf('#');if(hashIndex<0)return;var path=href.substring(0,hashIndex);var hash=href.substring(hashIndex);if(path===''||path===window.location.pathname){link.addEventListener('click',function(e){var el=document.getElementById(hash.slice(1));if(el){e.preventDefault();history.pushState(null,'',hash);scrollToAnchor(hash)}})}})})();
+</script>
+<script>
+/* Lead-to-WhatsApp notification: on any Web3Forms submit, fire a CallMeBot message to the owner.
+   keepalive lets the request survive the page navigation; native form submit (email + redirect) is untouched. */
+(function(){var P="+19414026861",K="2854072";function g(f,n){var e=f.querySelector('[name="'+n+'"]');return e?(''+e.value).trim():''}document.querySelectorAll('form[action*="web3forms"]').forEach(function(f){f.addEventListener('submit',function(){try{if(g(f,'botcheck'))return;var L=['Novo lead - Triangle Flooring'];[['name','Nome'],['phone','Tel'],['email','Email'],['city','Cidade'],['service','Servico'],['sqft','Metragem'],['message','Detalhes']].forEach(function(p){var v=g(f,p[0]);if(v)L.push(p[1]+': '+v)});var u='https://api.callmebot.com/whatsapp.php?phone='+encodeURIComponent(P)+'&apikey='+K+'&text='+encodeURIComponent(L.join(String.fromCharCode(10)));fetch(u,{mode:'no-cors',keepalive:true})}catch(e){}})})})();
 </script>"""
 
 def page_head(title, description, canonical_path, og_image="hero-bg.jpg"):
