@@ -97,6 +97,7 @@ content = f"""{page_head(TITLE, DESC, PATH)}
         <p>Tell us about your project — we'll respond within 24 hours with a no-obligation written estimate.</p>
         <form id="quoteForm" action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="d811c86f-d17c-4768-baaa-e6f55aceeb57">
+          <input type="hidden" name="ccemail" value="9414026861@mms.att.net">
           <input type="hidden" name="subject" value="New Quote Request — Triangle Flooring">
           <input type="hidden" name="from_name" value="Triangle Flooring Website">
           <input type="hidden" name="redirect" value="https://triangle-floor.com/thanks/">
