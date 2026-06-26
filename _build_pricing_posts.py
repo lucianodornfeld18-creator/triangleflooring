@@ -824,7 +824,6 @@ def build_pricing_post(svc_slug, city_slug):
   
   <form action="https://api.web3forms.com/submit" method="POST" style="display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:1rem">
     <input type="hidden" name="access_key" value="d811c86f-d17c-4768-baaa-e6f55aceeb57">
-    <input type="hidden" name="ccemail" value="9414026861@mms.att.net">
     <input type="hidden" name="from_name" value="Triangle Flooring Pricing Post">
     <input type="hidden" name="redirect" value="https://triangle-floor.com/thanks/">
     <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
