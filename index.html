@@ -1295,6 +1295,6 @@ footer{background:#0A2342;color:rgba(255,255,255,.85);padding:4rem 0 0;font-size
     }
   });
 })();
-/* Lead-to-WhatsApp notification (CallMeBot) — fires on form submit; keepalive survives navigation, email + redirect untouched */
-(function(){var P="+19414026861",K="2854072";function g(f,n){var e=f.querySelector('[name="'+n+'"]');return e?(''+e.value).trim():''}document.querySelectorAll('form[action*="web3forms"]').forEach(function(f){f.addEventListener('submit',function(){try{if(g(f,'botcheck'))return;var L=['Novo lead - Triangle Flooring'];[['name','Nome'],['phone','Tel'],['email','Email'],['city','Cidade'],['service','Servico'],['sqft','Metragem'],['message','Detalhes']].forEach(function(p){var v=g(f,p[0]);if(v)L.push(p[1]+': '+v)});var u='https://api.callmebot.com/whatsapp.php?phone='+encodeURIComponent(P)+'&apikey='+K+'&text='+encodeURIComponent(L.join(String.fromCharCode(10)));fetch(u,{mode:'no-cors',keepalive:true})}catch(e){}})})})();
+/* Lead-to-WhatsApp notification — POST lead to same-origin /wa-lead Pages Function (apikey hidden server-side, CSP-safe) */
+(function(){function g(f,n){var e=f.querySelector('[name="'+n+'"]');return e?(''+e.value).trim():''}document.querySelectorAll('form[action*="web3forms"]').forEach(function(f){f.addEventListener('submit',function(){try{if(g(f,'botcheck'))return;var d={};['name','phone','email','city','service','sqft','message'].forEach(function(n){d[n]=g(f,n)});var data=JSON.stringify(d);if(navigator.sendBeacon){navigator.sendBeacon('/wa-lead',data)}else{fetch('/wa-lead',{method:'POST',body:data,keepalive:true})}}catch(e){}})})})();
 </

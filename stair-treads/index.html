@@ -542,9 +542,9 @@ if(window.location.hash){setTimeout(function(){scrollToAnchor(window.location.ha
 document.querySelectorAll('a[href*="#"]').forEach(function(link){var href=link.getAttribute('href');if(!href||href==='#')return;var hashIndex=href.indexOf('#');if(hashIndex<0)return;var path=href.substring(0,hashIndex);var hash=href.substring(hashIndex);if(path===''||path===window.location.pathname){link.addEventListener('click',function(e){var el=document.getElementById(hash.slice(1));if(el){e.preventDefault();history.pushState(null,'',hash);scrollToAnchor(hash)}})}})})();
 </script>
 <script>
-/* Lead-to-WhatsApp notification: on any Web3Forms submit, fire a CallMeBot message to the owner.
-   keepalive lets the request survive the page navigation; native form submit (email + redirect) is untouched. */
-(function(){var P="+19414026861",K="2854072";function g(f,n){var e=f.querySelector('[name="'+n+'"]');return e?(''+e.value).trim():''}document.querySelectorAll('form[action*="web3forms"]').forEach(function(f){f.addEventListener('submit',function(){try{if(g(f,'botcheck'))return;var L=['Novo lead - Triangle Flooring'];[['name','Nome'],['phone','Tel'],['email','Email'],['city','Cidade'],['service','Servico'],['sqft','Metragem'],['message','Detalhes']].forEach(function(p){var v=g(f,p[0]);if(v)L.push(p[1]+': '+v)});var u='https://api.callmebot.com/whatsapp.php?phone='+encodeURIComponent(P)+'&apikey='+K+'&text='+encodeURIComponent(L.join(String.fromCharCode(10)));fetch(u,{mode:'no-cors',keepalive:true})}catch(e){}})})})();
+/* Lead-to-WhatsApp notification: on any Web3Forms submit, POST the lead to the same-origin
+   /wa-lead Pages Function, which calls CallMeBot server-side (apikey hidden, CSP-safe). */
+(function(){function g(f,n){var e=f.querySelector('[name="'+n+'"]');return e?(''+e.value).trim():''}document.querySelectorAll('form[action*="web3forms"]').forEach(function(f){f.addEventListener('submit',function(){try{if(g(f,'botcheck'))return;var d={};['name','phone','email','city','service','sqft','message'].forEach(function(n){d[n]=g(f,n)});var data=JSON.stringify(d);if(navigator.sendBeacon){navigator.sendBeacon('/wa-lead',data)}else{fetch('/wa-lead',{method:'POST',body:data,keepalive:true})}}catch(e){}})})})();
 </script>
 </body>
 </html>
