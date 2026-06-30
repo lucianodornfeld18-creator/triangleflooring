@@ -57,7 +57,7 @@ workers/photo-upload/wrangler.toml
 automation/social/_test-*
 PLANO-SEO-TOP1-2026-06.html
 
-# temp de produção de criativos (local)
+# temp de produï¿½ï¿½o de criativos (local)
 automation/social/**/_h/
 automation/social/**/_html/
 automation/social/**/prof/
@@ -69,3 +69,5 @@ automation/social/ad-concepts/
 automation/social/*.pcm
 automation/social/_frames/
 CHECKLIST-SEO-CLIENTE.html
+BACKLINKS-TRIANGLE-2026.html
+COPY-KIT-TRIANGLE.html
