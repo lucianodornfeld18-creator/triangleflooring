@@ -13,7 +13,8 @@ DESC = "Find Triangle Flooring (Palmetto, FL) on 75+ trusted business directorie
 # Anchor text intentionally varies but always includes "Triangle Flooring" to reinforce brand entity.
 
 TIER_1_AUTHORITY = [
-    ("Triangle Flooring on Houzz",                        "https://www.houzz.com/pro/trianglefloorus/__public",                                   "Home-improvement marketplace"),
+    ("Triangle Flooring on Houzz",                        "https://www.houzz.com/pro/triangleflooring79",                                          "Home-improvement marketplace"),
+    ("Triangle Flooring on BBB (Better Business Bureau)", "https://www.bbb.org/us/fl/palmetto/profile/flooring-contractors/triangle-flooring-llc-0653-90463364", "Better Business Bureau"),
     ("Triangle Flooring on Bark",                         "https://www.bark.com/en/us/company/triangle-flooring/YNKYvR/",                          "Service-pro marketplace"),
     ("Triangle Flooring on Manta",                        "https://www.manta.com/c/m1hxzxk/triangle-flooring",                                     "Small-business directory"),
     ("Triangle Flooring on Hotfrog",                      "https://www.hotfrog.com/company/e107d647d1e6563efced2ed6340c41be/triangle-flooring/palmetto/carpet-flooring", "Global business directory"),
