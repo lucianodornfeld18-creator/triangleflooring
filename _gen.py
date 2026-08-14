@@ -332,7 +332,7 @@ def footer():
     </div>
     <div class="footer-bottom">
       <div>© 2026 Triangle Flooring. All rights reserved. · Locally owned & operated.</div>
-      <div><a href="/about/">About</a> · <a href="/blog/">Blog</a> · <a href="/faq/">FAQ</a> · <a href="/financing/">Financing</a> · <a href="/warranty/">Warranty</a> · <a href="/contact/">Contact</a></div>
+      <div><a href="/about/">About</a> · <a href="/blog/">Blog</a> · <a href="/faq/">FAQ</a> · <a href="/warranty/">Warranty</a> · <a href="/contact/">Contact</a></div>
     </div>
   </div>
 </footer>"""
@@ -426,7 +426,7 @@ def render_local_business_schema(name_suffix, description, page_path, city=None,
         "image":f"https://{DOMAIN}/images/{image or 'hero-bg.jpg'}",
         "address":{"@type":"PostalAddress","streetAddress":"8737 Royal Acacia Ave","addressLocality":"Palmetto","addressRegion":"FL","postalCode":"34221","addressCountry":"US"},
         "geo":{"@type":"GeoCoordinates","latitude":27.5214,"longitude":-82.5723},
-        "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"21","bestRating":"5"},
+        "aggregateRating":{"@type":"AggregateRating","ratingValue":"5.0","reviewCount":"23","bestRating":"5"},
         "priceRange":"$$",
         "openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],"opens":"07:00","closes":"19:00"}]
     }

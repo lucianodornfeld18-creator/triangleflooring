@@ -38,12 +38,19 @@ export async function onRequestPost(context) {
 
     return new Response(JSON.stringify({ ok: true }), {
       status: 200,
-      headers: { "Content-Type": "application/json" },
+      // This is a form-processing endpoint, not a page that should be indexed.
+      headers: {
+        "Content-Type": "application/json",
+        "X-Robots-Tag": "noindex, nofollow",
+      },
     });
   } catch (e) {
     return new Response(JSON.stringify({ ok: false }), {
       status: 200,
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "X-Robots-Tag": "noindex, nofollow",
+      },
     });
   }
 }
@@ -51,5 +58,8 @@ export async function onRequestPost(context) {
 // Reject other methods cleanly.
 export async function onRequest(context) {
   if (context.request.method === "POST") return onRequestPost(context);
-  return new Response("Method Not Allowed", { status: 405 });
+  return new Response("Method Not Allowed", {
+    status: 405,
+    headers: { "X-Robots-Tag": "noindex, nofollow" },
+  });
 }
