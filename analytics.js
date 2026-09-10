@@ -125,6 +125,7 @@
   }
 
   function contactMethod(link) {
+    if (!link) return "";
     var href = (link.getAttribute("href") || "").trim();
     if (/^tel:/i.test(href)) return "phone";
     if (/^mailto:/i.test(href)) return "email";

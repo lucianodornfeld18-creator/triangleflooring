@@ -510,7 +510,7 @@ document.querySelectorAll('a[href*="#"]').forEach(function(link){var href=link.g
 <script>
 /* Lead-to-WhatsApp notification: on any Web3Forms submit, POST the lead to the same-origin
    /wa-lead Pages Function, which calls CallMeBot server-side (apikey hidden, CSP-safe). */
-(function(){function g(f,n){var e=f.querySelector('[name="'+n+'"]');return e?(''+e.value).trim():''}document.querySelectorAll('form[action*="web3forms"]').forEach(function(f){f.addEventListener('submit',function(){try{if(g(f,'botcheck'))return;var d={};['name','phone','email','city','service','sqft','message'].forEach(function(n){d[n]=g(f,n)});var data=JSON.stringify(d);if(navigator.sendBeacon){navigator.sendBeacon('/wa-lead',data)}else{fetch('/wa-lead',{method:'POST',body:data,keepalive:true})}}catch(e){}})})})();
+(function(){function g(f,n){var e=f.querySelector('[name="'+n+'"]');return e?(''+e.value).trim():''}document.querySelectorAll('form[action*="web3forms"]').forEach(function(f){f.addEventListener('submit',function(){try{var b=f.querySelector('[name="botcheck"]');if(b&&b.checked)return;var d={};['name','phone','email','city','service','sqft','message'].forEach(function(n){d[n]=g(f,n)});var data=JSON.stringify(d);if(navigator.sendBeacon){navigator.sendBeacon('/wa-lead',data)}else{fetch('/wa-lead',{method:'POST',body:data,keepalive:true})}}catch(e){}})})})();
 </script>
 </body>
 </html>
